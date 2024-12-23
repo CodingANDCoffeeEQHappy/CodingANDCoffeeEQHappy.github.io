@@ -1,0 +1,405 @@
+/*
+CodingANDCoffeeEQHappy
+This file contains the main styles for this site.
+*/
+body, html {
+    font-family: monospace;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #001f27, #002b36, #073642);
+    color: #839496;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+body.animate {
+    opacity: 0.8;
+}
+
+/* Anchor Styles */
+a {
+    color: #839496;
+}
+
+a:hover {
+    color: #586e75;
+}
+
+/* Header styles */
+h1 {
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 3vw;
+}
+
+h2 {
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 2vw;
+}
+
+/* Gradients for the H1 and H2 */
+.gradient_h1 {
+    background: linear-gradient(to right, #3f3f3f, #595959, #737373);
+    background-clip: text;
+    color: transparent;
+    transition: background 0.5s;
+}
+
+.gradient_h2 {
+    background: linear-gradient(to right, #737373, #595959, #3f3f3f);
+    background-clip: text;
+    color: transparent;
+    transition: background 0.5s;
+}
+
+/* Main container styles */
+.main_container {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+/* Styles for button div */
+.button_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: width 1s ease, opacity 1s ease;
+}
+
+.text_container {
+    height: 100%;
+    width: 0%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: width 1s ease, opacity 1s ease;
+}
+
+/* Styles for info page header and paragraph */
+#main_info_header {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#main_info_header.animate {
+    opacity: 100;
+}
+
+#main_info_paragraph {
+    width: 50%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#main_info_paragraph.animate {
+    opacity: 100;
+}
+
+.main_info_text {
+    opacity: 100;
+    text-align: center;
+    transition: opacity 1s ease;
+}
+
+.main_info_text.animate {
+    opacity: 0;
+}
+
+.button_container.animate {
+    width: 0%;
+    opacity: 0;
+}
+
+.text_container.animate {
+    width: 100%;
+    opacity: 100;
+}
+
+/* Styles for main page buttons */
+.main_page_buttons {
+    font-family: monospace;
+    background-color: #073642;
+    color: #839496;
+    border: 2px solid #586e75;
+    border-radius: 5px;
+    outline: none;
+
+    font-size: 16px;
+    width: 30%;
+
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+    margin: 10px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+    position: relative;
+}
+
+.main_page_buttons:hover {
+    background-color: #586e75;
+    color: #002b36;
+    border: 2px solid #073642;
+}
+
+.main_page_buttons span {
+    transition: opacity 0.5s ease;
+}
+
+.main_page_buttons.fade_text span {
+    opacity: 0;
+}
+
+footer {
+    width: 100%;
+    flex-shrink: 0;
+    margin-top: 10%;
+    text-align: center;
+    position: relative;
+}
+
+.footer_text {
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dynamic updates for different screen sizes: */
+@media (min-width: 480px) {
+    h1 { 
+        font-size: 7vw;
+    }
+
+    h2 { 
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    .main_page_buttons { 
+        width: 60%;
+        font-size: 4vw;
+    }
+
+    footer {
+        margin-top: 13%;
+    }
+
+    .footer_text {
+        font-size: 3vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { 
+        font-size: 7vw;
+    }
+
+    h2 { 
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    .main_page_buttons { 
+        width: 60%;
+        font-size: 4vw;
+    }
+
+    footer {
+        margin-top: 13%;
+    }
+
+    .footer_text {
+        font-size: 3vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 600px) {
+    h1 { 
+        font-size: 7vw;
+    }
+
+    h2 { 
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    .main_page_buttons { 
+        width: 60%;
+        font-size: 3vw;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+
+    .footer_text {
+        font-size: 2vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 { 
+        font-size: 7vw;
+    }
+
+    h2 { 
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    .main_page_buttons { 
+        width: 40%;
+        font-size: 2vw;
+    }
+
+    footer {
+        margin-top: 6%;
+    }
+
+    .footer_text {
+        font-size: 2vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 { 
+        font-size: 6vw;
+    }
+
+    h2 { 
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    .main_page_buttons { 
+        width: 40%;
+        font-size: 1.5vw;
+    }
+
+    footer {
+        margin-top: 6%;
+    }
+
+    .footer_text {
+        font-size: 1vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 1280px) {
+    h1 { 
+        font-size: 6vw;
+    }
+
+    h2 { 
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    .main_page_buttons {
+        width: 40%;
+        font-size: 1.3vw;
+    }
+
+    footer {
+        margin-top: 6%;
+    }
+
+    .footer_text {
+        font-size: 1vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 1440px) {
+    h1 { 
+        font-size: 5vw;
+    }
+
+    h2 { 
+        font-size: 3vw;
+    }
+
+    h3 {
+        font-size: 1.5vw;
+    }
+
+    .main_page_buttons {
+        width: 40%;
+        font-size: 1.3vw;
+    }
+
+    footer {
+        margin-top: 6%;
+    }
+
+    .footer_text {
+        font-size: 1vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 1vw;
+    }
+}

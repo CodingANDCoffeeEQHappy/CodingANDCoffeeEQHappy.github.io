@@ -6,9 +6,9 @@
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self';"/>
         <link href="./css/style.css" rel="stylesheet" type="text/CSS"/>
         <link href="./css/modal.css" rel="stylesheet" type="text/CSS"/>
-        <link href="./css/coffee.css" rel="stylesheet" type="text/CSS"/>
         <link href="./css/starBackground.css" rel="stylesheet" type="text/CSS"/>
-        <script src="./js/indexScript.js"></script>
+        <script src="./js/helloworldScript.js"></script>
+        <script src="./js/modal.js"></script>
         <script src="./js/starBackground.js"></script>
         <title>CodingANDCoffeeEQHappy</title>
     </head>
@@ -17,26 +17,33 @@
         <div id="stars"></div>
 
         <h1 class="gradient_h1">CodingANDCoffeeEQHappy</h1>
-        <h2 class="gradient_h2">Hello, World!</h2>
+        <h2 class="gradient_h2">Computer Science Student<br/>Undergraduate Researcher</h2>
     
         <br/>
-        
-        <!-- CodePen example: https://codepen.io/Sneha_P_P/pen/LXWWox -->
-        <div class="main_coffee">
-            <div class="coffee_cup">
-                <div class="cup"></div>
-                <div class="coffee"></div>
-                <div class="saucer"></div>
-            </div>
-        </div>
-        
+
         <div class="main_container">
             <div class="button_container">
-                <p class="hello_world_para">Welcome to my personal site!</p>
-                <p class="hello_world_para"><i>Life is not about the destination;<br/>it's about the coffee we have along the way.</i></p>
-                <button id="loadMainPageButton" class="main_page_buttons"><span>Continue</span></button>
+                <button id="whoamiButton" class="main_page_buttons"><span>whoami</span></button>
+                <button id="skillsButton" class="main_page_buttons"><span>Skills</span></button>
+                <button id="educationButton" class="main_page_buttons"><span>Education</span></button>
+                <button id="moreInfoButton" class="main_page_buttons"><span>More Info</span></button>
+            </div>
+
+            <div class="text_container">
+                <h3 id="main_info_header" class="main_info_text"></h3>
+                <p id="main_info_paragraph" class="main_info_text"></p>
+                <button id="displayModal" class="main_page_buttons"><span>More Info</span></button>
+                <button id="moveToRight" class="main_page_buttons"><span>Back</span></button>
             </div>
         </div>
+
+        <dialog id="moreInfoModal" class="modal">
+            <h3 id="modalHeader" class="main_info_text"></h3>
+            <p id="modalPara" class="main_info_text"></p>
+            <button id="closeModalButton" class="main_page_buttons"><span>Back</span></button>
+        </dialog>
+
+        <div class="overlay" id="overlay"></div>
        
         <footer>
             <div class="footer_div">

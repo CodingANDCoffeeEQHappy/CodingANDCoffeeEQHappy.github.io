@@ -1,6 +1,6 @@
 /*
 CodingANDCoffeeEQHappy
-Version 1.0.0
+Version 1.0.1
 This file controls the modal buttons and text.
 */
 document.addEventListener("DOMContentLoaded", function() {
@@ -89,6 +89,9 @@ document.addEventListener("DOMContentLoaded", function() {
         // Reset the default styles for the modals opacity and the overlays display style:
         dialog.style.opacity = '0';
         overlay.style.display = 'none';
+
+        // Reset the y-axis scroll to 0 (prevents modal from opening with a y-axis scroll value > 0):
+        mainInfoParagraphModal.scrollTop = 0;
 
         // Use a timeout to remove the modal with a slow fade:
         setTimeout(() => {

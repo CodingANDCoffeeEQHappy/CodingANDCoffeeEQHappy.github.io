@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const inputTextPara = {
         whoAmI: "I am a computer science student and undergraduate researcher with a diverse set of skills and an excitement to learn.",
         skills: "I have a diverse technical skillset, including programming, networking, cybersecurity, and more.",
-        education: "I will earn my bachelor's degree in computer science and a minor in mathematics in the Spring 2025 semester. While I have gained substantial knowledge, I recognize there is always more to learn.",
+        education: "I will earn my bachelor's degree in computer science and a minor in mathematics in the Spring 2025 semester.",
         moreInfo: "This website was built with various different resources. Please use the 'More Info' button to learn more."
     }
 

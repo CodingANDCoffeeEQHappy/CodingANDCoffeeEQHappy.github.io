@@ -1,0 +1,40 @@
+# CodingANDCoffeeEQHappy
+# Version 1.5.0
+# This action downloads the source code for Three.js and DOMPurify and adds them to the repo.
+name: Download Packages
+run-name: ${{ github.actor }} is downloading the required packages.
+on: workflow_dispatch
+jobs:
+  Download-Packages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Make Directories
+        run: |
+          mkdir -p ./space/packages/threeJS/build/
+          mkdir -p ./space/packages/threeJS/examples/jsm/controls/
+          mkdir -p ./space/packages/domPurify/
+
+      - name: Download Packages
+        # https://threejs.org/docs/index.html#manual/en/introduction/Installation
+        # https://github.com/cure53/DOMPurify
+        run: |
+          echo "Downloading Three.js..."
+          curl -o ./space/packages/threeJS/build/three.module.js https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js
+          echo "Downloading Three.js examples..."
+          curl -o ./space/packages/threeJS/examples/jsm/controls/TransformControls.js https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/controls/OrbitControls.js
+          echo "Downloading DOMPurify..."
+          curl -o ./space/packages/domPurify/purify.min.js https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js
+      
+      - name: Commit and Push Changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add ./space/packages/threeJS/build/three.module.js ./space/packages/threeJS/examples/jsm/controls/TransformControls.js ./space/packages/domPurify/purify.min.js
+          git commit -m "🤖 Downloaded packages. 🤖"
+          git push https://${{ github.actor }}:$GH_TOKEN@github.com/${{ github.repository }}.git

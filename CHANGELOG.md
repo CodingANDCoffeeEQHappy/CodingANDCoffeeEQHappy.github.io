@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.5.0 - 2025-1-12
+- Updated README to include details for project updates and GitHub Actions scripts added to pull data and download packages for future site updates.
+
 ## 1.0.1 - 2024-12-23
 - Bug fix to prevent the modals from saving the y-axis scroll position. This ensures the modals y-axis scroll is reset to 0 on close.
 

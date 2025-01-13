@@ -1,0 +1,134 @@
+# CodingANDCoffeeEQHappy
+# Version 1.5.0
+# This action uses the OpenWeatherMap API to make a few requests and saves the output as JSON files which are added to the repo.
+# https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-nodejs
+name: Weather API Calls
+run-name: ${{ github.actor }} is making OpenWeatherMap API requests.
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  Weather-API-Calls:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Install Dependencies
+        run: npm install axios isomorphic-dompurify
+
+      - name: Make API Requests and Save Results
+        # https://openweathermap.org/
+        run: |
+          node -e "
+          const axios = require('axios');
+          const fs = require('fs');
+          const DOMPurify = require('isomorphic-dompurify');
+          const filePath = './space/assets/data/cities.json';
+
+          // The following function uses DOMPurify to sanitize inputs:
+          const sanitizeData = (data) => {
+              // If data is of type string, directly sanitize:
+              if (typeof data === 'string') {
+                  return DOMPurify.sanitize(data);
+
+              } else if (Array.isArray(data)) {
+                  // If data is of type array, iterate through and sanitize each element:
+                  return data.map(ele => sanitizeData(ele));
+
+              } else if (typeof data === 'object' && data !== null) {
+                  // If data is of type object and contains data, iterate through each key and sanitize the data:
+                  const sanitizedObject = {};
+
+                  for (const key in data) {
+                      if (data.hasOwnProperty(key)) {
+                          sanitizedObject[key] = sanitizeData(data[key]);
+                      }
+                  }
+
+                  return sanitizedObject;
+
+              } else {
+                  // Else, return the data (will include numbers):
+                  return data;
+
+              }
+          };
+
+          fs.readFile(filePath, 'utf8', (err, data) => {
+            if (err) {
+              console.log('Error reading local JSON file: ', err);
+              process.exit(1);
+            } else {
+              const jsonData = JSON.parse(data);
+
+              jsonData.cities.forEach(element => {
+                if (typeof element.id === 'string' && typeof element.city === 'string' && typeof element.country === 'string' && typeof element.cityCountryNativeLang === 'string' && typeof element.latitude === 'number' && typeof element.longitude === 'number' && typeof element.cityWikiURL === 'string' && typeof element.countryWikiURL === 'string' && typeof element.timeZoneID === 'string') {
+                  // Request for imperial units:
+                  axios.get('https://api.openweathermap.org/data/2.5/forecast', {
+                    params: {
+                      lat: element.latitude,
+                      lon: element.longitude,
+                      units: 'imperial',
+                      appid: '${{ secrets.OPENWEATHERMAP_API_KEY }}'
+                    }
+                  }).then(response => {
+                    // Only allow sanitized data to be saved:
+                    const sanitizedData = sanitizeData(response.data);
+                    fs.writeFileSync(\`./space/assets/data/weather_data/\${element.id}_forecast_F.json\`, JSON.stringify(sanitizedData, null, 2));
+
+                  }).catch(error => {
+                    console.log('Error Fetching Weather Data: ', error);
+                    process.exit(1);
+
+                  });
+
+                  // Request for metric units:
+                  axios.get('https://api.openweathermap.org/data/2.5/forecast', {
+                    params: {
+                      lat: element.latitude,
+                      lon: element.longitude,
+                      units: 'metric',
+                      appid: '${{ secrets.OPENWEATHERMAP_API_KEY }}'
+                    }
+                  }).then(response => {
+                    // Only allow sanitized data to be saved:
+                    const sanitizedData = sanitizeData(response.data);
+                    fs.writeFileSync(\`./space/assets/data/weather_data/\${element.id}_forecast_C.json\`, JSON.stringify(sanitizedData, null, 2));
+
+                  }).catch(error => {
+                    console.log('Error Fetching Weather Data: ', error);
+                    process.exit(1);
+
+                  });
+
+                  // Write the current time since UNIX epoch in UTC to file:
+                  const dateTime = new Date().getTime();
+                  const updateTimeObject = { dateTime };
+                  fs.writeFileSync(\`./space/assets/data/weather_data/\${element.id}_forecast_update_time.json\`, JSON.stringify(updateTimeObject, null, 2));
+
+                } else {
+                  console.log('JSON Data Error: Data Type in JSON is Invalid');
+                  process.exit(1);
+                  
+                }
+              });
+            }
+          });"
+
+      - name: Commit and Push Changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add ./space/assets/data/weather_data/*.json
+          git commit -m "🤖 Update weather data from OpenWeatherMap API. 🤖"
+          git push https://${{ github.actor }}:$GH_TOKEN@github.com/${{ github.repository }}.git

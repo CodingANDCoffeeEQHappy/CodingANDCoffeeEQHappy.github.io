@@ -1,0 +1,63 @@
+# CodingANDCoffeeEQHappy
+# Version 1.5.0
+# This action downloads images from a few different NASA websites and adds them into the repo.
+name: Download NASA Images
+run-name: ${{ github.actor }} is downloading the required NASA images.
+on: workflow_dispatch
+jobs:
+  Download-NASA-Images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # NASA Image Use Guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/
+      # NASA Visible Earth Use Guidelines: https://visibleearth.nasa.gov/image-use-policy
+      - name: Download Images
+        run: |
+          echo "Downloading Space Image..."
+          # Image Credit: NASA/Goddard Space Flight Center Scientific Visualization Studio
+          # https://svs.gsfc.nasa.gov/3572/
+          curl -o ./space/assets/images/space/TychoSkymapII.t3_08192x04096.jpg https://svs.gsfc.nasa.gov/vis/a000000/a003500/a003572/TychoSkymapII.t3_08192x04096.jpg
+
+          # https://visibleearth.nasa.gov/collection/1484/blue-marble
+          echo "Downloading Earth Images..."
+          # Image Credit: NASA Goddard Space Flight Center Image by Reto Stöckli (land surface, shallow water, clouds). Enhancements by Robert Simmon (ocean color, compositing, 3D globes, animation). Data and technical support: MODIS Land Group; MODIS Science Data Support Team; MODIS Atmosphere Group; MODIS Ocean Group Additional data: USGS EROS Data Center (topography); USGS Terrestrial Remote Sensing Flagstaff Field Center (Antarctica); Defense Meteorological Satellite Program (city lights).
+          # https://visibleearth.nasa.gov/images/57730/the-blue-marble-land-surface-ocean-color-and-sea-ice
+          curl -o ./space/assets/images/earth/land_ocean_ice_8192.png https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57730/land_ocean_ice_8192.png
+
+          # Image Credit: NASA Earth Observatory images by Joshua Stevens, using Suomi NPP VIIRS data from Miguel Román, NASA GSFC 
+          # https://www.visibleearth.nasa.gov/images/144898/earth-at-night-black-marble-2016-color-maps
+          curl -o ./space/assets/images/earth/BlackMarble_2016_01deg.jpg https://eoimages.gsfc.nasa.gov/images/imagerecords/144000/144898/BlackMarble_2016_01deg.jpg
+
+          # Image Credit: Imagery by Jesse Allen, NASA's Earth Observatory, using data from the General Bathymetric Chart of the Oceans (GEBCO) produced by the British Oceanographic Data Centre.
+          # https://visibleearth.nasa.gov/images/73934/topography
+          curl -o ./space/assets/images/earth/srtm_ramp2.worldx294x196.jpg https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73934/srtm_ramp2.worldx294x196.jpg
+
+          # Image Credit: NASA/Goddard Space Flight Center Scientific Visualization Studio, U.S. Department of Commerce, National Oceanic and Atmospheric Administration, National Geophysical Data Center, 2006, 2-minute Gridded Global Relief Data (ETOPO2v2) - http://www.ngdc.noaa.gov/mgg/fliers/06mgg01.html The Blue Marble Next Generation data is courtesy of Reto Stockli (NASA/GSFC) and NASA's Earth Observatory.
+          # https://svs.gsfc.nasa.gov/3487
+          curl -o ./space/assets/images/earth/landmask4K.png https://svs.gsfc.nasa.gov/vis/a000000/a003400/a003487/landmask4K.png
+
+          # Image Credit: NASA Goddard Space Flight Center Image by Reto Stöckli (land surface, shallow water, clouds). Enhancements by Robert Simmon (ocean color, compositing, 3D globes, animation). Data and technical support: MODIS Land Group; MODIS Science Data Support Team; MODIS Atmosphere Group; MODIS Ocean Group Additional data: USGS EROS Data Center (topography); USGS Terrestrial Remote Sensing Flagstaff Field Center (Antarctica); Defense Meteorological Satellite Program (city lights).
+          # https://www.visibleearth.nasa.gov/images/57747/blue-marble-clouds
+          curl -o ./space/assets/images/earth/cloud_combined_2048.jpg https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57747/cloud_combined_2048.jpg
+
+          echo "Downloading Moon Images..."
+          # Image Credit: NASA's Scientific Visualization Studio
+          # https://svs.gsfc.nasa.gov/4720
+          curl -o ./space/assets/images/moon/lroc_color_poles_1k.jpg https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_poles_1k.jpg
+
+          # Image Credit: NASA's Scientific Visualization Studio
+          # https://svs.gsfc.nasa.gov/4720
+          curl -o ./space/assets/images/moon/ldem_3_8bit.jpg https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/ldem_3_8bit.jpg
+      
+      - name: Commit and Push Changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add ./space/assets/images/space/TychoSkymapII.t3_08192x04096.jpg ./space/assets/images/earth/*.png ./space/assets/images/earth/*.jpg ./space/assets/images/moon/*.jpg
+          git commit -m "🤖 Downloaded NASA images. 🤖"
+          git push https://${{ github.actor }}:$GH_TOKEN@github.com/${{ github.repository }}.git

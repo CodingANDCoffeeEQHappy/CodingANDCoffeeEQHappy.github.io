@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.6.0 - 2025-1-15
+- Major site updates. You can now explore outer space!
+
 ## 1.5.0 - 2025-1-12
 - Updated README to include details for project updates and GitHub Actions scripts added to pull data and download packages for future site updates.
 

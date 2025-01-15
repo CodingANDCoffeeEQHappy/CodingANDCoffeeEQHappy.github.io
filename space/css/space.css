@@ -1,0 +1,639 @@
+/*
+CodingANDCoffeeEQHappy
+1.6.0
+This file contains the main CSS for space.html.
+*/
+body, html {
+    font-family: monospace;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #001f27, #002b36, #073642);
+    color: #839496;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Styles for main page buttons */
+.main_page_buttons {
+    font-family: monospace;
+    background-color: #232526;
+
+    color: #839496;
+    border: 2px solid #586e75;
+    border-radius: 5px;
+    outline: none;
+
+    font-size: 16px;
+    width: 30%;
+
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    transition: opacity 0.5s ease;
+
+    margin: 10px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+    position: relative;
+}
+
+/* Button Styles */
+.main_page_buttons:not(:disabled):hover {
+    background-color: #708090;
+    color: #232526;
+    border: 2px solid #232526;
+}
+
+.main_page_buttons span {
+    transition: opacity 0.5s ease;
+}
+
+.main_page_buttons.animate {
+    opacity: 0;
+}
+
+.main_page_buttons.fade_text span {
+    opacity: 0;
+}
+
+/* Button Styles for Modal */
+.modal_buttons {
+    font-family: monospace;
+    background-color: #232526;
+
+    color: #839496;
+    border: 2px solid #586e75;
+
+    border-radius: 5px;
+    outline: none;
+
+    font-size: 16px;
+    width: 30%;
+
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+    margin: 10px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+    position: relative;
+}
+
+/* Button Styles */
+.modal_buttons:not(:disabled):hover {
+    background-color: #708090;
+    color: #232526;
+    border: 2px solid #232526;
+}
+
+.modal_buttons span {
+    transition: opacity 0.5s ease;
+}
+
+.modal_buttons.fade_text span {
+    opacity: 0;
+}
+
+/* Text Styles */
+.main_info_text {
+    opacity: 100;
+    text-align: center;
+    transition: opacity 1s ease;
+}
+
+.main_info_text.animate {
+    opacity: 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 70%;
+    height: 70%;
+
+    background: linear-gradient(135deg, #232526, #414345);
+    color: #839496;
+    border: 2px solid #586e75;
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#modalHeader {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#modalHeaderSmaller {
+    margin-top: 0;
+    text-align: center;
+}
+
+#cityLatLong {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#cityDate, #cityTime {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#modalPara {
+    height: 40%;
+    width: 80%;
+    
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Weather Data Styles */
+#weatherDataWidget {
+    text-align: center;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#weatherDataIcon {
+    margin-bottom: 0;
+    height: 50%;
+}
+
+#weatherDataDescription {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#weatherDataTemp {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#weatherDataTempMinMax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#maxMinTempDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 50%;
+}
+
+.weatherDataTempVals {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#weatherDataUpcoming {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.weatherDataUpcomingItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* More Info Styles */
+#modalMoreInfo {
+    margin-top: 1%;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Anchor Styles */
+a {
+    color: #839496;
+}
+
+a:hover {
+    color: #586e75;
+}
+
+/* 
+The following CSS is used for the overlay that is 
+displayed as a background for the modal: 
+*/
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#footerDiv {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 1%;
+    width: 30%;
+}
+
+#openMenuButton {
+    text-align: center;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+#openMenuButton:disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 0;
+    margin-bottom: 0.5%;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#footerText {
+    padding: 0;
+    margin: 0;
+    margin-top: 2%;
+    text-align: center;
+    opacity: 100;
+    transition: opacity 0.5s ease;
+}
+
+#footerText.fade_text {
+    opacity: 0;
+}
+
+/* Main Menu Styles */
+#mainMenu, #moreInfo {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 0%;
+    
+    background: linear-gradient(135deg, #232526, #414345);
+
+    border: 2px solid #586e75;
+    border-radius: 5px;
+    outline: none;
+
+    transition: height 1.5s ease;
+}
+
+#mainMenu.openMenu, #moreInfo.openMenu {
+    height: 50%;
+}
+
+#mainMenuButton1, #mainMenuButton2, #mainMenuButton3 {
+    width: 80% !important;
+    opacity: 0;
+    transition: opacity 2.0s ease;
+}
+
+#mainMenuCloseButton, #moreInfoCloseButton {
+    width: 60% !important;
+    opacity: 0;
+    transition: opacity 2.0s ease;
+}
+
+#mainMenuButton1.displayButtons, #mainMenuButton2.displayButtons, #mainMenuButton3.displayButtons, #mainMenuCloseButton.displayButtons, #moreInfoCloseButton.displayButtons {
+    opacity: 100;
+}
+
+/* More Info Text Styles */
+#moreInfoPara {
+    font-size: 14px;
+    width: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#moreInfoHeader, #moreInfoPara {
+    opacity: 0;
+    transition: opacity 2.0s ease;
+}
+
+#moreInfoHeader.animate, #moreInfoPara.animate {
+    opacity: 100;
+}
+
+.more_info_list_item {
+    margin-bottom: 10px;
+}
+
+/* 
+The following styles are used for the 
+scrollbar: 
+*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #414345;
+    border-radius: 5px;
+    border: 2px solid #586e75;
+}
+
+/* Dynamic updates for different screen sizes: */
+@media (min-width: 480px) {
+    h2 {
+        font-size: 5vw;
+        padding-top: 10%;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    .main_page_buttons, .modal_buttons, .loading_page_buttons { 
+        width: 60%;
+        font-size: 4vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 3vw;
+    }
+
+    #weatherDataWidget {
+        height: 100%;
+    }
+
+    #weatherDataIcon {
+        height: 50%;
+    }
+
+    #footerDiv {
+        width: 50%;
+    }
+
+    #mainMenu, #moreInfo {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 { 
+        font-size: 5vw;
+        padding-top: 10%;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    .main_page_buttons, .modal_buttons, .loading_page_buttons { 
+        width: 60%;
+        font-size: 4vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 3vw;
+    }
+
+    #weatherDataWidget {
+        height: 100%;
+    }
+
+    #weatherDataIcon {
+        height: 50%;
+    }
+
+    #footerDiv {
+        width: 50%;
+    }
+
+    #mainMenu, #moreInfo {
+        width: 70%;
+    }
+}
+
+@media (min-width: 600px) {
+    h2 { 
+        font-size: 5vw;
+        padding-top: 10%;
+    }
+
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    .main_page_buttons, .modal_buttons, .loading_page_buttons { 
+        width: 60%;
+        font-size: 3vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 2.5vw;
+    }
+
+    #weatherDataWidget {
+        height: 100%;
+    }
+
+    #weatherDataIcon {
+        height: 50%;
+    }
+
+    #footerDiv {
+        width: 50%;
+    }
+
+    #mainMenu, #moreInfo {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    h2 { 
+        font-size: 5vw;
+        padding-top: 5%;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    .main_page_buttons, .modal_buttons, .loading_page_buttons { 
+        width: 40%;
+        font-size: 2vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 2vw;
+    }
+
+    #weatherDataWidget {
+        height: 100%;
+    }
+
+    #weatherDataIcon {
+        height: 50%;
+    }
+
+    #footerDiv {
+        width: 30%;
+    }
+
+    #mainMenu, #moreInfo {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    h2 { 
+        font-size: 4vw;
+        padding-top: 0%;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    .main_page_buttons, .modal_buttons, .loading_page_buttons { 
+        width: 40%;
+        font-size: 1.5vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 1.5vw;
+    }
+
+    #weatherDataWidget {
+        height: 55%;
+    }
+
+    #weatherDataIcon {
+        height: 50%;
+    }
+
+    #footerDiv {
+        width: 20%;
+    }
+
+    #mainMenu, #moreInfo {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1280px) {
+    h2 { 
+        font-size: 4vw;
+        padding-top: 0%;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    .main_page_buttons, .modal_buttons, .loading_page_buttons {
+        width: 40%;
+        font-size: 1.3vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 1.5vw;
+    }
+
+    #weatherDataWidget {
+        height: 55%;
+    }
+
+    #weatherDataIcon {
+        height: 50%;
+    }
+
+    #footerDiv {
+        width: 20%;
+    }
+
+    #mainMenu, #moreInfo {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1440px) {
+    h2 { 
+        font-size: 3vw;
+        padding-top: 0%;
+    }
+
+    h3 {
+        font-size: 1.5vw;
+    }
+
+    .main_page_buttons, .modal_buttons, .loading_page_buttons {
+        width: 40%;
+        font-size: 1.3vw;
+    }
+
+    #main_info_paragraph, #modalPara, .hello_world_para {
+        font-size: 1vw;
+    }
+
+    #weatherDataWidget {
+        height: 55%;
+    }
+
+    #weatherDataIcon {
+        height: 50%;
+    }
+
+    #footerDiv {
+        width: 20%;
+    }
+
+    #mainMenu, #moreInfo {
+        width: 35%;
+    }
+}

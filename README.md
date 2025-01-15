@@ -9,10 +9,12 @@
 *Thank you for checking it out!*
 
 ## Resources Used 📃
-### Main Site (index.html and helloworld.html)
+### Main Site (index.html and helloworld.html) 💻
 - The animated [coffee cup](https://codepen.io/Sneha_P_P/pen/LXWWox) and [star/shooting stars](https://codepen.io/semdeck/pen/abQBwKN) are adapted from example code found on [CodePen](https://codepen.io/). Special thanks to [Sneha P P](https://codepen.io/Sneha_P_P) and [SEMdeck Digital](https://codepen.io/semdeck) on CodePen for their inspiring examples. The code has been modified and is used under the MIT License. All license/copyright information can be found in the respective files that include code used from these examples in comments at the top of the file.
 
-### Space Site (space.html)
+### Space Site (space.html) 🚀
+- To help create the Earth model for this portion of the project, I used [this amazing article](https://franky-arkon-digital.medium.com/make-your-own-earth-in-three-js-8b875e281b1e) by [Franky Hung](https://github.com/franky-adl). This article taught me how to create the Earth model, apply the textures, and write shaders to improve the realistic look of the Earth.
+- On the loading page for the space simulation, there is an animated [coffee cup](https://codepen.io/Sneha_P_P/pen/LXWWox), [star/shooting stars](https://codepen.io/semdeck/pen/abQBwKN), and [space shuttle](https://codepen.io/milessebesta/pen/KKzXRVW) which are adapted from example code found on [CodePen](https://codepen.io/). Special thanks to [Sneha P P](https://codepen.io/Sneha_P_P), [SEMdeck Digital](https://codepen.io/semdeck), and [Miles S](https://codepen.io/milessebesta) on CodePen for their inspiring examples. The code has been modified and is used under the MIT License. All license/copyright information can be found in the respective files that include code used from these examples in comments at the top of the file.
 - NASA Images:
     - *The script that downloads and saves these images in this repo can be found here.*
     1) [The Tycho Catalog Skymap - Version 2.0](https://svs.gsfc.nasa.gov/vis/a000000/a003500/a003572/TychoSkymapII.t3_08192x04096.jpg)

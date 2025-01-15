@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self';"/>
+        <link href="./css/space.css" rel="stylesheet" type="text/CSS"/>
+        <link href="./css/loadingPage.css" rel="stylesheet" type="text/CSS"/>
+        <link href="./css/coffeeLoadingPage.css" rel="stylesheet" type="text/CSS"/>
+        <link href="./css/spaceShuttle.css" rel="stylesheet" type="text/CSS"/>
+        <link href="../css/starBackground.css" rel="stylesheet" type="text/CSS"/>
+
+        <!-- Packages: -->
+        <!-- https://github.com/cure53/DOMPurify -->
+        <script type="text/javascript" src="./packages/domPurify/purify.min.js"></script>
+
+        <!-- https://threejs.org/docs/index.html#manual/en/introduction/Installation -->
+        <script type="module" src="./packages/threeJS/build/three.module.js"></script>
+        <script type="module" src="./packages/threeJS/examples/jsm/controls/OrbitControls.js"></script>
+        
+        <!-- Other JavaScript: -->
+        <script type="text/javascript" src="../js/starBackground.js"></script>
+        <script type="module" src="./js/main.js"></script>
+    
+        <title>CodingANDCoffeeEQHappy</title>
+    </head>
+    <body>
+        <dialog id="cityInfoModal" class="modal">
+            <h2 id="modalHeader" class="main_info_text"></h2>
+            <h3 id="modalHeaderSmaller" class="main_info_text"></h3>
+            <p id="cityLatLong" class="main_info_text"></p>
+            <p id="cityDate" class="main_info_text"></p>
+            <p id="cityTime" class="main_info_text"></p>
+            
+            <div id="weatherDataWidget">
+                <img id="weatherDataIcon" src="./assets/images/openweathermap_icons/01d@2x.png" alt="A weather icon from OpenWeatherMap to represent current weather conditions in this city."/>
+                <p id="weatherDataDescription"></p>
+                <p id="weatherDataTemp"></p>
+                
+                <div id="weatherDataTempMinMax">
+                    <div id="maxMinTempDiv">
+                        <p id="weatherDataTempMin" class="weatherDataTempVals"></p>
+                        <p id="weatherDataTempMax" class="weatherDataTempVals"></p>
+                    </div>
+                </div>
+
+                <div id="weatherDataUpcoming">
+                    <div class="weatherDataUpcomingItem">
+                        <p id="futureWeatherDataDate1"></p>
+                        <p id="futureWeatherDataMain1" class="weatherDataTempVals"></p>
+                        <p id="futureWeatherDataTemp1" class="weatherDataTempVals"></p>
+                    </div>
+
+                    <div class="weatherDataUpcomingItem">
+                        <p id="futureWeatherDataDate2"></p>
+                        <p id="futureWeatherDataMain2" class="weatherDataTempVals"></p>
+                        <p id="futureWeatherDataTemp2" class="weatherDataTempVals"></p>
+                    </div>
+
+                    <div class="weatherDataUpcomingItem">
+                        <p id="futureWeatherDataDate3"></p>
+                        <p id="futureWeatherDataMain3" class="weatherDataTempVals"></p>
+                        <p id="futureWeatherDataTemp3" class="weatherDataTempVals"></p>
+                    </div>
+
+                    <div class="weatherDataUpcomingItem">
+                        <p id="futureWeatherDataDate4"></p>
+                        <p id="futureWeatherDataMain4" class="weatherDataTempVals"></p>
+                        <p id="futureWeatherDataTemp4" class="weatherDataTempVals"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modalMoreInfo">
+                <p class="main_info_text">
+                    Additional Information: <a id="moreInfoCity" target="_blank"></a>, <a id="moreInfoCountry" target="_blank"></a>.
+                    </br>
+                    Weather data and icon provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap.</a>
+                    </br>
+                    Weather data last update: <a id="weatherDataLastUpdateTime" href="https://openweathermap.org/" target="_blank">OpenWeatherMap.</a>
+                </p>
+            </div>
+
+            <button id="closeModalButton" class="modal_buttons"><span>Back</span></button>
+        </dialog>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div id="loadingPage">
+            <!-- CodePen example: https://codepen.io/semdeck/pen/abQBwKN -->
+            <div id="stars"></div>
+
+            <h2 id="loadingPageHeader">Ready to Explore?</h2>
+
+            <!-- CodePen example: https://codepen.io/Sneha_P_P/pen/LXWWox -->
+            <div id="coffeeDiv" class="main_coffee">
+                <div class="coffee_cup">
+                    <div class="cup"></div>
+                    <div id="coffee" class="coffee_fill"></div>
+                </div>
+            </div>
+
+            <h3 id="loadingPageLoadingText">Loading</h3>
+
+            <p id="loadingPageInstructions">
+                <b>Move the Camera:</b> Left-click and drag (or touch and drag) to orbit the camera around the scene.
+                </br>
+                <b>Zoom:</b> Use the scroll wheel (or pinch to zoom) to zoom in/out.
+            </p>
+
+            <button id="loadingPageContinueButton" class="loading_page_buttons" disabled><span>Continue</span></button>
+
+            <!-- CodePen example: https://codepen.io/milessebesta/pen/KKzXRVW -->
+            <div class='space-shuttle' id="spaceShuttle">
+                <div class='fuel'>
+                  <div class='fuel-bottom'></div>
+                  <div class='fuel-shell'>
+                    <div class='shadow'></div>
+                  </div>
+                  <div class='booster-shadow'>
+                    <div class='booster'>
+                      <div class='booster-line'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class='ship'>
+                  <div class='ship_container'>
+                    <div class='nose'>
+                      <div class='fill'></div>
+                    </div>
+                    <div class='body'>
+                      <div class='attachment top'></div>
+                      <div class='attachment middle'></div>
+                      <div class='attachment bottom'></div>
+                      <div class='tail'></div>
+                    </div>
+                    <div class='fuels'>
+                      <div class='fuel-shell large'>
+                        <div class='shadow'></div>
+                      </div>
+                      <div class='fuel-shell left'>
+                        <div class='shadow'></div>
+                      </div>
+                      <div class='fuel-shell right'>
+                        <div class='shadow'></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ship-fire'>
+                    <div class='fire'></div>
+                    <div class='fire left'></div>
+                    <div class='fire right'></div>
+                  </div>
+                  <div class='rocket-fire'>
+                    <div class='fire'></div>
+                    <div class='fire left'></div>
+                    <div class='fire right'></div>
+                  </div>
+                  <div class='smoke light'>
+                    <div class='smoke--15 left_1'></div>
+                    <div class='smoke--20 left_-14 top_12'></div>
+                    <div class='smoke--15 left_-11 top_12'></div>
+                    <div class='smoke--25 left_-12 top_9'></div>
+                    <div class='smoke--22 left_-8 top_10'></div>
+                    <div class='smoke--25 left_-14 top_10'></div>
+                    <div class='smoke--40 left_-8 top_25'></div>
+                    <div class='smoke--53 left_-12 top_20'></div>
+                    <div class='smoke--60 left_-30 top_40'></div>
+                    <div class='smoke--100 left_-15 top_40'></div>
+                    <div class='smoke--100 left_-50 top_80'></div>
+                    <div class='smoke--140 left_-20 top_80'></div>
+                    <div class='smoke--205 left_-60 top_100'></div>
+                  </div>
+                  <div class='smoke dark'>
+                    <div class='smoke-space'></div>
+                    <div class='smoke--25 left_0 top_9'></div>
+                    <div class='smoke--22 left_0 top_10'></div>
+                    <div class='smoke--25 left_0 top_10'></div>
+                    <div class='smoke--40 left_-2 top_25'></div>
+                    <div class='smoke--53 left_-12 top_20'></div>
+                    <div class='smoke--60 left_-30 top_40'></div>
+                    <div class='smoke--100 left_-15 top_40'></div>
+                    <div class='smoke--100 left_-50 top_80'></div>
+                    <div class='smoke--140 left_-20 top_80'></div>
+                    <div class='smoke--205 left_-60 top_100'></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainMenu">
+            <button id="mainMenuButton1" class="main_page_buttons" disabled><span>More Info</span></button>
+            <button id="mainMenuButton2" class="main_page_buttons" disabled><span>About the Developer</span></button>
+            <button id="mainMenuButton3" class="main_page_buttons" disabled><span>Play Music</span></button>
+            <button id="mainMenuCloseButton" class="main_page_buttons" disabled><span>Close</span></button>
+        </div>
+
+        <div id="moreInfo">
+            <h2 id="moreInfoHeader">More Info</h2>
+            <ul id="moreInfoPara">
+                <li class="more_info_list_item">This project is part of my personal website, designed to showcase my work and skills. I hope it can serve as a valuable resource for potential employers and others interested in learning more about my professional journey.</li>
+                <li class="more_info_list_item">This project features a simple real-time simulation of the Earth, Moon, and Sun using Three.js. This simulation uses <a href="https://github.com/CodingANDCoffeeEQHappy/CodingANDCoffeeEQHappy.github.io#resources-used-" target="_blank">satellite imagery from NASA</a> to create textures for the Earth and Moon. The Earth's position relative to the Sun and the Moon's position relative to the Earth are approximately calculated using <a href="https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion#Position_as_a_function_of_time" target="_blank">Kepler's Laws of Planetary Motion</a>. Additionally, the simulated Earth includes interactive features and data, including real-time time zone calculations and semi-real-time weather data for a few cities on Earth using <a href="https://github.com/CodingANDCoffeeEQHappy/CodingANDCoffeeEQHappy.github.io#resources-used-" target="_blank">OpenWeatherMap's API</a>. To find more information about the work behind this portion of the project, please check out this document for more details.</li>
+                <li class="more_info_list_item">My space simulation is heavily inspired by <a href="https://eyes.nasa.gov/apps/solar-system/#/home" target="_blank">NASA's Eyes on the Solar System</a> and <a href="https://earth.google.com/" target="_blank">Google Earth</a>. <a href="https://eyes.nasa.gov/apps/solar-system/#/home" target="_blank">NASA's Eyes on the Solar System</a> is one of my favorite <a href="https://threejs.org/" target="_blank">Three.js</a> projects, and I really enjoy the research and effort in this project. Although I wanted to make my project unique, it shares a few similar features. <a href="https://eyes.nasa.gov/apps/solar-system/#/home" target="_blank">Eyes on the Solar System</a> is an amazing learning tool, and I recommend checking it out if you haven't.</li>
+                <li class="more_info_list_item">To help create the Earth model for this portion of the project, I used <a href="https://franky-arkon-digital.medium.com/make-your-own-earth-in-three-js-8b875e281b1e" target="_blank">this amazing article</a> by <a href="https://github.com/franky-adl" target="_blank">Franky Hung</a>. This article taught me how to create the Earth model, apply the textures, and write shaders to improve the realistic look of the Earth.</li>
+                <li class="more_info_list_item">On the loading page for the space simulation, there is an animated <a href="https://codepen.io/Sneha_P_P/pen/LXWWox" target="_blank">coffee cup</a>, <a href="https://codepen.io/semdeck/pen/abQBwKN" target="_blank">star/shooting stars</a>, and <a href="https://codepen.io/milessebesta/pen/KKzXRVW" target="_blank">space shuttle</a> which are adapted from example code found on <a href="https://codepen.io/" target="_blank">CodePen</a>. Special thanks to <a href="https://codepen.io/Sneha_P_P" target="_blank">Sneha P P</a>, <a href="https://codepen.io/semdeck" target="_blank">SEMdeck Digital</a>, and <a href="https://codepen.io/milessebesta" target="_blank">Miles S</a> on CodePen for their inspiring examples. The code has been modified and is used under the MIT License. All license/copyright information can be found in the respective files that include code used from these examples in comments at the top of the file.</li>
+                <li class="more_info_list_item">If you would like to visit the main site to learn more about me, please click <a href="https://codingandcoffeeeqhappy.github.io/helloworld.html" target="_blank">here</a>.</li>
+                <li class="more_info_list_item">To learn more about this project and the resources used, please see the <a href="https://github.com/CodingANDCoffeeEQHappy/CodingANDCoffeeEQHappy.github.io/blob/main/README.md" target="_blank">README on GitHub</a>.</li>
+            </ul>
+            <button id="moreInfoCloseButton" class="main_page_buttons" disabled><span>Close</span></button>
+        </div>
+
+        <div id="footerDiv">
+            <button id="openMenuButton" class="main_page_buttons"><span>Open Menu</span></button>
+            <footer><p id="footerText">Imagery used in this project is sourced from <a href="https://www.nasa.gov/nasa-brand-center/images-and-media/" target="_blank">NASA</a>.</p></footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+/*
+CodingANDCoffeeEQHappy
+Version 1.6.0
+*/
+#loadingPage {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to bottom, #001f27, #002b36, #073642);
+    color: #839496;
+
+    z-index: 500;
+    opacity: 100;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    transition: height 1.5s ease;
+}
+
+#loadingPage.closeMenu {
+    height: 0%;
+}
+
+#loadingPageHeader {
+    background: linear-gradient(to right, #3f3f3f, #595959, #737373);
+    background-clip: text;
+    color: transparent;
+    opacity: 100;
+    transition: opacity 2.0s ease;
+}
+
+#loadingPageLoadingText {
+    opacity: 100;
+    transition: opacity 2.0s ease;
+}
+
+#loadingPageInstructions {
+    opacity: 100;
+    transition: opacity 2.0s ease;
+}
+
+#stars {
+    opacity: 100 !important;
+    transition: opacity 2.0s ease;
+}
+
+#loadingPageHeader.remove, #loadingPageLoadingText.remove, #loadingPageInstructions.remove, #stars.remove {
+    opacity: 0 !important;
+}
+
+/* Styles for main page buttons */
+.loading_page_buttons {
+    font-family: monospace;
+    background-color: #073642;
+    color: #839496;
+    border: 2px solid #586e75;
+    border-radius: 5px;
+    outline: none;
+
+    font-size: 16px;
+    width: 30%;
+
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    transition: opacity 2.0s ease;
+
+    margin: 10px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+    position: relative;
+
+    opacity: 0;
+}
+
+.loading_page_buttons:hover {
+    background-color: #586e75;
+    color: #002b36;
+    border: 2px solid #073642;
+}
+
+.loading_page_buttons span {
+    transition: opacity 0.5s ease;
+}
+
+.loading_page_buttons.fade_text span {
+    opacity: 0;
+}
+
+.loading_page_buttons.displayButtons {
+    opacity: 100;
+}
+
+.loading_page_buttons:disabled {
+    cursor: default;
+}

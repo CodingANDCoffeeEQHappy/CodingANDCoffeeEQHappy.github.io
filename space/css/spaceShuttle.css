@@ -1,0 +1,3304 @@
+/*
+CodePen example: https://codepen.io/milessebesta/pen/KKzXRVW
+
+Copyright (c) 2025 by Miles S (https://codepen.io/milessebesta/pen/KKzXRVW)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+.space-shuttle {
+    position: absolute;
+    bottom: 30%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 3.0s ease;
+}
+
+.space-shuttle.displayShuttle {
+    opacity: 100;
+}
+
+.fuel {
+    display: block;
+    width: 44px;
+    height: 193px;
+    background: #d49459;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-top: 10px solid #af7d4c;
+    border-left: 9px solid #af7d4c;
+    position: relative;
+}
+
+.fuel-bottom {
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%);
+    display: block;
+    width: 53px;
+    height: 14px;
+    background: #d49459;
+    position: absolute;
+    bottom: -13px;
+    right: 0px;
+}
+
+.fuel-shell {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+    display: block;
+    width: 53px;
+    height: 26px;
+    background: #9d9e9d;
+    position: absolute;
+    bottom: -38px;
+    right: 0px;
+}
+
+.booster-shadow {
+    display: block;
+    width: 30px;
+    height: 204px;
+    background-color: #d1d4d4;
+    clip-path: polygon(50% 0, 15% 10%, 15% 91%, 0% 100%, 100% 100%, 85% 91%, 85% 10%);
+    margin-left: 3px;
+    z-index: 99;
+    margin-top: 40px;
+}
+
+.booster {
+    display: block;
+    width: 30px;
+    height: 204px;
+    background-color: #fff;
+    clip-path: polygon(50% 0, 18% 10%, 18% 91%, 0% 100%, 100% 100%, 85% 91%, 85% 10%);
+    position: absolute;
+    margin-left: 3px;
+    z-index: 999 !important;
+}
+
+.booster-line {
+    display: block;
+    width: 18px;
+    height: 1px;
+    display: block;
+    background: #c3c2c2;
+    position: absolute;
+    z-index: 1;
+    top: 59px;
+    right: 0;
+}
+
+.ship {
+    position: absolute;
+    padding-left: 56px;
+    margin-top: 25px;
+    top: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ship .ship_container {
+    width: 100%;
+    height: 100%;
+    position: relative !important;
+    display: block;
+}
+.ship .body {
+    width: 34px;
+    height: 128px;
+    background: white;
+    display: block;
+    position: relative;
+    border-left: 2px solid #201f1f;
+}
+.ship .tail {
+    clip-path: polygon(0 0, 85% 55%, 100% 89%, 0% 48%);
+    background: white;
+    width: 35px;
+    height: 60px;
+    display: block;
+    left: 33px;
+    bottom: -25px;
+    position: absolute;
+    z-index: 99;
+}
+.ship .nose {
+    width: 21px;
+    height: 50px;
+    display: block;
+    background: red;
+    margin-left: 0px;
+    background: white;
+    margin-bottom: -2px;
+    overflow: hidden;
+    border-radius: 100% 200% 0% 0%/200% 300% 0% 0%;
+    border-left: 15px solid #201f1f;
+    clip-path: polygon(0% 100%, 0% 0%, 60% 0%, 100% 71%, 100% 100%);
+    z-index: 9;
+}
+.ship .nose::before {
+    display: block;
+    width: 25px;
+    height: 23px;
+    content: " ";
+    clip-path: polygon(75% 3%, 88% 21%, 94% 96%, 66% 94%);
+    background: #201f1f;
+    margin-top: 9px;
+    margin-left: -5px;
+    z-index: 99;
+    position: absolute;
+}
+.ship .attachment {
+    height: 5px;
+    width: 8px;
+    display: block;
+    background: #a9a7a4;
+    position: absolute;
+    z-index: -1;
+}
+.ship .attachment.top {
+    bottom: 0px;
+    left: -5px;
+    margin-bottom: 141px;
+}
+.ship .attachment.middle {
+    bottom: 0px;
+    left: -5px;
+    margin-bottom: 84px;
+}
+.ship .attachment.bottom {
+    bottom: 0px;
+    left: -5px;
+    margin-bottom: 12px;
+}
+.ship .fuels {
+    position: relative;
+    left: 0px;
+    margin-left: -5px;
+    bottom: 0px;
+    width: 44px;
+}
+.ship .fuel-shell.large {
+    top: 0px;
+    left: 9px;
+    width: 25px;
+    height: 19px;
+    background: #959694;
+    z-index: 2;
+}
+.ship .fuel-shell.left {
+    top: 0px;
+    left: 0px;
+    width: 18px;
+    height: 11px;
+    background: #9d9e9d;
+}
+.ship .fuel-shell.right {
+    top: 0px;
+    right: 0px;
+    width: 18px;
+    height: 11px;
+    background: #9d9e9d;
+}
+
+.shadow::after {
+    display: block;
+    border-radius: 100%;
+    background: #9d9e9d;
+    content: " ";
+    height: 110%;
+    width: 100%;
+    margin-left: 80%;
+    transform: rotate(10deg);
+}
+
+.shadow {
+    display: block;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 28%;
+    height: 110%;
+    background: #898a88;
+}
+
+.fire {
+    background: #f8e546;
+    clip-path: polygon(0% 0%, 4% 46%, 0% 100%, 100% 99%, 96% 49%, 100% 0%);
+    height: 280px;
+    width: 23px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -10px;
+    z-index: -100;
+}
+
+.fire.right {
+    background: #ce7e3d;
+    z-index: -200;
+    margin-left: 13px;
+    margin-top: -17px;
+    width: 30px;
+    clip-path: polygon(0% 0%, 9% 53%, 0% 100%, 100% 100%, 81% 37%, 82% 0);
+    height: 290px;
+}
+
+.fire.left {
+    background: #e0b144;
+    z-index: -300;
+    margin-left: -4px;
+    margin-top: -17px;
+    width: 50px;
+    clip-path: polygon(0% 0%, 2% 53%, 0% 100%, 100% 100%, 81% 37%, 82% 0);
+    height: 290px;
+}
+
+.rocket-fire {
+    margin-left: -45px;
+    margin-top: 20px;
+}
+
+.rocket-fire .fire.left {
+    background: #ce7e3d;
+    margin-left: -11px;
+    width: 100px;
+    margin-top: -8px;
+    z-index: -9999;
+}
+
+.rocket-fire .fire.right {
+    background: #e0b144;
+    margin-left: 15px;
+    margin-top: -12px;
+}
+
+.rocket-fire .fire {
+    width: 28px;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+.space-shuttle {
+    animation: animation-rocket 1.9968s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animation-rocket {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 4px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+.fire.right {
+    animation: animation-ship-fire-right 1.9968s infinite;
+    animation-timing-function: linear;
+}
+
+.rocket-fire .fire.right {
+    animation: animation-ship-fire-right 1.7888s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animation-ship-fire-right {
+    0% {
+        background: #ce7e3d;
+    }
+    42% {
+        background: #bc7237;
+    }
+    100% {
+        background: #ce7e3d;
+    }
+}
+.fire {
+    animation: animation-ship-fire 1.9968s infinite;
+    animation-timing-function: linear;
+}
+
+.rocket-fire .fire {
+    animation: animation-ship-fire 1.664s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animation-ship-fire {
+    0% {
+        background: #f8e546;
+    }
+    52% {
+        background: #f3e573;
+    }
+    100% {
+        background: #f8e546;
+    }
+}
+.fire.left {
+    animation: animation-ship-fire-left 1.9968s infinite;
+    animation-timing-function: linear;
+}
+
+.rocket-fire .fire.left {
+    animation: animation-ship-fire-left 1.248s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animation-ship-fire-left {
+    0% {
+        background: #e0b144;
+    }
+    52% {
+        background: #bc7237;
+    }
+    100% {
+        background: #e0b144;
+    }
+}
+@keyframes animation-smoke-left-right {
+    52% {
+        margin-left: -6.3%;
+    }
+}
+.smoke {
+    margin-left: -30px;
+    z-index: -1;
+    position: absolute;
+}
+.smoke.light > div {
+    background: #adadac;
+}
+.smoke.dark > div {
+    background: #878887;
+}
+.smoke.dark {
+    margin-left: -43px;
+    z-index: -2;
+}
+.smoke-space {
+    padding-top: 36px;
+    background: transparent !important;
+}
+.smoke--15 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.2208s infinite;
+    animation-delay: 453ms;
+    animation-fill-mode: forwards;
+}
+.smoke--16 {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 13.9776s infinite;
+    animation-delay: 122ms;
+    animation-fill-mode: forwards;
+}
+.smoke--17 {
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.6272s infinite;
+    animation-delay: 900ms;
+    animation-fill-mode: forwards;
+}
+.smoke--18 {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.7264s infinite;
+    animation-delay: 419ms;
+    animation-fill-mode: forwards;
+}
+.smoke--19 {
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.6272s infinite;
+    animation-delay: 257ms;
+    animation-fill-mode: forwards;
+}
+.smoke--20 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.504s infinite;
+    animation-delay: 1059ms;
+    animation-fill-mode: forwards;
+}
+.smoke--21 {
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.9664s infinite;
+    animation-delay: 111ms;
+    animation-fill-mode: forwards;
+}
+.smoke--22 {
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.848s infinite;
+    animation-delay: 715ms;
+    animation-fill-mode: forwards;
+}
+.smoke--23 {
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 13.8112s infinite;
+    animation-delay: 1023ms;
+    animation-fill-mode: forwards;
+}
+.smoke--24 {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 13.728s infinite;
+    animation-delay: 565ms;
+    animation-fill-mode: forwards;
+}
+.smoke--25 {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 21.7568s infinite;
+    animation-delay: 321ms;
+    animation-fill-mode: forwards;
+}
+.smoke--26 {
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.7168s infinite;
+    animation-delay: 470ms;
+    animation-fill-mode: forwards;
+}
+.smoke--27 {
+    width: 27px;
+    height: 27px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.3792s infinite;
+    animation-delay: 636ms;
+    animation-fill-mode: forwards;
+}
+.smoke--28 {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.2176s infinite;
+    animation-delay: 489ms;
+    animation-fill-mode: forwards;
+}
+.smoke--29 {
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.0608s infinite;
+    animation-delay: 573ms;
+    animation-fill-mode: forwards;
+}
+.smoke--30 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.0944s infinite;
+    animation-delay: 435ms;
+    animation-fill-mode: forwards;
+}
+.smoke--31 {
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.5648s infinite;
+    animation-delay: 321ms;
+    animation-fill-mode: forwards;
+}
+.smoke--32 {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.3488s infinite;
+    animation-delay: 182ms;
+    animation-fill-mode: forwards;
+}
+.smoke--33 {
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.2528s infinite;
+    animation-delay: 845ms;
+    animation-fill-mode: forwards;
+}
+.smoke--34 {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.5648s infinite;
+    animation-delay: 814ms;
+    animation-fill-mode: forwards;
+}
+.smoke--35 {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 10.3584s infinite;
+    animation-delay: 989ms;
+    animation-fill-mode: forwards;
+}
+.smoke--36 {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.5184s infinite;
+    animation-delay: 3ms;
+    animation-fill-mode: forwards;
+}
+.smoke--37 {
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.544s infinite;
+    animation-delay: 651ms;
+    animation-fill-mode: forwards;
+}
+.smoke--38 {
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 21.0912s infinite;
+    animation-delay: 479ms;
+    animation-fill-mode: forwards;
+}
+.smoke--39 {
+    width: 39px;
+    height: 39px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 17.6384s infinite;
+    animation-delay: 412ms;
+    animation-fill-mode: forwards;
+}
+.smoke--40 {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.6752s infinite;
+    animation-delay: 504ms;
+    animation-fill-mode: forwards;
+}
+.smoke--41 {
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.224s infinite;
+    animation-delay: 986ms;
+    animation-fill-mode: forwards;
+}
+.smoke--42 {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.5536s infinite;
+    animation-delay: 267ms;
+    animation-fill-mode: forwards;
+}
+.smoke--43 {
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.2656s infinite;
+    animation-delay: 241ms;
+    animation-fill-mode: forwards;
+}
+.smoke--44 {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.3184s infinite;
+    animation-delay: 379ms;
+    animation-fill-mode: forwards;
+}
+.smoke--45 {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.8784s infinite;
+    animation-delay: 385ms;
+    animation-fill-mode: forwards;
+}
+.smoke--46 {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.8096s infinite;
+    animation-delay: 937ms;
+    animation-fill-mode: forwards;
+}
+.smoke--47 {
+    width: 47px;
+    height: 47px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.968s infinite;
+    animation-delay: 570ms;
+    animation-fill-mode: forwards;
+}
+.smoke--48 {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 8.6528s infinite;
+    animation-delay: 708ms;
+    animation-fill-mode: forwards;
+}
+.smoke--49 {
+    width: 49px;
+    height: 49px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 10.6496s infinite;
+    animation-delay: 16ms;
+    animation-fill-mode: forwards;
+}
+.smoke--50 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.8544s infinite;
+    animation-delay: 932ms;
+    animation-fill-mode: forwards;
+}
+.smoke--51 {
+    width: 51px;
+    height: 51px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 22.9216s infinite;
+    animation-delay: 837ms;
+    animation-fill-mode: forwards;
+}
+.smoke--52 {
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.024s infinite;
+    animation-delay: 158ms;
+    animation-fill-mode: forwards;
+}
+.smoke--53 {
+    width: 53px;
+    height: 53px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.0576s infinite;
+    animation-delay: 888ms;
+    animation-fill-mode: forwards;
+}
+.smoke--54 {
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 17.1808s infinite;
+    animation-delay: 125ms;
+    animation-fill-mode: forwards;
+}
+.smoke--55 {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.2736s infinite;
+    animation-delay: 25ms;
+    animation-fill-mode: forwards;
+}
+.smoke--56 {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.1696s infinite;
+    animation-delay: 93ms;
+    animation-fill-mode: forwards;
+}
+.smoke--57 {
+    width: 57px;
+    height: 57px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 22.4224s infinite;
+    animation-delay: 74ms;
+    animation-fill-mode: forwards;
+}
+.smoke--58 {
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.2944s infinite;
+    animation-delay: 732ms;
+    animation-fill-mode: forwards;
+}
+.smoke--59 {
+    width: 59px;
+    height: 59px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.4688s infinite;
+    animation-delay: 969ms;
+    animation-fill-mode: forwards;
+}
+.smoke--60 {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.3008s infinite;
+    animation-delay: 157ms;
+    animation-fill-mode: forwards;
+}
+.smoke--61 {
+    width: 61px;
+    height: 61px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.1888s infinite;
+    animation-delay: 1060ms;
+    animation-fill-mode: forwards;
+}
+.smoke--62 {
+    width: 62px;
+    height: 62px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.392s infinite;
+    animation-delay: 580ms;
+    animation-fill-mode: forwards;
+}
+.smoke--63 {
+    width: 63px;
+    height: 63px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.856s infinite;
+    animation-delay: 1050ms;
+    animation-fill-mode: forwards;
+}
+.smoke--64 {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.6928s infinite;
+    animation-delay: 67ms;
+    animation-fill-mode: forwards;
+}
+.smoke--65 {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 22.0064s infinite;
+    animation-delay: 316ms;
+    animation-fill-mode: forwards;
+}
+.smoke--66 {
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 17.4304s infinite;
+    animation-delay: 399ms;
+    animation-fill-mode: forwards;
+}
+.smoke--67 {
+    width: 67px;
+    height: 67px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.3152s infinite;
+    animation-delay: 705ms;
+    animation-fill-mode: forwards;
+}
+.smoke--68 {
+    width: 68px;
+    height: 68px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.9424s infinite;
+    animation-delay: 549ms;
+    animation-fill-mode: forwards;
+}
+.smoke--69 {
+    width: 69px;
+    height: 69px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.896s infinite;
+    animation-delay: 1075ms;
+    animation-fill-mode: forwards;
+}
+.smoke--70 {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.7264s infinite;
+    animation-delay: 350ms;
+    animation-fill-mode: forwards;
+}
+.smoke--71 {
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.1296s infinite;
+    animation-delay: 703ms;
+    animation-fill-mode: forwards;
+}
+.smoke--72 {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 13.3952s infinite;
+    animation-delay: 646ms;
+    animation-fill-mode: forwards;
+}
+.smoke--73 {
+    width: 73px;
+    height: 73px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 21.3824s infinite;
+    animation-delay: 193ms;
+    animation-fill-mode: forwards;
+}
+.smoke--74 {
+    width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.4688s infinite;
+    animation-delay: 133ms;
+    animation-fill-mode: forwards;
+}
+.smoke--75 {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.5984s infinite;
+    animation-delay: 8ms;
+    animation-fill-mode: forwards;
+}
+.smoke--76 {
+    width: 76px;
+    height: 76px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.0928s infinite;
+    animation-delay: 70ms;
+    animation-fill-mode: forwards;
+}
+.smoke--77 {
+    width: 77px;
+    height: 77px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.856s infinite;
+    animation-delay: 913ms;
+    animation-fill-mode: forwards;
+}
+.smoke--78 {
+    width: 78px;
+    height: 78px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.8496s infinite;
+    animation-delay: 55ms;
+    animation-fill-mode: forwards;
+}
+.smoke--79 {
+    width: 79px;
+    height: 79px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.4816s infinite;
+    animation-delay: 483ms;
+    animation-fill-mode: forwards;
+}
+.smoke--80 {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 17.4304s infinite;
+    animation-delay: 773ms;
+    animation-fill-mode: forwards;
+}
+.smoke--81 {
+    width: 81px;
+    height: 81px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 22.0896s infinite;
+    animation-delay: 709ms;
+    animation-fill-mode: forwards;
+}
+.smoke--82 {
+    width: 82px;
+    height: 82px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.9744s infinite;
+    animation-delay: 275ms;
+    animation-fill-mode: forwards;
+}
+.smoke--83 {
+    width: 83px;
+    height: 83px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.4624s infinite;
+    animation-delay: 882ms;
+    animation-fill-mode: forwards;
+}
+.smoke--84 {
+    width: 84px;
+    height: 84px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.6288s infinite;
+    animation-delay: 643ms;
+    animation-fill-mode: forwards;
+}
+.smoke--85 {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 10.5248s infinite;
+    animation-delay: 1065ms;
+    animation-fill-mode: forwards;
+}
+.smoke--86 {
+    width: 86px;
+    height: 86px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.592s infinite;
+    animation-delay: 688ms;
+    animation-fill-mode: forwards;
+}
+.smoke--87 {
+    width: 87px;
+    height: 87px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.3136s infinite;
+    animation-delay: 274ms;
+    animation-fill-mode: forwards;
+}
+.smoke--88 {
+    width: 88px;
+    height: 88px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 21.9648s infinite;
+    animation-delay: 638ms;
+    animation-fill-mode: forwards;
+}
+.smoke--89 {
+    width: 89px;
+    height: 89px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.0944s infinite;
+    animation-delay: 1001ms;
+    animation-fill-mode: forwards;
+}
+.smoke--90 {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.432s infinite;
+    animation-delay: 871ms;
+    animation-fill-mode: forwards;
+}
+.smoke--91 {
+    width: 91px;
+    height: 91px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.3184s infinite;
+    animation-delay: 551ms;
+    animation-fill-mode: forwards;
+}
+.smoke--92 {
+    width: 92px;
+    height: 92px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 21.0496s infinite;
+    animation-delay: 967ms;
+    animation-fill-mode: forwards;
+}
+.smoke--93 {
+    width: 93px;
+    height: 93px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.352s infinite;
+    animation-delay: 985ms;
+    animation-fill-mode: forwards;
+}
+.smoke--94 {
+    width: 94px;
+    height: 94px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 22.7136s infinite;
+    animation-delay: 87ms;
+    animation-fill-mode: forwards;
+}
+.smoke--95 {
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 22.0896s infinite;
+    animation-delay: 1017ms;
+    animation-fill-mode: forwards;
+}
+.smoke--96 {
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.3136s infinite;
+    animation-delay: 807ms;
+    animation-fill-mode: forwards;
+}
+.smoke--97 {
+    width: 97px;
+    height: 97px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.0512s infinite;
+    animation-delay: 359ms;
+    animation-fill-mode: forwards;
+}
+.smoke--98 {
+    width: 98px;
+    height: 98px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.6368s infinite;
+    animation-delay: 226ms;
+    animation-fill-mode: forwards;
+}
+.smoke--99 {
+    width: 99px;
+    height: 99px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.8864s infinite;
+    animation-delay: 752ms;
+    animation-fill-mode: forwards;
+}
+.smoke--100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.344s infinite;
+    animation-delay: 821ms;
+    animation-fill-mode: forwards;
+}
+.smoke--101 {
+    width: 101px;
+    height: 101px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 13.3536s infinite;
+    animation-delay: 704ms;
+    animation-fill-mode: forwards;
+}
+.smoke--102 {
+    width: 102px;
+    height: 102px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.128s infinite;
+    animation-delay: 1045ms;
+    animation-fill-mode: forwards;
+}
+.smoke--103 {
+    width: 103px;
+    height: 103px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.5856s infinite;
+    animation-delay: 1073ms;
+    animation-fill-mode: forwards;
+}
+.smoke--104 {
+    width: 104px;
+    height: 104px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.4384s infinite;
+    animation-delay: 628ms;
+    animation-fill-mode: forwards;
+}
+.smoke--105 {
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.352s infinite;
+    animation-delay: 79ms;
+    animation-fill-mode: forwards;
+}
+.smoke--106 {
+    width: 106px;
+    height: 106px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.8768s infinite;
+    animation-delay: 719ms;
+    animation-fill-mode: forwards;
+}
+.smoke--107 {
+    width: 107px;
+    height: 107px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.3504s infinite;
+    animation-delay: 762ms;
+    animation-fill-mode: forwards;
+}
+.smoke--108 {
+    width: 108px;
+    height: 108px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 21.5488s infinite;
+    animation-delay: 280ms;
+    animation-fill-mode: forwards;
+}
+.smoke--109 {
+    width: 109px;
+    height: 109px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 13.9776s infinite;
+    animation-delay: 1006ms;
+    animation-fill-mode: forwards;
+}
+.smoke--110 {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 21.8816s infinite;
+    animation-delay: 610ms;
+    animation-fill-mode: forwards;
+}
+.smoke--111 {
+    width: 111px;
+    height: 111px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.6048s infinite;
+    animation-delay: 976ms;
+    animation-fill-mode: forwards;
+}
+.smoke--112 {
+    width: 112px;
+    height: 112px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.1024s infinite;
+    animation-delay: 171ms;
+    animation-fill-mode: forwards;
+}
+.smoke--113 {
+    width: 113px;
+    height: 113px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 22.7968s infinite;
+    animation-delay: 1071ms;
+    animation-fill-mode: forwards;
+}
+.smoke--114 {
+    width: 114px;
+    height: 114px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.5104s infinite;
+    animation-delay: 749ms;
+    animation-fill-mode: forwards;
+}
+.smoke--115 {
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 17.3888s infinite;
+    animation-delay: 890ms;
+    animation-fill-mode: forwards;
+}
+.smoke--116 {
+    width: 116px;
+    height: 116px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.9696s infinite;
+    animation-delay: 261ms;
+    animation-fill-mode: forwards;
+}
+.smoke--117 {
+    width: 117px;
+    height: 117px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.568s infinite;
+    animation-delay: 427ms;
+    animation-fill-mode: forwards;
+}
+.smoke--118 {
+    width: 118px;
+    height: 118px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.0592s infinite;
+    animation-delay: 620ms;
+    animation-fill-mode: forwards;
+}
+.smoke--119 {
+    width: 119px;
+    height: 119px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.128s infinite;
+    animation-delay: 183ms;
+    animation-fill-mode: forwards;
+}
+.smoke--120 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.92s infinite;
+    animation-delay: 740ms;
+    animation-fill-mode: forwards;
+}
+.smoke--121 {
+    width: 121px;
+    height: 121px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 22.5472s infinite;
+    animation-delay: 735ms;
+    animation-fill-mode: forwards;
+}
+.smoke--122 {
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 17.3472s infinite;
+    animation-delay: 972ms;
+    animation-fill-mode: forwards;
+}
+.smoke--123 {
+    width: 123px;
+    height: 123px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.9792s infinite;
+    animation-delay: 395ms;
+    animation-fill-mode: forwards;
+}
+.smoke--124 {
+    width: 124px;
+    height: 124px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.3152s infinite;
+    animation-delay: 778ms;
+    animation-fill-mode: forwards;
+}
+.smoke--125 {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.128s infinite;
+    animation-delay: 960ms;
+    animation-fill-mode: forwards;
+}
+.smoke--126 {
+    width: 126px;
+    height: 126px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.0112s infinite;
+    animation-delay: 111ms;
+    animation-fill-mode: forwards;
+}
+.smoke--127 {
+    width: 127px;
+    height: 127px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 13.8112s infinite;
+    animation-delay: 418ms;
+    animation-fill-mode: forwards;
+}
+.smoke--128 {
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 17.2224s infinite;
+    animation-delay: 125ms;
+    animation-fill-mode: forwards;
+}
+.smoke--129 {
+    width: 129px;
+    height: 129px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 8.4448s infinite;
+    animation-delay: 675ms;
+    animation-fill-mode: forwards;
+}
+.smoke--130 {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.688s infinite;
+    animation-delay: 340ms;
+    animation-fill-mode: forwards;
+}
+.smoke--131 {
+    width: 131px;
+    height: 131px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 8.6112s infinite;
+    animation-delay: 778ms;
+    animation-fill-mode: forwards;
+}
+.smoke--132 {
+    width: 132px;
+    height: 132px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.4704s infinite;
+    animation-delay: 619ms;
+    animation-fill-mode: forwards;
+}
+.smoke--133 {
+    width: 133px;
+    height: 133px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.808s infinite;
+    animation-delay: 18ms;
+    animation-fill-mode: forwards;
+}
+.smoke--134 {
+    width: 134px;
+    height: 134px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 17.2224s infinite;
+    animation-delay: 42ms;
+    animation-fill-mode: forwards;
+}
+.smoke--135 {
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.3376s infinite;
+    animation-delay: 346ms;
+    animation-fill-mode: forwards;
+}
+.smoke--136 {
+    width: 136px;
+    height: 136px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.1376s infinite;
+    animation-delay: 766ms;
+    animation-fill-mode: forwards;
+}
+.smoke--137 {
+    width: 137px;
+    height: 137px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.6816s infinite;
+    animation-delay: 106ms;
+    animation-fill-mode: forwards;
+}
+.smoke--138 {
+    width: 138px;
+    height: 138px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.1904s infinite;
+    animation-delay: 58ms;
+    animation-fill-mode: forwards;
+}
+.smoke--139 {
+    width: 139px;
+    height: 139px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.0688s infinite;
+    animation-delay: 466ms;
+    animation-fill-mode: forwards;
+}
+.smoke--140 {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.0192s infinite;
+    animation-delay: 603ms;
+    animation-fill-mode: forwards;
+}
+.smoke--141 {
+    width: 141px;
+    height: 141px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.5568s infinite;
+    animation-delay: 428ms;
+    animation-fill-mode: forwards;
+}
+.smoke--142 {
+    width: 142px;
+    height: 142px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.6512s infinite;
+    animation-delay: 33ms;
+    animation-fill-mode: forwards;
+}
+.smoke--143 {
+    width: 143px;
+    height: 143px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.1104s infinite;
+    animation-delay: 18ms;
+    animation-fill-mode: forwards;
+}
+.smoke--144 {
+    width: 144px;
+    height: 144px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 10.9824s infinite;
+    animation-delay: 973ms;
+    animation-fill-mode: forwards;
+}
+.smoke--145 {
+    width: 145px;
+    height: 145px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.4432s infinite;
+    animation-delay: 684ms;
+    animation-fill-mode: forwards;
+}
+.smoke--146 {
+    width: 146px;
+    height: 146px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.6352s infinite;
+    animation-delay: 812ms;
+    animation-fill-mode: forwards;
+}
+.smoke--147 {
+    width: 147px;
+    height: 147px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.0928s infinite;
+    animation-delay: 172ms;
+    animation-fill-mode: forwards;
+}
+.smoke--148 {
+    width: 148px;
+    height: 148px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.544s infinite;
+    animation-delay: 717ms;
+    animation-fill-mode: forwards;
+}
+.smoke--149 {
+    width: 149px;
+    height: 149px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.92s infinite;
+    animation-delay: 773ms;
+    animation-fill-mode: forwards;
+}
+.smoke--150 {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 8.5696s infinite;
+    animation-delay: 733ms;
+    animation-fill-mode: forwards;
+}
+.smoke--151 {
+    width: 151px;
+    height: 151px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 12.48s infinite;
+    animation-delay: 385ms;
+    animation-fill-mode: forwards;
+}
+.smoke--152 {
+    width: 152px;
+    height: 152px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.9344s infinite;
+    animation-delay: 109ms;
+    animation-fill-mode: forwards;
+}
+.smoke--153 {
+    width: 153px;
+    height: 153px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.8912s infinite;
+    animation-delay: 225ms;
+    animation-fill-mode: forwards;
+}
+.smoke--154 {
+    width: 154px;
+    height: 154px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.0608s infinite;
+    animation-delay: 551ms;
+    animation-fill-mode: forwards;
+}
+.smoke--155 {
+    width: 155px;
+    height: 155px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.1696s infinite;
+    animation-delay: 746ms;
+    animation-fill-mode: forwards;
+}
+.smoke--156 {
+    width: 156px;
+    height: 156px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 17.888s infinite;
+    animation-delay: 912ms;
+    animation-fill-mode: forwards;
+}
+.smoke--157 {
+    width: 157px;
+    height: 157px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.0272s infinite;
+    animation-delay: 426ms;
+    animation-fill-mode: forwards;
+}
+.smoke--158 {
+    width: 158px;
+    height: 158px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 13.0208s infinite;
+    animation-delay: 1068ms;
+    animation-fill-mode: forwards;
+}
+.smoke--159 {
+    width: 159px;
+    height: 159px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.6896s infinite;
+    animation-delay: 111ms;
+    animation-fill-mode: forwards;
+}
+.smoke--160 {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.9328s infinite;
+    animation-delay: 48ms;
+    animation-fill-mode: forwards;
+}
+.smoke--161 {
+    width: 161px;
+    height: 161px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.7104s infinite;
+    animation-delay: 756ms;
+    animation-fill-mode: forwards;
+}
+.smoke--162 {
+    width: 162px;
+    height: 162px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.7232s infinite;
+    animation-delay: 90ms;
+    animation-fill-mode: forwards;
+}
+.smoke--163 {
+    width: 163px;
+    height: 163px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 10.7328s infinite;
+    animation-delay: 818ms;
+    animation-fill-mode: forwards;
+}
+.smoke--164 {
+    width: 164px;
+    height: 164px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.1344s infinite;
+    animation-delay: 932ms;
+    animation-fill-mode: forwards;
+}
+.smoke--165 {
+    width: 165px;
+    height: 165px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.384s infinite;
+    animation-delay: 1054ms;
+    animation-fill-mode: forwards;
+}
+.smoke--166 {
+    width: 166px;
+    height: 166px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.808s infinite;
+    animation-delay: 618ms;
+    animation-fill-mode: forwards;
+}
+.smoke--167 {
+    width: 167px;
+    height: 167px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.432s infinite;
+    animation-delay: 480ms;
+    animation-fill-mode: forwards;
+}
+.smoke--168 {
+    width: 168px;
+    height: 168px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.232s infinite;
+    animation-delay: 1058ms;
+    animation-fill-mode: forwards;
+}
+.smoke--169 {
+    width: 169px;
+    height: 169px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.9184s infinite;
+    animation-delay: 976ms;
+    animation-fill-mode: forwards;
+}
+.smoke--170 {
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.2128s infinite;
+    animation-delay: 1038ms;
+    animation-fill-mode: forwards;
+}
+.smoke--171 {
+    width: 171px;
+    height: 171px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.6784s infinite;
+    animation-delay: 449ms;
+    animation-fill-mode: forwards;
+}
+.smoke--172 {
+    width: 172px;
+    height: 172px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.0048s infinite;
+    animation-delay: 221ms;
+    animation-fill-mode: forwards;
+}
+.smoke--173 {
+    width: 173px;
+    height: 173px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.0688s infinite;
+    animation-delay: 523ms;
+    animation-fill-mode: forwards;
+}
+.smoke--174 {
+    width: 174px;
+    height: 174px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.304s infinite;
+    animation-delay: 544ms;
+    animation-fill-mode: forwards;
+}
+.smoke--175 {
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.4336s infinite;
+    animation-delay: 871ms;
+    animation-fill-mode: forwards;
+}
+.smoke--176 {
+    width: 176px;
+    height: 176px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.9328s infinite;
+    animation-delay: 617ms;
+    animation-fill-mode: forwards;
+}
+.smoke--177 {
+    width: 177px;
+    height: 177px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.9248s infinite;
+    animation-delay: 191ms;
+    animation-fill-mode: forwards;
+}
+.smoke--178 {
+    width: 178px;
+    height: 178px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.7664s infinite;
+    animation-delay: 29ms;
+    animation-fill-mode: forwards;
+}
+.smoke--179 {
+    width: 179px;
+    height: 179px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.544s infinite;
+    animation-delay: 567ms;
+    animation-fill-mode: forwards;
+}
+.smoke--180 {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 15.808s infinite;
+    animation-delay: 23ms;
+    animation-fill-mode: forwards;
+}
+.smoke--181 {
+    width: 181px;
+    height: 181px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.92s infinite;
+    animation-delay: 165ms;
+    animation-fill-mode: forwards;
+}
+.smoke--182 {
+    width: 182px;
+    height: 182px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.7952s infinite;
+    animation-delay: 969ms;
+    animation-fill-mode: forwards;
+}
+.smoke--183 {
+    width: 183px;
+    height: 183px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.5184s infinite;
+    animation-delay: 942ms;
+    animation-fill-mode: forwards;
+}
+.smoke--184 {
+    width: 184px;
+    height: 184px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.096s infinite;
+    animation-delay: 786ms;
+    animation-fill-mode: forwards;
+}
+.smoke--185 {
+    width: 185px;
+    height: 185px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.0048s infinite;
+    animation-delay: 247ms;
+    animation-fill-mode: forwards;
+}
+.smoke--186 {
+    width: 186px;
+    height: 186px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.224s infinite;
+    animation-delay: 138ms;
+    animation-fill-mode: forwards;
+}
+.smoke--187 {
+    width: 187px;
+    height: 187px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.0096s infinite;
+    animation-delay: 1099ms;
+    animation-fill-mode: forwards;
+}
+.smoke--188 {
+    width: 188px;
+    height: 188px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.928s infinite;
+    animation-delay: 864ms;
+    animation-fill-mode: forwards;
+}
+.smoke--189 {
+    width: 189px;
+    height: 189px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.7952s infinite;
+    animation-delay: 213ms;
+    animation-fill-mode: forwards;
+}
+.smoke--190 {
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 9.5264s infinite;
+    animation-delay: 560ms;
+    animation-fill-mode: forwards;
+}
+.smoke--191 {
+    width: 191px;
+    height: 191px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 18.8448s infinite;
+    animation-delay: 1025ms;
+    animation-fill-mode: forwards;
+}
+.smoke--192 {
+    width: 192px;
+    height: 192px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 10.5248s infinite;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+}
+.smoke--193 {
+    width: 193px;
+    height: 193px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 20.8416s infinite;
+    animation-delay: 926ms;
+    animation-fill-mode: forwards;
+}
+.smoke--194 {
+    width: 194px;
+    height: 194px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.4736s infinite;
+    animation-delay: 364ms;
+    animation-fill-mode: forwards;
+}
+.smoke--195 {
+    width: 195px;
+    height: 195px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 21.7568s infinite;
+    animation-delay: 65ms;
+    animation-fill-mode: forwards;
+}
+.smoke--196 {
+    width: 196px;
+    height: 196px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 19.0112s infinite;
+    animation-delay: 843ms;
+    animation-fill-mode: forwards;
+}
+.smoke--197 {
+    width: 197px;
+    height: 197px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 14.976s infinite;
+    animation-delay: 398ms;
+    animation-fill-mode: forwards;
+}
+.smoke--198 {
+    width: 198px;
+    height: 198px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 11.3152s infinite;
+    animation-delay: 532ms;
+    animation-fill-mode: forwards;
+}
+.smoke--199 {
+    width: 199px;
+    height: 199px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 23.7952s infinite;
+    animation-delay: 538ms;
+    animation-fill-mode: forwards;
+}
+.smoke--200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 10.4s infinite;
+    animation-delay: 875ms;
+    animation-fill-mode: forwards;
+}
+.smoke--201 {
+    width: 201px;
+    height: 201px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 16.7232s infinite;
+    animation-delay: 166ms;
+    animation-fill-mode: forwards;
+}
+.smoke--202 {
+    width: 202px;
+    height: 202px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 10.4s infinite;
+    animation-delay: 526ms;
+    animation-fill-mode: forwards;
+}
+.smoke--203 {
+    width: 203px;
+    height: 203px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 21.1328s infinite;
+    animation-delay: 873ms;
+    animation-fill-mode: forwards;
+}
+.smoke--204 {
+    width: 204px;
+    height: 204px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.8768s infinite;
+    animation-delay: 248ms;
+    animation-fill-mode: forwards;
+}
+.smoke--205 {
+    width: 205px;
+    height: 205px;
+    border-radius: 100%;
+    position: relative;
+    animation: animation-smoke-left-right 24.2944s infinite;
+    animation-delay: 411ms;
+    animation-fill-mode: forwards;
+}
+.smoke .left_-100 {
+margin-left: -100px;
+}
+.smoke .left_-99 {
+margin-left: -99px;
+}
+.smoke .left_-98 {
+margin-left: -98px;
+}
+.smoke .left_-97 {
+margin-left: -97px;
+}
+.smoke .left_-96 {
+margin-left: -96px;
+}
+.smoke .left_-95 {
+margin-left: -95px;
+}
+.smoke .left_-94 {
+margin-left: -94px;
+}
+.smoke .left_-93 {
+margin-left: -93px;
+}
+.smoke .left_-92 {
+margin-left: -92px;
+}
+.smoke .left_-91 {
+margin-left: -91px;
+}
+.smoke .left_-90 {
+margin-left: -90px;
+}
+.smoke .left_-89 {
+margin-left: -89px;
+}
+.smoke .left_-88 {
+margin-left: -88px;
+}
+.smoke .left_-87 {
+margin-left: -87px;
+}
+.smoke .left_-86 {
+margin-left: -86px;
+}
+.smoke .left_-85 {
+margin-left: -85px;
+}
+.smoke .left_-84 {
+margin-left: -84px;
+}
+.smoke .left_-83 {
+margin-left: -83px;
+}
+.smoke .left_-82 {
+margin-left: -82px;
+}
+.smoke .left_-81 {
+margin-left: -81px;
+}
+.smoke .left_-80 {
+margin-left: -80px;
+}
+.smoke .left_-79 {
+margin-left: -79px;
+}
+.smoke .left_-78 {
+margin-left: -78px;
+}
+.smoke .left_-77 {
+margin-left: -77px;
+}
+.smoke .left_-76 {
+margin-left: -76px;
+}
+.smoke .left_-75 {
+margin-left: -75px;
+}
+.smoke .left_-74 {
+margin-left: -74px;
+}
+.smoke .left_-73 {
+margin-left: -73px;
+}
+.smoke .left_-72 {
+margin-left: -72px;
+}
+.smoke .left_-71 {
+margin-left: -71px;
+}
+.smoke .left_-70 {
+margin-left: -70px;
+}
+.smoke .left_-69 {
+margin-left: -69px;
+}
+.smoke .left_-68 {
+margin-left: -68px;
+}
+.smoke .left_-67 {
+margin-left: -67px;
+}
+.smoke .left_-66 {
+margin-left: -66px;
+}
+.smoke .left_-65 {
+margin-left: -65px;
+}
+.smoke .left_-64 {
+margin-left: -64px;
+}
+.smoke .left_-63 {
+margin-left: -63px;
+}
+.smoke .left_-62 {
+margin-left: -62px;
+}
+.smoke .left_-61 {
+margin-left: -61px;
+}
+.smoke .left_-60 {
+margin-left: -60px;
+}
+.smoke .left_-59 {
+margin-left: -59px;
+}
+.smoke .left_-58 {
+margin-left: -58px;
+}
+.smoke .left_-57 {
+margin-left: -57px;
+}
+.smoke .left_-56 {
+margin-left: -56px;
+}
+.smoke .left_-55 {
+margin-left: -55px;
+}
+.smoke .left_-54 {
+margin-left: -54px;
+}
+.smoke .left_-53 {
+margin-left: -53px;
+}
+.smoke .left_-52 {
+margin-left: -52px;
+}
+.smoke .left_-51 {
+margin-left: -51px;
+}
+.smoke .left_-50 {
+margin-left: -50px;
+}
+.smoke .left_-49 {
+margin-left: -49px;
+}
+.smoke .left_-48 {
+margin-left: -48px;
+}
+.smoke .left_-47 {
+margin-left: -47px;
+}
+.smoke .left_-46 {
+margin-left: -46px;
+}
+.smoke .left_-45 {
+margin-left: -45px;
+}
+.smoke .left_-44 {
+margin-left: -44px;
+}
+.smoke .left_-43 {
+margin-left: -43px;
+}
+.smoke .left_-42 {
+margin-left: -42px;
+}
+.smoke .left_-41 {
+margin-left: -41px;
+}
+.smoke .left_-40 {
+margin-left: -40px;
+}
+.smoke .left_-39 {
+margin-left: -39px;
+}
+.smoke .left_-38 {
+margin-left: -38px;
+}
+.smoke .left_-37 {
+margin-left: -37px;
+}
+.smoke .left_-36 {
+margin-left: -36px;
+}
+.smoke .left_-35 {
+margin-left: -35px;
+}
+.smoke .left_-34 {
+margin-left: -34px;
+}
+.smoke .left_-33 {
+margin-left: -33px;
+}
+.smoke .left_-32 {
+margin-left: -32px;
+}
+.smoke .left_-31 {
+margin-left: -31px;
+}
+.smoke .left_-30 {
+margin-left: -30px;
+}
+.smoke .left_-29 {
+margin-left: -29px;
+}
+.smoke .left_-28 {
+margin-left: -28px;
+}
+.smoke .left_-27 {
+margin-left: -27px;
+}
+.smoke .left_-26 {
+margin-left: -26px;
+}
+.smoke .left_-25 {
+margin-left: -25px;
+}
+.smoke .left_-24 {
+margin-left: -24px;
+}
+.smoke .left_-23 {
+margin-left: -23px;
+}
+.smoke .left_-22 {
+margin-left: -22px;
+}
+.smoke .left_-21 {
+margin-left: -21px;
+}
+.smoke .left_-20 {
+margin-left: -20px;
+}
+.smoke .left_-19 {
+margin-left: -19px;
+}
+.smoke .left_-18 {
+margin-left: -18px;
+}
+.smoke .left_-17 {
+margin-left: -17px;
+}
+.smoke .left_-16 {
+margin-left: -16px;
+}
+.smoke .left_-15 {
+margin-left: -15px;
+}
+.smoke .left_-14 {
+margin-left: -14px;
+}
+.smoke .left_-13 {
+margin-left: -13px;
+}
+.smoke .left_-12 {
+margin-left: -12px;
+}
+.smoke .left_-11 {
+margin-left: -11px;
+}
+.smoke .left_-10 {
+margin-left: -10px;
+}
+.smoke .left_-9 {
+margin-left: -9px;
+}
+.smoke .left_-8 {
+margin-left: -8px;
+}
+.smoke .left_-7 {
+margin-left: -7px;
+}
+.smoke .left_-6 {
+margin-left: -6px;
+}
+.smoke .left_-5 {
+margin-left: -5px;
+}
+.smoke .left_-4 {
+margin-left: -4px;
+}
+.smoke .left_-3 {
+margin-left: -3px;
+}
+.smoke .left_-2 {
+margin-left: -2px;
+}
+.smoke .left_-1 {
+margin-left: -1px;
+}
+.smoke .left_0 {
+margin-left: 0px;
+}
+.smoke .left_1 {
+margin-left: 1px;
+}
+.smoke .left_2 {
+margin-left: 2px;
+}
+.smoke .left_3 {
+margin-left: 3px;
+}
+.smoke .left_4 {
+margin-left: 4px;
+}
+.smoke .left_5 {
+margin-left: 5px;
+}
+.smoke .left_6 {
+margin-left: 6px;
+}
+.smoke .left_7 {
+margin-left: 7px;
+}
+.smoke .left_8 {
+margin-left: 8px;
+}
+.smoke .left_9 {
+margin-left: 9px;
+}
+.smoke .left_10 {
+margin-left: 10px;
+}
+.smoke .left_11 {
+margin-left: 11px;
+}
+.smoke .left_12 {
+margin-left: 12px;
+}
+.smoke .left_13 {
+margin-left: 13px;
+}
+.smoke .left_14 {
+margin-left: 14px;
+}
+.smoke .left_15 {
+margin-left: 15px;
+}
+.smoke .left_16 {
+margin-left: 16px;
+}
+.smoke .left_17 {
+margin-left: 17px;
+}
+.smoke .left_18 {
+margin-left: 18px;
+}
+.smoke .left_19 {
+margin-left: 19px;
+}
+.smoke .left_20 {
+margin-left: 20px;
+}
+.smoke .left_21 {
+margin-left: 21px;
+}
+.smoke .left_22 {
+margin-left: 22px;
+}
+.smoke .left_23 {
+margin-left: 23px;
+}
+.smoke .left_24 {
+margin-left: 24px;
+}
+.smoke .left_25 {
+margin-left: 25px;
+}
+.smoke .left_26 {
+margin-left: 26px;
+}
+.smoke .left_27 {
+margin-left: 27px;
+}
+.smoke .left_28 {
+margin-left: 28px;
+}
+.smoke .left_29 {
+margin-left: 29px;
+}
+.smoke .left_30 {
+margin-left: 30px;
+}
+.smoke .left_31 {
+margin-left: 31px;
+}
+.smoke .left_32 {
+margin-left: 32px;
+}
+.smoke .left_33 {
+margin-left: 33px;
+}
+.smoke .left_34 {
+margin-left: 34px;
+}
+.smoke .left_35 {
+margin-left: 35px;
+}
+.smoke .left_36 {
+margin-left: 36px;
+}
+.smoke .left_37 {
+margin-left: 37px;
+}
+.smoke .left_38 {
+margin-left: 38px;
+}
+.smoke .left_39 {
+margin-left: 39px;
+}
+.smoke .left_40 {
+margin-left: 40px;
+}
+.smoke .left_41 {
+margin-left: 41px;
+}
+.smoke .left_42 {
+margin-left: 42px;
+}
+.smoke .left_43 {
+margin-left: 43px;
+}
+.smoke .left_44 {
+margin-left: 44px;
+}
+.smoke .left_45 {
+margin-left: 45px;
+}
+.smoke .left_46 {
+margin-left: 46px;
+}
+.smoke .left_47 {
+margin-left: 47px;
+}
+.smoke .left_48 {
+margin-left: 48px;
+}
+.smoke .left_49 {
+margin-left: 49px;
+}
+.smoke .left_50 {
+margin-left: 50px;
+}
+.smoke .left_51 {
+margin-left: 51px;
+}
+.smoke .left_52 {
+margin-left: 52px;
+}
+.smoke .left_53 {
+margin-left: 53px;
+}
+.smoke .left_54 {
+margin-left: 54px;
+}
+.smoke .left_55 {
+margin-left: 55px;
+}
+.smoke .left_56 {
+margin-left: 56px;
+}
+.smoke .left_57 {
+margin-left: 57px;
+}
+.smoke .left_58 {
+margin-left: 58px;
+}
+.smoke .left_59 {
+margin-left: 59px;
+}
+.smoke .left_60 {
+margin-left: 60px;
+}
+.smoke .left_61 {
+margin-left: 61px;
+}
+.smoke .left_62 {
+margin-left: 62px;
+}
+.smoke .left_63 {
+margin-left: 63px;
+}
+.smoke .left_64 {
+margin-left: 64px;
+}
+.smoke .left_65 {
+margin-left: 65px;
+}
+.smoke .left_66 {
+margin-left: 66px;
+}
+.smoke .left_67 {
+margin-left: 67px;
+}
+.smoke .left_68 {
+margin-left: 68px;
+}
+.smoke .left_69 {
+margin-left: 69px;
+}
+.smoke .left_70 {
+margin-left: 70px;
+}
+.smoke .left_71 {
+margin-left: 71px;
+}
+.smoke .left_72 {
+margin-left: 72px;
+}
+.smoke .left_73 {
+margin-left: 73px;
+}
+.smoke .left_74 {
+margin-left: 74px;
+}
+.smoke .left_75 {
+margin-left: 75px;
+}
+.smoke .left_76 {
+margin-left: 76px;
+}
+.smoke .left_77 {
+margin-left: 77px;
+}
+.smoke .left_78 {
+margin-left: 78px;
+}
+.smoke .left_79 {
+margin-left: 79px;
+}
+.smoke .left_80 {
+margin-left: 80px;
+}
+.smoke .left_81 {
+margin-left: 81px;
+}
+.smoke .left_82 {
+margin-left: 82px;
+}
+.smoke .left_83 {
+margin-left: 83px;
+}
+.smoke .left_84 {
+margin-left: 84px;
+}
+.smoke .left_85 {
+margin-left: 85px;
+}
+.smoke .left_86 {
+margin-left: 86px;
+}
+.smoke .left_87 {
+margin-left: 87px;
+}
+.smoke .left_88 {
+margin-left: 88px;
+}
+.smoke .left_89 {
+margin-left: 89px;
+}
+.smoke .left_90 {
+margin-left: 90px;
+}
+.smoke .left_91 {
+margin-left: 91px;
+}
+.smoke .left_92 {
+margin-left: 92px;
+}
+.smoke .left_93 {
+margin-left: 93px;
+}
+.smoke .left_94 {
+margin-left: 94px;
+}
+.smoke .left_95 {
+margin-left: 95px;
+}
+.smoke .left_96 {
+margin-left: 96px;
+}
+.smoke .left_97 {
+margin-left: 97px;
+}
+.smoke .left_98 {
+margin-left: 98px;
+}
+.smoke .left_99 {
+margin-left: 99px;
+}
+.smoke .left_100 {
+margin-left: 100px;
+}
+.smoke .top_1 {
+margin-top: -1px;
+}
+.smoke .top_2 {
+margin-top: -2px;
+}
+.smoke .top_3 {
+margin-top: -3px;
+}
+.smoke .top_4 {
+margin-top: -4px;
+}
+.smoke .top_5 {
+margin-top: -5px;
+}
+.smoke .top_6 {
+margin-top: -6px;
+}
+.smoke .top_7 {
+margin-top: -7px;
+}
+.smoke .top_8 {
+margin-top: -8px;
+}
+.smoke .top_9 {
+margin-top: -9px;
+}
+.smoke .top_10 {
+margin-top: -10px;
+}
+.smoke .top_11 {
+margin-top: -11px;
+}
+.smoke .top_12 {
+margin-top: -12px;
+}
+.smoke .top_13 {
+margin-top: -13px;
+}
+.smoke .top_14 {
+margin-top: -14px;
+}
+.smoke .top_15 {
+margin-top: -15px;
+}
+.smoke .top_16 {
+margin-top: -16px;
+}
+.smoke .top_17 {
+margin-top: -17px;
+}
+.smoke .top_18 {
+margin-top: -18px;
+}
+.smoke .top_19 {
+margin-top: -19px;
+}
+.smoke .top_20 {
+margin-top: -20px;
+}
+.smoke .top_21 {
+margin-top: -21px;
+}
+.smoke .top_22 {
+margin-top: -22px;
+}
+.smoke .top_23 {
+margin-top: -23px;
+}
+.smoke .top_24 {
+margin-top: -24px;
+}
+.smoke .top_25 {
+margin-top: -25px;
+}
+.smoke .top_26 {
+margin-top: -26px;
+}
+.smoke .top_27 {
+margin-top: -27px;
+}
+.smoke .top_28 {
+margin-top: -28px;
+}
+.smoke .top_29 {
+margin-top: -29px;
+}
+.smoke .top_30 {
+margin-top: -30px;
+}
+.smoke .top_31 {
+margin-top: -31px;
+}
+.smoke .top_32 {
+margin-top: -32px;
+}
+.smoke .top_33 {
+margin-top: -33px;
+}
+.smoke .top_34 {
+margin-top: -34px;
+}
+.smoke .top_35 {
+margin-top: -35px;
+}
+.smoke .top_36 {
+margin-top: -36px;
+}
+.smoke .top_37 {
+margin-top: -37px;
+}
+.smoke .top_38 {
+margin-top: -38px;
+}
+.smoke .top_39 {
+margin-top: -39px;
+}
+.smoke .top_40 {
+margin-top: -40px;
+}
+.smoke .top_41 {
+margin-top: -41px;
+}
+.smoke .top_42 {
+margin-top: -42px;
+}
+.smoke .top_43 {
+margin-top: -43px;
+}
+.smoke .top_44 {
+margin-top: -44px;
+}
+.smoke .top_45 {
+margin-top: -45px;
+}
+.smoke .top_46 {
+margin-top: -46px;
+}
+.smoke .top_47 {
+margin-top: -47px;
+}
+.smoke .top_48 {
+margin-top: -48px;
+}
+.smoke .top_49 {
+margin-top: -49px;
+}
+.smoke .top_50 {
+margin-top: -50px;
+}
+.smoke .top_51 {
+margin-top: -51px;
+}
+.smoke .top_52 {
+margin-top: -52px;
+}
+.smoke .top_53 {
+margin-top: -53px;
+}
+.smoke .top_54 {
+margin-top: -54px;
+}
+.smoke .top_55 {
+margin-top: -55px;
+}
+.smoke .top_56 {
+margin-top: -56px;
+}
+.smoke .top_57 {
+margin-top: -57px;
+}
+.smoke .top_58 {
+margin-top: -58px;
+}
+.smoke .top_59 {
+margin-top: -59px;
+}
+.smoke .top_60 {
+margin-top: -60px;
+}
+.smoke .top_61 {
+margin-top: -61px;
+}
+.smoke .top_62 {
+margin-top: -62px;
+}
+.smoke .top_63 {
+margin-top: -63px;
+}
+.smoke .top_64 {
+margin-top: -64px;
+}
+.smoke .top_65 {
+margin-top: -65px;
+}
+.smoke .top_66 {
+margin-top: -66px;
+}
+.smoke .top_67 {
+margin-top: -67px;
+}
+.smoke .top_68 {
+margin-top: -68px;
+}
+.smoke .top_69 {
+margin-top: -69px;
+}
+.smoke .top_70 {
+margin-top: -70px;
+}
+.smoke .top_71 {
+margin-top: -71px;
+}
+.smoke .top_72 {
+margin-top: -72px;
+}
+.smoke .top_73 {
+margin-top: -73px;
+}
+.smoke .top_74 {
+margin-top: -74px;
+}
+.smoke .top_75 {
+margin-top: -75px;
+}
+.smoke .top_76 {
+margin-top: -76px;
+}
+.smoke .top_77 {
+margin-top: -77px;
+}
+.smoke .top_78 {
+margin-top: -78px;
+}
+.smoke .top_79 {
+margin-top: -79px;
+}
+.smoke .top_80 {
+margin-top: -80px;
+}
+.smoke .top_81 {
+margin-top: -81px;
+}
+.smoke .top_82 {
+margin-top: -82px;
+}
+.smoke .top_83 {
+margin-top: -83px;
+}
+.smoke .top_84 {
+margin-top: -84px;
+}
+.smoke .top_85 {
+margin-top: -85px;
+}
+.smoke .top_86 {
+margin-top: -86px;
+}
+.smoke .top_87 {
+margin-top: -87px;
+}
+.smoke .top_88 {
+margin-top: -88px;
+}
+.smoke .top_89 {
+margin-top: -89px;
+}
+.smoke .top_90 {
+margin-top: -90px;
+}
+.smoke .top_91 {
+margin-top: -91px;
+}
+.smoke .top_92 {
+margin-top: -92px;
+}
+.smoke .top_93 {
+margin-top: -93px;
+}
+.smoke .top_94 {
+margin-top: -94px;
+}
+.smoke .top_95 {
+margin-top: -95px;
+}
+.smoke .top_96 {
+margin-top: -96px;
+}
+.smoke .top_97 {
+margin-top: -97px;
+}
+.smoke .top_98 {
+margin-top: -98px;
+}
+.smoke .top_99 {
+margin-top: -99px;
+}
+.smoke .top_100 {
+margin-top: -100px;
+}
+.smoke .top_101 {
+margin-top: -101px;
+}
+.smoke .top_102 {
+margin-top: -102px;
+}
+.smoke .top_103 {
+margin-top: -103px;
+}
+.smoke .top_104 {
+margin-top: -104px;
+}
+.smoke .top_105 {
+margin-top: -105px;
+}
+.smoke .top_106 {
+margin-top: -106px;
+}
+.smoke .top_107 {
+margin-top: -107px;
+}
+.smoke .top_108 {
+margin-top: -108px;
+}
+.smoke .top_109 {
+margin-top: -109px;
+}
+.smoke .top_110 {
+margin-top: -110px;
+}
+.smoke .top_111 {
+margin-top: -111px;
+}
+.smoke .top_112 {
+margin-top: -112px;
+}
+.smoke .top_113 {
+margin-top: -113px;
+}
+.smoke .top_114 {
+margin-top: -114px;
+}
+.smoke .top_115 {
+margin-top: -115px;
+}
+.smoke .top_116 {
+margin-top: -116px;
+}
+.smoke .top_117 {
+margin-top: -117px;
+}
+.smoke .top_118 {
+margin-top: -118px;
+}
+.smoke .top_119 {
+margin-top: -119px;
+}
+.smoke .top_120 {
+margin-top: -120px;
+}
+.smoke .top_121 {
+margin-top: -121px;
+}
+.smoke .top_122 {
+margin-top: -122px;
+}
+.smoke .top_123 {
+margin-top: -123px;
+}
+.smoke .top_124 {
+margin-top: -124px;
+}
+.smoke .top_125 {
+margin-top: -125px;
+}
+.smoke .top_126 {
+margin-top: -126px;
+}
+.smoke .top_127 {
+margin-top: -127px;
+}
+.smoke .top_128 {
+margin-top: -128px;
+}
+.smoke .top_129 {
+margin-top: -129px;
+}
+.smoke .top_130 {
+margin-top: -130px;
+}
+.smoke .top_131 {
+margin-top: -131px;
+}
+.smoke .top_132 {
+margin-top: -132px;
+}
+.smoke .top_133 {
+margin-top: -133px;
+}
+.smoke .top_134 {
+margin-top: -134px;
+}
+.smoke .top_135 {
+margin-top: -135px;
+}
+.smoke .top_136 {
+margin-top: -136px;
+}
+.smoke .top_137 {
+margin-top: -137px;
+}
+.smoke .top_138 {
+margin-top: -138px;
+}
+.smoke .top_139 {
+margin-top: -139px;
+}
+.smoke .top_140 {
+margin-top: -140px;
+}
+.smoke .top_141 {
+margin-top: -141px;
+}
+.smoke .top_142 {
+margin-top: -142px;
+}
+.smoke .top_143 {
+margin-top: -143px;
+}
+.smoke .top_144 {
+margin-top: -144px;
+}
+.smoke .top_145 {
+margin-top: -145px;
+}
+.smoke .top_146 {
+margin-top: -146px;
+}
+.smoke .top_147 {
+margin-top: -147px;
+}
+.smoke .top_148 {
+margin-top: -148px;
+}
+.smoke .top_149 {
+margin-top: -149px;
+}
+.smoke .top_150 {
+margin-top: -150px;
+}
+.smoke .top_151 {
+margin-top: -151px;
+}
+.smoke .top_152 {
+margin-top: -152px;
+}
+.smoke .top_153 {
+margin-top: -153px;
+}
+.smoke .top_154 {
+margin-top: -154px;
+}
+.smoke .top_155 {
+margin-top: -155px;
+}
+.smoke .top_156 {
+margin-top: -156px;
+}
+.smoke .top_157 {
+margin-top: -157px;
+}
+.smoke .top_158 {
+margin-top: -158px;
+}
+.smoke .top_159 {
+margin-top: -159px;
+}
+.smoke .top_160 {
+margin-top: -160px;
+}
+.smoke .top_161 {
+margin-top: -161px;
+}
+.smoke .top_162 {
+margin-top: -162px;
+}
+.smoke .top_163 {
+margin-top: -163px;
+}
+.smoke .top_164 {
+margin-top: -164px;
+}
+.smoke .top_165 {
+margin-top: -165px;
+}
+.smoke .top_166 {
+margin-top: -166px;
+}
+.smoke .top_167 {
+margin-top: -167px;
+}
+.smoke .top_168 {
+margin-top: -168px;
+}
+.smoke .top_169 {
+margin-top: -169px;
+}
+.smoke .top_170 {
+margin-top: -170px;
+}
+.smoke .top_171 {
+margin-top: -171px;
+}
+.smoke .top_172 {
+margin-top: -172px;
+}
+.smoke .top_173 {
+margin-top: -173px;
+}
+.smoke .top_174 {
+margin-top: -174px;
+}
+.smoke .top_175 {
+margin-top: -175px;
+}
+.smoke .top_176 {
+margin-top: -176px;
+}
+.smoke .top_177 {
+margin-top: -177px;
+}
+.smoke .top_178 {
+margin-top: -178px;
+}
+.smoke .top_179 {
+margin-top: -179px;
+}
+.smoke .top_180 {
+margin-top: -180px;
+}
+.smoke .top_181 {
+margin-top: -181px;
+}
+.smoke .top_182 {
+margin-top: -182px;
+}
+.smoke .top_183 {
+margin-top: -183px;
+}
+.smoke .top_184 {
+margin-top: -184px;
+}
+.smoke .top_185 {
+margin-top: -185px;
+}
+.smoke .top_186 {
+margin-top: -186px;
+}
+.smoke .top_187 {
+margin-top: -187px;
+}
+.smoke .top_188 {
+margin-top: -188px;
+}
+.smoke .top_189 {
+margin-top: -189px;
+}
+.smoke .top_190 {
+margin-top: -190px;
+}
+.smoke .top_191 {
+margin-top: -191px;
+}
+.smoke .top_192 {
+margin-top: -192px;
+}
+.smoke .top_193 {
+margin-top: -193px;
+}
+.smoke .top_194 {
+margin-top: -194px;
+}
+.smoke .top_195 {
+margin-top: -195px;
+}
+.smoke .top_196 {
+margin-top: -196px;
+}
+.smoke .top_197 {
+margin-top: -197px;
+}
+.smoke .top_198 {
+margin-top: -198px;
+}
+.smoke .top_199 {
+margin-top: -199px;
+}
+.smoke .top_200 {
+margin-top: -200px;
+}

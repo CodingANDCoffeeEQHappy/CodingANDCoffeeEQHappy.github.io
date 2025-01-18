@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1737234000,
-      "main": {
-        "temp": 1.12,
-        "feels_like": 1.12,
-        "temp_min": 0.95,
-        "temp_max": 1.12,
-        "pressure": 1026,
-        "sea_level": 1026,
-        "grnd_level": 1016,
-        "humidity": 86,
-        "temp_kf": 0.17
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 1.23,
-        "deg": 126,
-        "gust": 1.4
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-01-18 21:00:00"
-    },
-    {
       "dt": 1737244800,
       "main": {
-        "temp": 0.96,
-        "feels_like": 0.96,
+        "temp": 0.95,
+        "feels_like": 0.95,
         "temp_min": 0.63,
-        "temp_max": 0.96,
+        "temp_max": 0.95,
         "pressure": 1026,
         "sea_level": 1026,
         "grnd_level": 1015,
         "humidity": 86,
-        "temp_kf": 0.33
+        "temp_kf": 0.32
       },
       "weather": [
         {
@@ -1460,14 +1424,53 @@
         "pod": "n"
       },
       "dt_txt": "2025-01-23 18:00:00"
+    },
+    {
+      "dt": 1737666000,
+      "main": {
+        "temp": 7.59,
+        "feels_like": 3.96,
+        "temp_min": 7.59,
+        "temp_max": 7.59,
+        "pressure": 1004,
+        "sea_level": 1004,
+        "grnd_level": 994,
+        "humidity": 74,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 6.65,
+        "deg": 260,
+        "gust": 14.09
+      },
+      "visibility": 10000,
+      "pop": 0.68,
+      "rain": {
+        "3h": 0.33
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-01-23 21:00:00"
     }
   ],
   "city": {
     "id": 6455259,
     "name": "Paris",
     "coord": {
-      "lat": 48.857,
-      "lon": 2.351
+      "lat": 48.8575,
+      "lon": 2.3514
     },
     "country": "FR",
     "population": 0,

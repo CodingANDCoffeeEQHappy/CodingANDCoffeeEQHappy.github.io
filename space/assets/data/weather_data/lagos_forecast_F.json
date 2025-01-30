@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1738249200,
-      "main": {
-        "temp": 87.31,
-        "feels_like": 93.7,
-        "temp_min": 87.31,
-        "temp_max": 87.31,
-        "pressure": 1008,
-        "sea_level": 1008,
-        "grnd_level": 1007,
-        "humidity": 60,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "clouds": {
-        "all": 49
-      },
-      "wind": {
-        "speed": 12.93,
-        "deg": 177,
-        "gust": 11.25
-      },
-      "visibility": 10000,
-      "pop": 0.05,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2025-01-30 15:00:00"
-    },
-    {
       "dt": 1738260000,
       "main": {
         "temp": 86.36,
@@ -1472,17 +1436,56 @@
         "pod": "d"
       },
       "dt_txt": "2025-02-04 12:00:00"
+    },
+    {
+      "dt": 1738681200,
+      "main": {
+        "temp": 86.63,
+        "feels_like": 95.25,
+        "temp_min": 86.63,
+        "temp_max": 86.63,
+        "pressure": 1006,
+        "sea_level": 1006,
+        "grnd_level": 1005,
+        "humidity": 67,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 19
+      },
+      "wind": {
+        "speed": 15.79,
+        "deg": 204,
+        "gust": 15.08
+      },
+      "visibility": 10000,
+      "pop": 0.26,
+      "rain": {
+        "3h": 0.12
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2025-02-04 15:00:00"
     }
   ],
   "city": {
-    "id": 2332459,
-    "name": "Lagos",
+    "id": 2566677,
+    "name": "Shogunle",
     "coord": {
       "lat": 6.5244,
       "lon": 3.3792
     },
     "country": "NG",
-    "population": 9000000,
+    "population": 0,
     "timezone": 3600,
     "sunrise": 1738217071,
     "sunset": 1738259694

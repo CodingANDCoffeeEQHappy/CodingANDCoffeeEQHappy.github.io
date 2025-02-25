@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1740495600,
-      "main": {
-        "temp": 69.48,
-        "feels_like": 69.75,
-        "temp_min": 69.48,
-        "temp_max": 70.92,
-        "pressure": 1023,
-        "sea_level": 1023,
-        "grnd_level": 1017,
-        "humidity": 77,
-        "temp_kf": -0.8
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 4.43,
-        "deg": 108,
-        "gust": 7.02
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-02-25 15:00:00"
-    },
-    {
       "dt": 1740506400,
       "main": {
-        "temp": 69.96,
-        "feels_like": 70.41,
-        "temp_min": 69.96,
+        "temp": 69.82,
+        "feels_like": 70.27,
+        "temp_min": 69.82,
         "temp_max": 70.93,
         "pressure": 1023,
         "sea_level": 1023,
         "grnd_level": 1016,
         "humidity": 80,
-        "temp_kf": -0.54
+        "temp_kf": -0.62
       },
       "weather": [
         {
@@ -81,15 +45,15 @@
     {
       "dt": 1740517200,
       "main": {
-        "temp": 70.9,
-        "feels_like": 71.58,
-        "temp_min": 70.9,
+        "temp": 70.83,
+        "feels_like": 71.51,
+        "temp_min": 70.83,
         "temp_max": 71.6,
         "pressure": 1022,
         "sea_level": 1022,
         "grnd_level": 1017,
         "humidity": 83,
-        "temp_kf": -0.39
+        "temp_kf": -0.43
       },
       "weather": [
         {
@@ -1475,17 +1439,56 @@
         "pod": "n"
       },
       "dt_txt": "2025-03-02 12:00:00"
+    },
+    {
+      "dt": 1740927600,
+      "main": {
+        "temp": 69.57,
+        "feels_like": 70.36,
+        "temp_min": 69.57,
+        "temp_max": 69.57,
+        "pressure": 1017,
+        "sea_level": 1017,
+        "grnd_level": 1012,
+        "humidity": 88,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 21.5,
+        "deg": 192,
+        "gust": 29.19
+      },
+      "visibility": 10000,
+      "pop": 0.6,
+      "rain": {
+        "3h": 0.39
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-03-02 15:00:00"
     }
   ],
   "city": {
-    "id": 2147714,
-    "name": "Sydney",
+    "id": 2163755,
+    "name": "Haymarket",
     "coord": {
       "lat": -33.8688,
       "lon": 151.2093
     },
     "country": "AU",
-    "population": 1000000,
+    "population": 4310,
     "timezone": 39600,
     "sunrise": 1740512421,
     "sunset": 1740558974

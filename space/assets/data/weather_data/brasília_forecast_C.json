@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1740517200,
-      "main": {
-        "temp": 22.6,
-        "feels_like": 22.95,
-        "temp_min": 22.6,
-        "temp_max": 23.67,
-        "pressure": 1013,
-        "sea_level": 1013,
-        "grnd_level": 890,
-        "humidity": 78,
-        "temp_kf": -1.07
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": {
-        "all": 75
-      },
-      "wind": {
-        "speed": 3.71,
-        "deg": 114,
-        "gust": 7.83
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2025-02-25 21:00:00"
-    },
-    {
       "dt": 1740528000,
       "main": {
-        "temp": 21.92,
-        "feels_like": 22.13,
+        "temp": 22.58,
+        "feels_like": 22.72,
         "temp_min": 20.55,
-        "temp_max": 21.92,
+        "temp_max": 22.58,
         "pressure": 1014,
         "sea_level": 1014,
         "grnd_level": 892,
-        "humidity": 75,
-        "temp_kf": 1.37
+        "humidity": 70,
+        "temp_kf": 2.03
       },
       "weather": [
         {
@@ -78,15 +42,15 @@
     {
       "dt": 1740538800,
       "main": {
-        "temp": 20.89,
-        "feels_like": 20.97,
+        "temp": 21.22,
+        "feels_like": 21.25,
         "temp_min": 20.03,
-        "temp_max": 20.89,
+        "temp_max": 21.22,
         "pressure": 1015,
         "sea_level": 1015,
         "grnd_level": 892,
-        "humidity": 74,
-        "temp_kf": 0.86
+        "humidity": 71,
+        "temp_kf": 1.19
       },
       "weather": [
         {
@@ -1460,17 +1424,56 @@
         "pod": "d"
       },
       "dt_txt": "2025-03-02 18:00:00"
+    },
+    {
+      "dt": 1740949200,
+      "main": {
+        "temp": 22.54,
+        "feels_like": 22.68,
+        "temp_min": 22.54,
+        "temp_max": 22.54,
+        "pressure": 1013,
+        "sea_level": 1013,
+        "grnd_level": 890,
+        "humidity": 70,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 95
+      },
+      "wind": {
+        "speed": 3.65,
+        "deg": 104,
+        "gust": 6.23
+      },
+      "visibility": 10000,
+      "pop": 0.88,
+      "rain": {
+        "3h": 1.05
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2025-03-02 21:00:00"
     }
   ],
   "city": {
-    "id": 3469058,
-    "name": "Brasília",
+    "id": 3461936,
+    "name": "Guará",
     "coord": {
       "lat": -15.7975,
       "lon": -47.8919
     },
     "country": "BR",
-    "population": 1000000,
+    "population": 0,
     "timezone": -10800,
     "sunrise": 1740474662,
     "sunset": 1740519511

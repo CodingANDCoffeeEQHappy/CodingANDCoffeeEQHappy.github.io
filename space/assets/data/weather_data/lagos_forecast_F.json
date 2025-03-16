@@ -4,56 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1742115600,
-      "main": {
-        "temp": 86.22,
-        "feels_like": 98.82,
-        "temp_min": 86.22,
-        "temp_max": 86.34,
-        "pressure": 1013,
-        "sea_level": 1013,
-        "grnd_level": 1012,
-        "humidity": 79,
-        "temp_kf": -0.07
-      },
-      "weather": [
-        {
-          "id": 500,
-          "main": "Rain",
-          "description": "light rain",
-          "icon": "10d"
-        }
-      ],
-      "clouds": {
-        "all": 40
-      },
-      "wind": {
-        "speed": 10.18,
-        "deg": 214,
-        "gust": 10
-      },
-      "visibility": 10000,
-      "pop": 0.2,
-      "rain": {
-        "3h": 0.12
-      },
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2025-03-16 09:00:00"
-    },
-    {
       "dt": 1742126400,
       "main": {
-        "temp": 86.74,
-        "feels_like": 99.34,
-        "temp_min": 86.74,
+        "temp": 86.81,
+        "feels_like": 96.6,
+        "temp_min": 86.81,
         "temp_max": 87.76,
         "pressure": 1013,
         "sea_level": 1013,
         "grnd_level": 1011,
-        "humidity": 75,
-        "temp_kf": -0.57
+        "humidity": 69,
+        "temp_kf": -0.53
       },
       "weather": [
         {
@@ -64,7 +25,7 @@
         }
       ],
       "clouds": {
-        "all": 60
+        "all": 100
       },
       "wind": {
         "speed": 11.83,
@@ -84,15 +45,15 @@
     {
       "dt": 1742137200,
       "main": {
-        "temp": 86.94,
-        "feels_like": 97.9,
-        "temp_min": 86.94,
+        "temp": 86.97,
+        "feels_like": 97.02,
+        "temp_min": 86.97,
         "temp_max": 87.3,
         "pressure": 1010,
         "sea_level": 1010,
         "grnd_level": 1008,
-        "humidity": 71,
-        "temp_kf": -0.2
+        "humidity": 69,
+        "temp_kf": -0.18
       },
       "weather": [
         {
@@ -103,7 +64,7 @@
         }
       ],
       "clouds": {
-        "all": 79
+        "all": 99
       },
       "wind": {
         "speed": 11.36,
@@ -1487,17 +1448,53 @@
         "pod": "d"
       },
       "dt_txt": "2025-03-21 06:00:00"
+    },
+    {
+      "dt": 1742547600,
+      "main": {
+        "temp": 85.87,
+        "feels_like": 95.2,
+        "temp_min": 85.87,
+        "temp_max": 85.87,
+        "pressure": 1013,
+        "sea_level": 1013,
+        "grnd_level": 1012,
+        "humidity": 71,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 10.94,
+        "deg": 228,
+        "gust": 11.59
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2025-03-21 09:00:00"
     }
   ],
   "city": {
-    "id": 2566677,
-    "name": "Shogunle",
+    "id": 2332459,
+    "name": "Lagos",
     "coord": {
       "lat": 6.5244,
       "lon": 3.3792
     },
     "country": "NG",
-    "population": 0,
+    "population": 9000000,
     "timezone": 3600,
     "sunrise": 1742104354,
     "sunset": 1742147863

@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1742828400,
-      "main": {
-        "temp": 58.5,
-        "feels_like": 57.15,
-        "temp_min": 58.5,
-        "temp_max": 58.5,
-        "pressure": 1004,
-        "sea_level": 1004,
-        "grnd_level": 1001,
-        "humidity": 66,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 75
-      },
-      "wind": {
-        "speed": 7.43,
-        "deg": 334,
-        "gust": 13.13
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-03-24 15:00:00"
-    },
-    {
       "dt": 1742839200,
       "main": {
         "temp": 57.09,
@@ -54,14 +18,14 @@
       },
       "weather": [
         {
-          "id": 803,
+          "id": 801,
           "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
+          "description": "few clouds",
+          "icon": "02n"
         }
       ],
       "clouds": {
-        "all": 53
+        "all": 16
       },
       "wind": {
         "speed": 2.66,
@@ -90,14 +54,14 @@
       },
       "weather": [
         {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
         }
       ],
       "clouds": {
-        "all": 25
+        "all": 7
       },
       "wind": {
         "speed": 0.16,
@@ -1484,6 +1448,45 @@
         "pod": "n"
       },
       "dt_txt": "2025-03-29 12:00:00"
+    },
+    {
+      "dt": 1743260400,
+      "main": {
+        "temp": 42.93,
+        "feels_like": 36.93,
+        "temp_min": 42.93,
+        "temp_max": 42.93,
+        "pressure": 1017,
+        "sea_level": 1017,
+        "grnd_level": 1014,
+        "humidity": 84,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 10.85,
+        "deg": 43,
+        "gust": 11.05
+      },
+      "visibility": 8429,
+      "pop": 1,
+      "rain": {
+        "3h": 2.76
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-03-29 15:00:00"
     }
   ],
   "city": {
@@ -1496,7 +1499,7 @@
     "country": "JP",
     "population": 0,
     "timezone": 32400,
-    "sunrise": 1742762387,
-    "sunset": 1742806538
+    "sunrise": 1742848700,
+    "sunset": 1742892987
   }
 }

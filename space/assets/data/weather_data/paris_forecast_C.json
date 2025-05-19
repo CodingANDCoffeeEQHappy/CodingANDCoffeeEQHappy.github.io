@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1747623600,
+      "dt": 1747634400,
       "main": {
-        "temp": 10.66,
-        "feels_like": 9.74,
-        "temp_min": 9.85,
-        "temp_max": 10.66,
+        "temp": 9.05,
+        "feels_like": 7.43,
+        "temp_min": 9.05,
+        "temp_max": 10.1,
         "pressure": 1017,
         "sea_level": 1017,
-        "grnd_level": 1007,
-        "humidity": 75,
-        "temp_kf": 0.81
+        "grnd_level": 1008,
+        "humidity": 79,
+        "temp_kf": -1.05
       },
       "weather": [
         {
           "id": 800,
           "main": "Clear",
           "description": "clear sky",
-          "icon": "01n"
+          "icon": "01d"
         }
       ],
       "clouds": {
-        "all": 0
-      },
-      "wind": {
-        "speed": 1.86,
-        "deg": 56,
-        "gust": 5.28
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-05-19 03:00:00"
-    },
-    {
-      "dt": 1747634400,
-      "main": {
-        "temp": 10.73,
-        "feels_like": 9.74,
-        "temp_min": 10.56,
-        "temp_max": 10.73,
-        "pressure": 1018,
-        "sea_level": 1018,
-        "grnd_level": 1008,
-        "humidity": 72,
-        "temp_kf": 0.17
-      },
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02d"
-        }
-      ],
-      "clouds": {
-        "all": 20
+        "all": 10
       },
       "wind": {
         "speed": 2.91,
@@ -78,26 +42,26 @@
     {
       "dt": 1747645200,
       "main": {
-        "temp": 14.26,
-        "feels_like": 13.05,
-        "temp_min": 14.26,
+        "temp": 12.35,
+        "feels_like": 11.23,
+        "temp_min": 12.35,
         "temp_max": 14.26,
         "pressure": 1017,
         "sea_level": 1017,
         "grnd_level": 1008,
-        "humidity": 50,
-        "temp_kf": 0
+        "humidity": 61,
+        "temp_kf": -1.91
       },
       "weather": [
         {
-          "id": 804,
+          "id": 803,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "broken clouds",
           "icon": "04d"
         }
       ],
       "clouds": {
-        "all": 93
+        "all": 62
       },
       "wind": {
         "speed": 3.02,
@@ -1460,11 +1424,47 @@
         "pod": "n"
       },
       "dt_txt": "2025-05-24 00:00:00"
+    },
+    {
+      "dt": 1748055600,
+      "main": {
+        "temp": 9.43,
+        "feels_like": 9.43,
+        "temp_min": 9.43,
+        "temp_max": 9.43,
+        "pressure": 1020,
+        "sea_level": 1020,
+        "grnd_level": 1011,
+        "humidity": 61,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "all": 82
+      },
+      "wind": {
+        "speed": 0.94,
+        "deg": 295,
+        "gust": 0.84
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-05-24 03:00:00"
     }
   ],
   "city": {
-    "id": 6455259,
-    "name": "Paris",
+    "id": 2978048,
+    "name": "Saint-Merri",
     "coord": {
       "lat": 48.8575,
       "lon": 2.3514

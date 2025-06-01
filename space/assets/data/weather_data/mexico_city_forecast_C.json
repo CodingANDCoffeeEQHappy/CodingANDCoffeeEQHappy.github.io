@@ -4,56 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1748768400,
-      "main": {
-        "temp": 15.55,
-        "feels_like": 15.46,
-        "temp_min": 14.96,
-        "temp_max": 15.55,
-        "pressure": 1017,
-        "sea_level": 1017,
-        "grnd_level": 765,
-        "humidity": 88,
-        "temp_kf": 0.59
-      },
-      "weather": [
-        {
-          "id": 500,
-          "main": "Rain",
-          "description": "light rain",
-          "icon": "10n"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 0.51,
-        "deg": 97,
-        "gust": 0.86
-      },
-      "visibility": 10000,
-      "pop": 0.98,
-      "rain": {
-        "3h": 1.31
-      },
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-06-01 09:00:00"
-    },
-    {
       "dt": 1748779200,
       "main": {
-        "temp": 15.06,
-        "feels_like": 14.84,
-        "temp_min": 14.07,
-        "temp_max": 15.06,
+        "temp": 15.04,
+        "feels_like": 14.79,
+        "temp_min": 14.03,
+        "temp_max": 15.04,
         "pressure": 1017,
         "sea_level": 1017,
         "grnd_level": 765,
-        "humidity": 85,
-        "temp_kf": 0.99
+        "humidity": 84,
+        "temp_kf": 1.01
       },
       "weather": [
         {
@@ -1514,19 +1475,55 @@
         "pod": "n"
       },
       "dt_txt": "2025-06-06 06:00:00"
+    },
+    {
+      "dt": 1749200400,
+      "main": {
+        "temp": 17.47,
+        "feels_like": 16.89,
+        "temp_min": 17.47,
+        "temp_max": 17.47,
+        "pressure": 1015,
+        "sea_level": 1015,
+        "grnd_level": 763,
+        "humidity": 62,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "all": 80
+      },
+      "wind": {
+        "speed": 3.24,
+        "deg": 7,
+        "gust": 3.66
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-06-06 09:00:00"
     }
   ],
   "city": {
     "id": 3530597,
     "name": "Mexico City",
     "coord": {
-      "lat": 19.4326,
-      "lon": -99.1332
+      "lat": 19.43,
+      "lon": -99.13
     },
     "country": "MX",
     "population": 15000,
     "timezone": -21600,
-    "sunrise": 1748779067,
-    "sunset": 1748826685
+    "sunrise": 1748779066,
+    "sunset": 1748826684
   }
 }

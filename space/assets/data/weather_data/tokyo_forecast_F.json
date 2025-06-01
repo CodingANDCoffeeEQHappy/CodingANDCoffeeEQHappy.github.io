@@ -4,56 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1748790000,
-      "main": {
-        "temp": 62.47,
-        "feels_like": 62.37,
-        "temp_min": 62.47,
-        "temp_max": 65.55,
-        "pressure": 1007,
-        "sea_level": 1007,
-        "grnd_level": 1004,
-        "humidity": 84,
-        "temp_kf": -1.71
-      },
-      "weather": [
-        {
-          "id": 500,
-          "main": "Rain",
-          "description": "light rain",
-          "icon": "10n"
-        }
-      ],
-      "clouds": {
-        "all": 75
-      },
-      "wind": {
-        "speed": 3.8,
-        "deg": 176,
-        "gust": 8.1
-      },
-      "visibility": 10000,
-      "pop": 0.2,
-      "rain": {
-        "3h": 0.13
-      },
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-06-01 15:00:00"
-    },
-    {
       "dt": 1748800800,
       "main": {
-        "temp": 63,
-        "feels_like": 62.8,
-        "temp_min": 63,
+        "temp": 63.12,
+        "feels_like": 62.94,
+        "temp_min": 63.12,
         "temp_max": 64.04,
         "pressure": 1007,
         "sea_level": 1007,
         "grnd_level": 1004,
         "humidity": 81,
-        "temp_kf": -0.58
+        "temp_kf": -0.51
       },
       "weather": [
         {
@@ -81,15 +42,15 @@
     {
       "dt": 1748811600,
       "main": {
-        "temp": 63.55,
-        "feels_like": 63,
-        "temp_min": 63.55,
+        "temp": 63.61,
+        "feels_like": 63.05,
+        "temp_min": 63.61,
         "temp_max": 64.09,
         "pressure": 1008,
         "sea_level": 1008,
         "grnd_level": 1005,
         "humidity": 72,
-        "temp_kf": -0.3
+        "temp_kf": -0.27
       },
       "weather": [
         {
@@ -1466,19 +1427,55 @@
         "pod": "n"
       },
       "dt_txt": "2025-06-06 12:00:00"
+    },
+    {
+      "dt": 1749222000,
+      "main": {
+        "temp": 73.45,
+        "feels_like": 72.95,
+        "temp_min": 73.45,
+        "temp_max": 73.45,
+        "pressure": 1013,
+        "sea_level": 1013,
+        "grnd_level": 1010,
+        "humidity": 52,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 10.02,
+        "deg": 188,
+        "gust": 13.31
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-06-06 15:00:00"
     }
   ],
   "city": {
     "id": 1862143,
     "name": "Horinouchi",
     "coord": {
-      "lat": 35.6764,
-      "lon": 139.65
+      "lat": 35.6762,
+      "lon": 139.6503
     },
     "country": "JP",
     "population": 0,
     "timezone": 32400,
-    "sunrise": 1748719632,
-    "sunset": 1748771491
+    "sunrise": 1748806012,
+    "sunset": 1748857929
   }
 }

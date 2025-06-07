@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1749297600,
-      "main": {
-        "temp": -10.59,
-        "feels_like": -10.59,
-        "temp_min": -15.18,
-        "temp_max": -10.59,
-        "pressure": 1006,
-        "sea_level": 1006,
-        "grnd_level": 990,
-        "humidity": 70,
-        "temp_kf": 2.55
-      },
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02d"
-        }
-      ],
-      "clouds": {
-        "all": 20
-      },
-      "wind": {
-        "speed": 2.8,
-        "deg": 312,
-        "gust": 2.95
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2025-06-07 12:00:00"
-    },
-    {
       "dt": 1749308400,
       "main": {
         "temp": -12.28,
@@ -54,14 +18,14 @@
       },
       "weather": [
         {
-          "id": 802,
+          "id": 804,
           "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
+          "description": "overcast clouds",
+          "icon": "04d"
         }
       ],
       "clouds": {
-        "all": 47
+        "all": 100
       },
       "wind": {
         "speed": 2.28,
@@ -90,14 +54,14 @@
       },
       "weather": [
         {
-          "id": 803,
+          "id": 804,
           "main": "Clouds",
-          "description": "broken clouds",
+          "description": "overcast clouds",
           "icon": "04d"
         }
       ],
       "clouds": {
-        "all": 73
+        "all": 100
       },
       "wind": {
         "speed": 1.95,
@@ -1502,6 +1466,45 @@
         "pod": "d"
       },
       "dt_txt": "2025-06-12 09:00:00"
+    },
+    {
+      "dt": 1749729600,
+      "main": {
+        "temp": 11.43,
+        "feels_like": 0.91,
+        "temp_min": 11.43,
+        "temp_max": 11.43,
+        "pressure": 993,
+        "sea_level": 993,
+        "grnd_level": 978,
+        "humidity": 85,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 600,
+          "main": "Snow",
+          "description": "light snow",
+          "icon": "13d"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 6.78,
+        "deg": 114,
+        "gust": 16.49
+      },
+      "visibility": 10000,
+      "pop": 0.25,
+      "snow": {
+        "3h": 0.13
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2025-06-12 12:00:00"
     }
   ],
   "city": {

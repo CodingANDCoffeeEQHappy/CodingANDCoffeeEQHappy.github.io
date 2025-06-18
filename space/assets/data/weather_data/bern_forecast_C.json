@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1750280400,
-      "main": {
-        "temp": 20.95,
-        "feels_like": 20.67,
-        "temp_min": 20.95,
-        "temp_max": 21.47,
-        "pressure": 1023,
-        "sea_level": 1023,
-        "grnd_level": 951,
-        "humidity": 60,
-        "temp_kf": -0.52
-      },
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "clouds": {
-        "all": 0
-      },
-      "wind": {
-        "speed": 1.64,
-        "deg": 148,
-        "gust": 1.32
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-06-18 21:00:00"
-    },
-    {
       "dt": 1750291200,
       "main": {
-        "temp": 20.14,
-        "feels_like": 19.93,
-        "temp_min": 18.53,
-        "temp_max": 20.14,
+        "temp": 18.24,
+        "feels_like": 18.16,
+        "temp_min": 18.24,
+        "temp_max": 18.59,
         "pressure": 1023,
         "sea_level": 1023,
         "grnd_level": 951,
-        "humidity": 66,
-        "temp_kf": 1.61
+        "humidity": 78,
+        "temp_kf": -0.35
       },
       "weather": [
         {
@@ -78,15 +42,15 @@
     {
       "dt": 1750302000,
       "main": {
-        "temp": 17.55,
-        "feels_like": 17.45,
+        "temp": 16.59,
+        "feels_like": 16.52,
         "temp_min": 15.85,
-        "temp_max": 17.55,
+        "temp_max": 16.59,
         "pressure": 1023,
         "sea_level": 1023,
         "grnd_level": 951,
-        "humidity": 80,
-        "temp_kf": 1.7
+        "humidity": 85,
+        "temp_kf": 0.74
       },
       "weather": [
         {
@@ -1442,13 +1406,52 @@
         "pod": "d"
       },
       "dt_txt": "2025-06-23 18:00:00"
+    },
+    {
+      "dt": 1750712400,
+      "main": {
+        "temp": 19.88,
+        "feels_like": 20.17,
+        "temp_min": 19.88,
+        "temp_max": 19.88,
+        "pressure": 1019,
+        "sea_level": 1019,
+        "grnd_level": 948,
+        "humidity": 86,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 16
+      },
+      "wind": {
+        "speed": 2.16,
+        "deg": 219,
+        "gust": 2.16
+      },
+      "visibility": 10000,
+      "pop": 0.34,
+      "rain": {
+        "3h": 0.15
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-06-23 21:00:00"
     }
   ],
   "city": {
     "id": 2661552,
     "name": "Bern",
     "coord": {
-      "lat": 46.9481,
+      "lat": 46.948,
       "lon": 7.4474
     },
     "country": "CH",

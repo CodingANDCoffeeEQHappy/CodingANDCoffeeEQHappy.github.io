@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1752634800,
-      "main": {
-        "temp": 19.47,
-        "feels_like": 19.14,
-        "temp_min": 18.58,
-        "temp_max": 19.47,
-        "pressure": 1019,
-        "sea_level": 1019,
-        "grnd_level": 1008,
-        "humidity": 64,
-        "temp_kf": 0.89
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 4.18,
-        "deg": 245,
-        "gust": 10.15
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-07-16 03:00:00"
-    },
-    {
       "dt": 1752645600,
       "main": {
-        "temp": 19.24,
-        "feels_like": 18.94,
-        "temp_min": 18.9,
-        "temp_max": 19.24,
+        "temp": 18.78,
+        "feels_like": 18.59,
+        "temp_min": 18.45,
+        "temp_max": 18.78,
         "pressure": 1018,
         "sea_level": 1018,
         "grnd_level": 1008,
-        "humidity": 66,
-        "temp_kf": 0.34
+        "humidity": 72,
+        "temp_kf": 0.33
       },
       "weather": [
         {
-          "id": 804,
+          "id": 803,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "broken clouds",
           "icon": "04d"
         }
       ],
       "clouds": {
-        "all": 99
+        "all": 75
       },
       "wind": {
         "speed": 4.45,
@@ -78,26 +42,26 @@
     {
       "dt": 1752656400,
       "main": {
-        "temp": 21.59,
-        "feels_like": 21.32,
-        "temp_min": 21.59,
-        "temp_max": 21.59,
+        "temp": 19.55,
+        "feels_like": 19.34,
+        "temp_min": 19.55,
+        "temp_max": 21.1,
         "pressure": 1018,
         "sea_level": 1018,
         "grnd_level": 1008,
-        "humidity": 58,
-        "temp_kf": 0
+        "humidity": 68,
+        "temp_kf": -1.55
       },
       "weather": [
         {
-          "id": 804,
+          "id": 803,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "broken clouds",
           "icon": "04d"
         }
       ],
       "clouds": {
-        "all": 92
+        "all": 81
       },
       "wind": {
         "speed": 4.39,
@@ -114,15 +78,15 @@
     {
       "dt": 1752667200,
       "main": {
-        "temp": 18.29,
-        "feels_like": 17.98,
+        "temp": 18.45,
+        "feels_like": 18.18,
         "temp_min": 18.29,
-        "temp_max": 18.29,
+        "temp_max": 18.45,
         "pressure": 1019,
         "sea_level": 1019,
         "grnd_level": 1009,
-        "humidity": 69,
-        "temp_kf": 0
+        "humidity": 70,
+        "temp_kf": 0.16
       },
       "weather": [
         {
@@ -133,7 +97,7 @@
         }
       ],
       "clouds": {
-        "all": 96
+        "all": 89
       },
       "wind": {
         "speed": 4.22,
@@ -1487,19 +1451,55 @@
         "pod": "n"
       },
       "dt_txt": "2025-07-21 00:00:00"
+    },
+    {
+      "dt": 1753066800,
+      "main": {
+        "temp": 15.47,
+        "feels_like": 15.24,
+        "temp_min": 15.47,
+        "temp_max": 15.47,
+        "pressure": 1009,
+        "sea_level": 1009,
+        "grnd_level": 999,
+        "humidity": 83,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03n"
+        }
+      ],
+      "clouds": {
+        "all": 35
+      },
+      "wind": {
+        "speed": 4.17,
+        "deg": 235,
+        "gust": 10.34
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-07-21 03:00:00"
     }
   ],
   "city": {
     "id": 6455259,
     "name": "Paris",
     "coord": {
-      "lat": 48.8575,
-      "lon": 2.3514
+      "lat": 48.8567,
+      "lon": 2.3515
     },
     "country": "FR",
     "population": 0,
     "timezone": 7200,
     "sunrise": 1752638648,
-    "sunset": 1752695327
+    "sunset": 1752695326
   }
 }

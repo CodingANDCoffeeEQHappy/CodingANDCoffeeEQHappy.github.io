@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1753822800,
-      "main": {
-        "temp": 76.44,
-        "feels_like": 77.74,
-        "temp_min": 76.44,
-        "temp_max": 76.44,
-        "pressure": 1015,
-        "sea_level": 1015,
-        "grnd_level": 1014,
-        "humidity": 84,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 10.74,
-        "deg": 233,
-        "gust": 14.83
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-07-29 21:00:00"
-    },
-    {
       "dt": 1753833600,
       "main": {
         "temp": 76.37,
@@ -1484,17 +1448,56 @@
         "pod": "d"
       },
       "dt_txt": "2025-08-03 18:00:00"
+    },
+    {
+      "dt": 1754254800,
+      "main": {
+        "temp": 76.8,
+        "feels_like": 78.13,
+        "temp_min": 76.8,
+        "temp_max": 76.8,
+        "pressure": 1015,
+        "sea_level": 1015,
+        "grnd_level": 1014,
+        "humidity": 84,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 65
+      },
+      "wind": {
+        "speed": 12.88,
+        "deg": 235,
+        "gust": 18.28
+      },
+      "visibility": 10000,
+      "pop": 0.54,
+      "rain": {
+        "3h": 0.27
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-08-03 21:00:00"
     }
   ],
   "city": {
-    "id": 2566677,
-    "name": "Shogunle",
+    "id": 2332459,
+    "name": "Lagos",
     "coord": {
       "lat": 6.5244,
       "lon": 3.3792
     },
     "country": "NG",
-    "population": 0,
+    "population": 9000000,
     "timezone": 3600,
     "sunrise": 1753767626,
     "sunset": 1753812315

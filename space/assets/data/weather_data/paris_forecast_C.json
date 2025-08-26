@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1756177200,
-      "main": {
-        "temp": 17.06,
-        "feels_like": 16.52,
-        "temp_min": 14.35,
-        "temp_max": 17.06,
-        "pressure": 1012,
-        "sea_level": 1012,
-        "grnd_level": 1002,
-        "humidity": 65,
-        "temp_kf": 2.71
-      },
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "clouds": {
-        "all": 0
-      },
-      "wind": {
-        "speed": 1.96,
-        "deg": 149,
-        "gust": 7.21
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-08-26 03:00:00"
-    },
-    {
       "dt": 1756188000,
       "main": {
-        "temp": 16.65,
-        "feels_like": 15.91,
-        "temp_min": 15.82,
-        "temp_max": 16.65,
-        "pressure": 1012,
-        "sea_level": 1012,
+        "temp": 16.18,
+        "feels_like": 15.5,
+        "temp_min": 15.42,
+        "temp_max": 16.18,
+        "pressure": 1011,
+        "sea_level": 1011,
         "grnd_level": 1002,
-        "humidity": 59,
-        "temp_kf": 0.83
+        "humidity": 63,
+        "temp_kf": 0.76
       },
       "weather": [
         {
@@ -78,15 +42,15 @@
     {
       "dt": 1756198800,
       "main": {
-        "temp": 22.75,
-        "feels_like": 22.15,
-        "temp_min": 22.75,
-        "temp_max": 25.59,
+        "temp": 22.45,
+        "feels_like": 21.98,
+        "temp_min": 22.45,
+        "temp_max": 25.39,
         "pressure": 1011,
         "sea_level": 1011,
         "grnd_level": 1001,
-        "humidity": 41,
-        "temp_kf": -2.84
+        "humidity": 47,
+        "temp_kf": -2.94
       },
       "weather": [
         {
@@ -1475,19 +1439,58 @@
         "pod": "n"
       },
       "dt_txt": "2025-08-31 00:00:00"
+    },
+    {
+      "dt": 1756609200,
+      "main": {
+        "temp": 16.77,
+        "feels_like": 16.88,
+        "temp_min": 16.77,
+        "temp_max": 16.77,
+        "pressure": 1011,
+        "sea_level": 1011,
+        "grnd_level": 1001,
+        "humidity": 91,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 4.36,
+        "deg": 225,
+        "gust": 11.45
+      },
+      "visibility": 10000,
+      "pop": 0.2,
+      "rain": {
+        "3h": 0.12
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-08-31 03:00:00"
     }
   ],
   "city": {
-    "id": 6269531,
-    "name": "Paris 01 Louvre",
+    "id": 6455259,
+    "name": "Paris",
     "coord": {
-      "lat": 48.859,
-      "lon": 2.3477
+      "lat": 48.8567,
+      "lon": 2.3515
     },
     "country": "FR",
     "population": 0,
     "timezone": 7200,
-    "sunrise": 1756184345,
-    "sunset": 1756233970
+    "sunrise": 1756184344,
+    "sunset": 1756233969
   }
 }

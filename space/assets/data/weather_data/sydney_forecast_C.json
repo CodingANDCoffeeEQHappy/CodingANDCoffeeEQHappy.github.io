@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1757084400,
-      "main": {
-        "temp": 14.67,
-        "feels_like": 13.81,
-        "temp_min": 13.25,
-        "temp_max": 14.67,
-        "pressure": 1031,
-        "sea_level": 1031,
-        "grnd_level": 1026,
-        "humidity": 62,
-        "temp_kf": 1.42
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 3.37,
-        "deg": 112,
-        "gust": 4.73
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-09-05 15:00:00"
-    },
-    {
       "dt": 1757095200,
       "main": {
-        "temp": 14.09,
-        "feels_like": 13.12,
-        "temp_min": 12.92,
-        "temp_max": 14.09,
+        "temp": 13.78,
+        "feels_like": 12.78,
+        "temp_min": 12.93,
+        "temp_max": 13.78,
         "pressure": 1031,
         "sea_level": 1031,
         "grnd_level": 1025,
         "humidity": 60,
-        "temp_kf": 1.17
+        "temp_kf": 0.85
       },
       "weather": [
         {
@@ -78,15 +42,15 @@
     {
       "dt": 1757106000,
       "main": {
-        "temp": 13.78,
-        "feels_like": 12.75,
+        "temp": 13.62,
+        "feels_like": 12.58,
         "temp_min": 13.33,
-        "temp_max": 13.78,
+        "temp_max": 13.62,
         "pressure": 1032,
         "sea_level": 1032,
         "grnd_level": 1026,
         "humidity": 59,
-        "temp_kf": 0.45
+        "temp_kf": 0.29
       },
       "weather": [
         {
@@ -1484,17 +1448,56 @@
         "pod": "n"
       },
       "dt_txt": "2025-09-10 12:00:00"
+    },
+    {
+      "dt": 1757516400,
+      "main": {
+        "temp": 11.13,
+        "feels_like": 10.31,
+        "temp_min": 11.13,
+        "temp_max": 11.13,
+        "pressure": 998,
+        "sea_level": 998,
+        "grnd_level": 993,
+        "humidity": 77,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 99
+      },
+      "wind": {
+        "speed": 10.1,
+        "deg": 258,
+        "gust": 19.49
+      },
+      "visibility": 10000,
+      "pop": 1,
+      "rain": {
+        "3h": 0.96
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-09-10 15:00:00"
     }
   ],
   "city": {
-    "id": 6619279,
+    "id": 2147714,
     "name": "Sydney",
     "coord": {
       "lat": -33.8688,
       "lon": 151.2093
     },
     "country": "AU",
-    "population": 0,
+    "population": 1000000,
     "timezone": 36000,
     "sunrise": 1757102847,
     "sunset": 1757144416

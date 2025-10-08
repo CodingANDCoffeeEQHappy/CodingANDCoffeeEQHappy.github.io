@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1759892400,
-      "main": {
-        "temp": 71.6,
-        "feels_like": 72.18,
-        "temp_min": 71.08,
-        "temp_max": 71.6,
-        "pressure": 1017,
-        "sea_level": 1017,
-        "grnd_level": 1009,
-        "humidity": 79,
-        "temp_kf": 0.29
-      },
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03n"
-        }
-      ],
-      "clouds": {
-        "all": 40
-      },
-      "wind": {
-        "speed": 6.35,
-        "deg": 196,
-        "gust": 24.96
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-10-08 03:00:00"
-    },
-    {
       "dt": 1759903200,
       "main": {
-        "temp": 71.29,
-        "feels_like": 71.6,
-        "temp_min": 70.68,
-        "temp_max": 71.29,
+        "temp": 70.05,
+        "feels_like": 70.43,
+        "temp_min": 70.05,
+        "temp_max": 70.45,
         "pressure": 1016,
         "sea_level": 1016,
         "grnd_level": 1007,
-        "humidity": 74,
-        "temp_kf": 0.34
+        "humidity": 78,
+        "temp_kf": -0.22
       },
       "weather": [
         {
-          "id": 803,
+          "id": 804,
           "main": "Clouds",
-          "description": "broken clouds",
+          "description": "overcast clouds",
           "icon": "04n"
         }
       ],
       "clouds": {
-        "all": 60
+        "all": 100
       },
       "wind": {
         "speed": 7,
@@ -78,15 +42,15 @@
     {
       "dt": 1759914000,
       "main": {
-        "temp": 66.83,
-        "feels_like": 67.44,
+        "temp": 66.25,
+        "feels_like": 66.9,
         "temp_min": 64.45,
-        "temp_max": 66.83,
+        "temp_max": 66.25,
         "pressure": 1016,
         "sea_level": 1016,
         "grnd_level": 1007,
-        "humidity": 90,
-        "temp_kf": 1.32
+        "humidity": 92,
+        "temp_kf": 1
       },
       "weather": [
         {
@@ -97,7 +61,7 @@
         }
       ],
       "clouds": {
-        "all": 80
+        "all": 100
       },
       "wind": {
         "speed": 3.83,
@@ -1472,19 +1436,58 @@
         "pod": "n"
       },
       "dt_txt": "2025-10-13 00:00:00"
+    },
+    {
+      "dt": 1760324400,
+      "main": {
+        "temp": 54.88,
+        "feels_like": 53.92,
+        "temp_min": 54.88,
+        "temp_max": 54.88,
+        "pressure": 1011,
+        "sea_level": 1011,
+        "grnd_level": 1003,
+        "humidity": 82,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 10.47,
+        "deg": 346,
+        "gust": 26.73
+      },
+      "visibility": 10000,
+      "pop": 0.45,
+      "rain": {
+        "3h": 0.33
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-10-13 03:00:00"
     }
   ],
   "city": {
     "id": 4140963,
     "name": "Washington D.C.",
     "coord": {
-      "lat": 38.91,
-      "lon": -77.04
+      "lat": 38.9072,
+      "lon": -77.0369
     },
     "country": "US",
     "population": 601723,
     "timezone": -14400,
-    "sunrise": 1759835387,
+    "sunrise": 1759835386,
     "sunset": 1759876905
   }
 }

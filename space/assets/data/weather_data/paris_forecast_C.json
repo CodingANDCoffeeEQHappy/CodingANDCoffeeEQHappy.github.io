@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1760540400,
-      "main": {
-        "temp": 14.88,
-        "feels_like": 14.41,
-        "temp_min": 14.88,
-        "temp_max": 15.26,
-        "pressure": 1025,
-        "sea_level": 1025,
-        "grnd_level": 1015,
-        "humidity": 76,
-        "temp_kf": -0.38
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 4.19,
-        "deg": 45,
-        "gust": 5.79
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2025-10-15 15:00:00"
-    },
-    {
       "dt": 1760551200,
       "main": {
-        "temp": 14.9,
-        "feels_like": 14.3,
+        "temp": 15.04,
+        "feels_like": 14.45,
         "temp_min": 14.9,
-        "temp_max": 14.93,
+        "temp_max": 15.04,
         "pressure": 1025,
         "sea_level": 1025,
         "grnd_level": 1015,
         "humidity": 71,
-        "temp_kf": -0.03
+        "temp_kf": 0.14
       },
       "weather": [
         {
@@ -78,15 +42,15 @@
     {
       "dt": 1760562000,
       "main": {
-        "temp": 13.99,
-        "feels_like": 13.27,
+        "temp": 14.06,
+        "feels_like": 13.35,
         "temp_min": 13.54,
-        "temp_max": 13.99,
+        "temp_max": 14.06,
         "pressure": 1025,
         "sea_level": 1025,
         "grnd_level": 1015,
         "humidity": 70,
-        "temp_kf": 0.45
+        "temp_kf": 0.52
       },
       "weather": [
         {
@@ -1457,19 +1421,58 @@
         "pod": "d"
       },
       "dt_txt": "2025-10-20 12:00:00"
+    },
+    {
+      "dt": 1760972400,
+      "main": {
+        "temp": 18.52,
+        "feels_like": 17.79,
+        "temp_min": 18.52,
+        "temp_max": 18.52,
+        "pressure": 1005,
+        "sea_level": 1005,
+        "grnd_level": 995,
+        "humidity": 52,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 28
+      },
+      "wind": {
+        "speed": 5.09,
+        "deg": 230,
+        "gust": 9.38
+      },
+      "visibility": 10000,
+      "pop": 0.2,
+      "rain": {
+        "3h": 0.15
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2025-10-20 15:00:00"
     }
   ],
   "city": {
-    "id": 6545270,
-    "name": "Palais-Royal",
+    "id": 6455259,
+    "name": "Paris",
     "coord": {
-      "lat": 48.8575,
-      "lon": 2.3514
+      "lat": 48.856,
+      "lon": 2.35
     },
     "country": "FR",
     "population": 0,
     "timezone": 7200,
-    "sunrise": 1760508646,
+    "sunrise": 1760508647,
     "sunset": 1760547696
   }
 }

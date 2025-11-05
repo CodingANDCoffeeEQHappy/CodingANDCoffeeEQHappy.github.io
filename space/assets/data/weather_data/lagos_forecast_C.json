@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1762322400,
-      "main": {
-        "temp": 25.12,
-        "feels_like": 26.14,
-        "temp_min": 25.12,
-        "temp_max": 26.87,
-        "pressure": 1013,
-        "sea_level": 1013,
-        "grnd_level": 1012,
-        "humidity": 94,
-        "temp_kf": -1.75
-      },
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "clouds": {
-        "all": 40
-      },
-      "wind": {
-        "speed": 1.94,
-        "deg": 251,
-        "gust": 2.26
-      },
-      "visibility": 10000,
-      "pop": 0.28,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2025-11-05 06:00:00"
-    },
-    {
       "dt": 1762333200,
       "main": {
         "temp": 26.48,
@@ -1499,17 +1463,53 @@
         "pod": "n"
       },
       "dt_txt": "2025-11-10 03:00:00"
+    },
+    {
+      "dt": 1762754400,
+      "main": {
+        "temp": 26.89,
+        "feels_like": 29.5,
+        "temp_min": 26.89,
+        "temp_max": 26.89,
+        "pressure": 1012,
+        "sea_level": 1012,
+        "grnd_level": 1011,
+        "humidity": 80,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "all": 77
+      },
+      "wind": {
+        "speed": 2.26,
+        "deg": 219,
+        "gust": 2.87
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2025-11-10 06:00:00"
     }
   ],
   "city": {
-    "id": 2332459,
-    "name": "Lagos",
+    "id": 2566677,
+    "name": "Shogunle",
     "coord": {
       "lat": 6.5244,
       "lon": 3.3792
     },
     "country": "NG",
-    "population": 9000000,
+    "population": 0,
     "timezone": 3600,
     "sunrise": 1762320838,
     "sunset": 1762363569

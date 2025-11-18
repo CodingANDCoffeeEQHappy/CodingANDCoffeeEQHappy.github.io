@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1763456400,
-      "main": {
-        "temp": 29.02,
-        "feels_like": 32.05,
-        "temp_min": 29.02,
-        "temp_max": 29.02,
-        "pressure": 1013,
-        "sea_level": 1013,
-        "grnd_level": 1012,
-        "humidity": 66,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01d"
-        }
-      ],
-      "clouds": {
-        "all": 6
-      },
-      "wind": {
-        "speed": 1.14,
-        "deg": 193,
-        "gust": 0.99
-      },
-      "visibility": 10000,
-      "pop": 0.11,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2025-11-18 09:00:00"
-    },
-    {
       "dt": 1763467200,
       "main": {
         "temp": 29.34,
@@ -1463,17 +1427,53 @@
         "pod": "d"
       },
       "dt_txt": "2025-11-23 06:00:00"
+    },
+    {
+      "dt": 1763888400,
+      "main": {
+        "temp": 28.98,
+        "feels_like": 32.5,
+        "temp_min": 28.98,
+        "temp_max": 28.98,
+        "pressure": 1012,
+        "sea_level": 1012,
+        "grnd_level": 1011,
+        "humidity": 69,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "clouds": {
+        "all": 45
+      },
+      "wind": {
+        "speed": 3.01,
+        "deg": 188,
+        "gust": 2.34
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2025-11-23 09:00:00"
     }
   ],
   "city": {
-    "id": 2332459,
-    "name": "Lagos",
+    "id": 2566677,
+    "name": "Shogunle",
     "coord": {
       "lat": 6.5244,
       "lon": 3.3792
     },
     "country": "NG",
-    "population": 9000000,
+    "population": 0,
     "timezone": 3600,
     "sunrise": 1763444246,
     "sunset": 1763486772

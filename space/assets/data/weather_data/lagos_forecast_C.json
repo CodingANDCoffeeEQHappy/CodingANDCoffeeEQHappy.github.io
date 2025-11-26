@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1764169200,
-      "main": {
-        "temp": 30.2,
-        "feels_like": 34.32,
-        "temp_min": 30.2,
-        "temp_max": 30.2,
-        "pressure": 1008,
-        "sea_level": 1008,
-        "grnd_level": 1007,
-        "humidity": 65,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02d"
-        }
-      ],
-      "clouds": {
-        "all": 20
-      },
-      "wind": {
-        "speed": 5.54,
-        "deg": 192,
-        "gust": 5.02
-      },
-      "visibility": 10000,
-      "pop": 0.33,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2025-11-26 15:00:00"
-    },
-    {
       "dt": 1764180000,
       "main": {
         "temp": 29.72,
@@ -1493,17 +1457,56 @@
         "pod": "d"
       },
       "dt_txt": "2025-12-01 12:00:00"
+    },
+    {
+      "dt": 1764601200,
+      "main": {
+        "temp": 29.55,
+        "feels_like": 33.34,
+        "temp_min": 29.55,
+        "temp_max": 29.55,
+        "pressure": 1006,
+        "sea_level": 1006,
+        "grnd_level": 1005,
+        "humidity": 67,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 98
+      },
+      "wind": {
+        "speed": 4,
+        "deg": 208,
+        "gust": 3.57
+      },
+      "visibility": 10000,
+      "pop": 0.32,
+      "rain": {
+        "3h": 0.13
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2025-12-01 15:00:00"
     }
   ],
   "city": {
-    "id": 2332459,
-    "name": "Lagos",
+    "id": 2566677,
+    "name": "Shogunle",
     "coord": {
       "lat": 6.5244,
       "lon": 3.3792
     },
     "country": "NG",
-    "population": 9000000,
+    "population": 0,
     "timezone": 3600,
     "sunrise": 1764135628,
     "sunset": 1764178052

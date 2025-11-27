@@ -4,17 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1764212400,
+      "dt": 1764223200,
       "main": {
-        "temp": 20.74,
-        "feels_like": 21.25,
-        "temp_min": 20.74,
-        "temp_max": 21.19,
-        "pressure": 1015,
-        "sea_level": 1015,
-        "grnd_level": 889,
-        "humidity": 91,
-        "temp_kf": -0.45
+        "temp": 20.1,
+        "feels_like": 20.59,
+        "temp_min": 19.44,
+        "temp_max": 20.1,
+        "pressure": 1013,
+        "sea_level": 1013,
+        "grnd_level": 888,
+        "humidity": 93,
+        "temp_kf": 0.66
       },
       "weather": [
         {
@@ -26,42 +26,6 @@
       ],
       "clouds": {
         "all": 33
-      },
-      "wind": {
-        "speed": 0.22,
-        "deg": 262,
-        "gust": 0.16
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-11-27 03:00:00"
-    },
-    {
-      "dt": 1764223200,
-      "main": {
-        "temp": 19.97,
-        "feels_like": 20.24,
-        "temp_min": 19.7,
-        "temp_max": 19.97,
-        "pressure": 1013,
-        "sea_level": 1013,
-        "grnd_level": 888,
-        "humidity": 85,
-        "temp_kf": 0.27
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 66
       },
       "wind": {
         "speed": 0.46,
@@ -78,26 +42,26 @@
     {
       "dt": 1764234000,
       "main": {
-        "temp": 19.17,
-        "feels_like": 19.15,
+        "temp": 19.59,
+        "feels_like": 19.8,
         "temp_min": 19.17,
-        "temp_max": 19.17,
+        "temp_max": 19.59,
         "pressure": 1013,
         "sea_level": 1013,
         "grnd_level": 889,
-        "humidity": 77,
-        "temp_kf": 0
+        "humidity": 84,
+        "temp_kf": 0.42
       },
       "weather": [
         {
-          "id": 804,
+          "id": 803,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "broken clouds",
           "icon": "04d"
         }
       ],
       "clouds": {
-        "all": 100
+        "all": 67
       },
       "wind": {
         "speed": 0.89,
@@ -1475,6 +1439,45 @@
         "pod": "n"
       },
       "dt_txt": "2025-12-02 00:00:00"
+    },
+    {
+      "dt": 1764644400,
+      "main": {
+        "temp": 21.2,
+        "feels_like": 21.39,
+        "temp_min": 21.2,
+        "temp_max": 21.2,
+        "pressure": 1009,
+        "sea_level": 1009,
+        "grnd_level": 887,
+        "humidity": 77,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 73
+      },
+      "wind": {
+        "speed": 1.25,
+        "deg": 327,
+        "gust": 1.74
+      },
+      "visibility": 10000,
+      "pop": 0.25,
+      "rain": {
+        "3h": 0.18
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-12-02 03:00:00"
     }
   ],
   "city": {
@@ -1487,7 +1490,7 @@
     "country": "BR",
     "population": 0,
     "timezone": -10800,
-    "sunrise": 1764145828,
-    "sunset": 1764192467
+    "sunrise": 1764232233,
+    "sunset": 1764278901
   }
 }

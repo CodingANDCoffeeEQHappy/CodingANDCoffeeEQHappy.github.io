@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1765054800,
-      "main": {
-        "temp": 22.72,
-        "feels_like": 21.91,
-        "temp_min": 22.72,
-        "temp_max": 22.82,
-        "pressure": 1011,
-        "sea_level": 1011,
-        "grnd_level": 761,
-        "humidity": 33,
-        "temp_kf": -0.1
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 0.6,
-        "deg": 100,
-        "gust": 1.79
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2025-12-06 21:00:00"
-    },
-    {
       "dt": 1765065600,
       "main": {
-        "temp": 21.96,
-        "feels_like": 21.18,
+        "temp": 21.98,
+        "feels_like": 21.2,
         "temp_min": 20.44,
-        "temp_max": 21.96,
+        "temp_max": 21.98,
         "pressure": 1011,
         "sea_level": 1011,
         "grnd_level": 762,
         "humidity": 37,
-        "temp_kf": 1.52
+        "temp_kf": 1.54
       },
       "weather": [
         {
@@ -61,7 +25,7 @@
         }
       ],
       "clouds": {
-        "all": 100
+        "all": 98
       },
       "wind": {
         "speed": 3.01,
@@ -81,15 +45,15 @@
     {
       "dt": 1765076400,
       "main": {
-        "temp": 20.33,
-        "feels_like": 19.57,
+        "temp": 20.34,
+        "feels_like": 19.58,
         "temp_min": 19.14,
-        "temp_max": 20.33,
+        "temp_max": 20.34,
         "pressure": 1014,
         "sea_level": 1014,
         "grnd_level": 764,
         "humidity": 44,
-        "temp_kf": 1.19
+        "temp_kf": 1.2
       },
       "weather": [
         {
@@ -100,7 +64,7 @@
         }
       ],
       "clouds": {
-        "all": 99
+        "all": 98
       },
       "wind": {
         "speed": 1.17,
@@ -1454,19 +1418,58 @@
         "pod": "d"
       },
       "dt_txt": "2025-12-11 18:00:00"
+    },
+    {
+      "dt": 1765486800,
+      "main": {
+        "temp": 24.59,
+        "feels_like": 23.81,
+        "temp_min": 24.59,
+        "temp_max": 24.59,
+        "pressure": 1008,
+        "sea_level": 1008,
+        "grnd_level": 760,
+        "humidity": 27,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 14
+      },
+      "wind": {
+        "speed": 1.32,
+        "deg": 105,
+        "gust": 2.3
+      },
+      "visibility": 10000,
+      "pop": 0.34,
+      "rain": {
+        "3h": 0.12
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2025-12-11 21:00:00"
     }
   ],
   "city": {
     "id": 3530597,
     "name": "Mexico City",
     "coord": {
-      "lat": 19.4326,
-      "lon": -99.1332
+      "lat": 19.4285,
+      "lon": -99.1277
     },
     "country": "MX",
     "population": 15000,
     "timezone": -21600,
-    "sunrise": 1765025863,
-    "sunset": 1765065483
+    "sunrise": 1765025861,
+    "sunset": 1765065482
   }
 }

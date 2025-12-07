@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1765141200,
-      "main": {
-        "temp": 43.84,
-        "feels_like": 43.84,
-        "temp_min": 43.84,
-        "temp_max": 48.61,
-        "pressure": 1018,
-        "sea_level": 1018,
-        "grnd_level": 1015,
-        "humidity": 62,
-        "temp_kf": -2.65
-      },
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "clouds": {
-        "all": 0
-      },
-      "wind": {
-        "speed": 2.73,
-        "deg": 316,
-        "gust": 3.04
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2025-12-07 21:00:00"
-    },
-    {
       "dt": 1765152000,
       "main": {
         "temp": 46.31,
@@ -1442,14 +1406,50 @@
         "pod": "n"
       },
       "dt_txt": "2025-12-12 18:00:00"
+    },
+    {
+      "dt": 1765573200,
+      "main": {
+        "temp": 39.33,
+        "feels_like": 32.16,
+        "temp_min": 39.33,
+        "temp_max": 39.33,
+        "pressure": 1030,
+        "sea_level": 1030,
+        "grnd_level": 1027,
+        "humidity": 37,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 11.59,
+        "deg": 357,
+        "gust": 19.01
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2025-12-12 21:00:00"
     }
   ],
   "city": {
     "id": 1862143,
     "name": "Horinouchi",
     "coord": {
-      "lat": 35.6762,
-      "lon": 139.6503
+      "lat": 35.6764,
+      "lon": 139.65
     },
     "country": "JP",
     "population": 0,

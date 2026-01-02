@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1767355200,
-      "main": {
-        "temp": 65.52,
-        "feels_like": 65.19,
-        "temp_min": 65.52,
-        "temp_max": 67.5,
-        "pressure": 1018,
-        "sea_level": 1018,
-        "grnd_level": 1012,
-        "humidity": 73,
-        "temp_kf": -1.1
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 7.58,
-        "deg": 67,
-        "gust": 10.92
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-01-02 12:00:00"
-    },
-    {
       "dt": 1767366000,
       "main": {
-        "temp": 66.25,
-        "feels_like": 66.15,
-        "temp_min": 66.25,
-        "temp_max": 67.71,
+        "temp": 65.19,
+        "feels_like": 65.17,
+        "temp_min": 65.19,
+        "temp_max": 67.41,
         "pressure": 1017,
         "sea_level": 1017,
         "grnd_level": 1011,
-        "humidity": 76,
-        "temp_kf": -0.81
+        "humidity": 80,
+        "temp_kf": -1.23
       },
       "weather": [
         {
@@ -81,15 +45,15 @@
     {
       "dt": 1767376800,
       "main": {
-        "temp": 65.07,
-        "feels_like": 65.08,
-        "temp_min": 64.85,
-        "temp_max": 65.07,
+        "temp": 64.6,
+        "feels_like": 64.65,
+        "temp_min": 64.6,
+        "temp_max": 64.85,
         "pressure": 1016,
         "sea_level": 1016,
         "grnd_level": 1010,
-        "humidity": 81,
-        "temp_kf": 0.12
+        "humidity": 83,
+        "temp_kf": -0.14
       },
       "weather": [
         {
@@ -1484,17 +1448,53 @@
         "pod": "d"
       },
       "dt_txt": "2026-01-07 09:00:00"
+    },
+    {
+      "dt": 1767787200,
+      "main": {
+        "temp": 71.74,
+        "feels_like": 72.43,
+        "temp_min": 71.74,
+        "temp_max": 71.74,
+        "pressure": 1017,
+        "sea_level": 1017,
+        "grnd_level": 1012,
+        "humidity": 81,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "clouds": {
+        "all": 0
+      },
+      "wind": {
+        "speed": 10.4,
+        "deg": 26,
+        "gust": 23.17
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-01-07 12:00:00"
     }
   ],
   "city": {
-    "id": 2147714,
+    "id": 6619279,
     "name": "Sydney",
     "coord": {
       "lat": -33.8688,
       "lon": 151.2093
     },
     "country": "AU",
-    "population": 1000000,
+    "population": 0,
     "timezone": 39600,
     "sunrise": 1767293288,
     "sunset": 1767344962

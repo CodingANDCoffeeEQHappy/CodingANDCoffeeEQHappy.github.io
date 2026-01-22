@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1769094000,
-      "main": {
-        "temp": 4.86,
-        "feels_like": 4.86,
-        "temp_min": 0.39,
-        "temp_max": 4.86,
-        "pressure": 999,
-        "sea_level": 999,
-        "grnd_level": 927,
-        "humidity": 68,
-        "temp_kf": 4.47
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": {
-        "all": 75
-      },
-      "wind": {
-        "speed": 0.3,
-        "deg": 268,
-        "gust": 0.68
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-01-22 15:00:00"
-    },
-    {
       "dt": 1769104800,
       "main": {
-        "temp": 3.46,
-        "feels_like": 2.14,
-        "temp_min": 0.66,
-        "temp_max": 3.46,
+        "temp": 2.98,
+        "feels_like": 1.59,
+        "temp_min": 0.56,
+        "temp_max": 2.98,
         "pressure": 999,
         "sea_level": 999,
         "grnd_level": 927,
-        "humidity": 75,
-        "temp_kf": 2.8
+        "humidity": 69,
+        "temp_kf": 2.42
       },
       "weather": [
         {
-          "id": 803,
+          "id": 802,
           "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
+          "description": "scattered clouds",
+          "icon": "03n"
         }
       ],
       "clouds": {
-        "all": 83
+        "all": 47
       },
       "wind": {
         "speed": 1.54,
@@ -78,26 +42,26 @@
     {
       "dt": 1769115600,
       "main": {
-        "temp": 1.33,
-        "feels_like": 1.33,
+        "temp": 1.11,
+        "feels_like": 1.11,
         "temp_min": -0.43,
-        "temp_max": 1.33,
+        "temp_max": 1.11,
         "pressure": 1000,
         "sea_level": 1000,
         "grnd_level": 927,
-        "humidity": 80,
-        "temp_kf": 1.76
+        "humidity": 77,
+        "temp_kf": 1.54
       },
       "weather": [
         {
-          "id": 804,
+          "id": 803,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "broken clouds",
           "icon": "04n"
         }
       ],
       "clouds": {
-        "all": 92
+        "all": 73
       },
       "wind": {
         "speed": 1.12,
@@ -1477,13 +1441,52 @@
         "pod": "d"
       },
       "dt_txt": "2026-01-27 12:00:00"
+    },
+    {
+      "dt": 1769526000,
+      "main": {
+        "temp": 2.16,
+        "feels_like": 2.16,
+        "temp_min": 2.16,
+        "temp_max": 2.16,
+        "pressure": 999,
+        "sea_level": 999,
+        "grnd_level": 926,
+        "humidity": 91,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 0.83,
+        "deg": 315,
+        "gust": 0.57
+      },
+      "visibility": 10000,
+      "pop": 1,
+      "rain": {
+        "3h": 1.11
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-01-27 15:00:00"
     }
   ],
   "city": {
     "id": 2661552,
     "name": "Bern",
     "coord": {
-      "lat": 46.948,
+      "lat": 46.9481,
       "lon": 7.4474
     },
     "country": "CH",

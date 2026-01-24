@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1769288400,
-      "main": {
-        "temp": -6.33,
-        "feels_like": -10.42,
-        "temp_min": -6.33,
-        "temp_max": -3.41,
-        "pressure": 1038,
-        "sea_level": 1038,
-        "grnd_level": 1029,
-        "humidity": 32,
-        "temp_kf": -2.92
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": {
-        "all": 75
-      },
-      "wind": {
-        "speed": 2.42,
-        "deg": 19,
-        "gust": 2.86
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-01-24 21:00:00"
-    },
-    {
       "dt": 1769299200,
       "main": {
         "temp": -5.16,
@@ -54,14 +18,14 @@
       },
       "weather": [
         {
-          "id": 803,
+          "id": 804,
           "main": "Clouds",
-          "description": "broken clouds",
+          "description": "overcast clouds",
           "icon": "04n"
         }
       ],
       "clouds": {
-        "all": 83
+        "all": 100
       },
       "wind": {
         "speed": 2.16,
@@ -97,7 +61,7 @@
         }
       ],
       "clouds": {
-        "all": 92
+        "all": 100
       },
       "wind": {
         "speed": 2.56,
@@ -1496,19 +1460,55 @@
         "pod": "d"
       },
       "dt_txt": "2026-01-29 18:00:00"
+    },
+    {
+      "dt": 1769720400,
+      "main": {
+        "temp": -6.1,
+        "feels_like": -11.93,
+        "temp_min": -6.1,
+        "temp_max": -6.1,
+        "pressure": 1025,
+        "sea_level": 1025,
+        "grnd_level": 1016,
+        "humidity": 82,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "all": 54
+      },
+      "wind": {
+        "speed": 4.18,
+        "deg": 314,
+        "gust": 9.5
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-01-29 21:00:00"
     }
   ],
   "city": {
     "id": 4140963,
     "name": "Washington D.C.",
     "coord": {
-      "lat": 38.91,
-      "lon": -77.04
+      "lat": 38.9072,
+      "lon": -77.0369
     },
     "country": "US",
     "population": 601723,
     "timezone": -18000,
-    "sunrise": 1769257236,
+    "sunrise": 1769257235,
     "sunset": 1769293176
   }
 }

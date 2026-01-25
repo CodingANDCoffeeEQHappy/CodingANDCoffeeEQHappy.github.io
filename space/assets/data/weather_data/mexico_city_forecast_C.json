@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1769310000,
-      "main": {
-        "temp": 18.83,
-        "feels_like": 17.73,
-        "temp_min": 18,
-        "temp_max": 18.83,
-        "pressure": 1017,
-        "sea_level": 1017,
-        "grnd_level": 765,
-        "humidity": 37,
-        "temp_kf": 0.83
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 75
-      },
-      "wind": {
-        "speed": 3.83,
-        "deg": 207,
-        "gust": 6.38
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-01-25 03:00:00"
-    },
-    {
       "dt": 1769320800,
       "main": {
-        "temp": 18.1,
-        "feels_like": 16.98,
+        "temp": 16.64,
+        "feels_like": 15.43,
         "temp_min": 16.63,
-        "temp_max": 18.1,
+        "temp_max": 16.64,
         "pressure": 1017,
         "sea_level": 1017,
         "grnd_level": 765,
-        "humidity": 39,
-        "temp_kf": 1.47
+        "humidity": 41,
+        "temp_kf": 0.01
       },
       "weather": [
         {
@@ -78,15 +42,15 @@
     {
       "dt": 1769331600,
       "main": {
-        "temp": 16.35,
-        "feels_like": 15.22,
+        "temp": 15.62,
+        "feels_like": 14.44,
         "temp_min": 15.11,
-        "temp_max": 16.35,
+        "temp_max": 15.62,
         "pressure": 1018,
         "sea_level": 1018,
         "grnd_level": 764,
-        "humidity": 45,
-        "temp_kf": 1.24
+        "humidity": 46,
+        "temp_kf": 0.51
       },
       "weather": [
         {
@@ -1442,19 +1406,55 @@
         "pod": "d"
       },
       "dt_txt": "2026-01-30 00:00:00"
+    },
+    {
+      "dt": 1769742000,
+      "main": {
+        "temp": 19.2,
+        "feels_like": 18.09,
+        "temp_min": 19.2,
+        "temp_max": 19.2,
+        "pressure": 1016,
+        "sea_level": 1016,
+        "grnd_level": 765,
+        "humidity": 35,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 2.25,
+        "deg": 18,
+        "gust": 4.18
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-01-30 03:00:00"
     }
   ],
   "city": {
     "id": 3530597,
     "name": "Mexico City",
     "coord": {
-      "lat": 19.4326,
-      "lon": -99.1332
+      "lat": 19.4285,
+      "lon": -99.1277
     },
     "country": "MX",
     "population": 15000,
     "timezone": -21600,
-    "sunrise": 1769260374,
-    "sunset": 1769300645
+    "sunrise": 1769260372,
+    "sunset": 1769300644
   }
 }

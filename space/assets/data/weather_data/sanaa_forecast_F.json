@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1769364000,
-      "main": {
-        "temp": 60.6,
-        "feels_like": 58.15,
-        "temp_min": 60.6,
-        "temp_max": 60.6,
-        "pressure": 1020,
-        "sea_level": 1020,
-        "grnd_level": 765,
-        "humidity": 38,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 64
-      },
-      "wind": {
-        "speed": 8.7,
-        "deg": 52,
-        "gust": 12.15
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-01-25 18:00:00"
-    },
-    {
       "dt": 1769374800,
       "main": {
         "temp": 58.95,
@@ -1442,19 +1406,58 @@
         "pod": "n"
       },
       "dt_txt": "2026-01-30 15:00:00"
+    },
+    {
+      "dt": 1769796000,
+      "main": {
+        "temp": 61.34,
+        "feels_like": 59.29,
+        "temp_min": 61.34,
+        "temp_max": 61.34,
+        "pressure": 1019,
+        "sea_level": 1019,
+        "grnd_level": 765,
+        "humidity": 45,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 6
+      },
+      "wind": {
+        "speed": 3.42,
+        "deg": 76,
+        "gust": 4.79
+      },
+      "visibility": 10000,
+      "pop": 0.2,
+      "rain": {
+        "3h": 0.33
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-01-30 18:00:00"
     }
   ],
   "city": {
     "id": 71137,
     "name": "Sanaa",
     "coord": {
-      "lat": 15.3545,
-      "lon": 44.2064
+      "lat": 15.3522,
+      "lon": 44.2095
     },
     "country": "YE",
     "population": 1937451,
     "timezone": 10800,
-    "sunrise": 1769312000,
+    "sunrise": 1769311999,
     "sunset": 1769353033
   }
 }

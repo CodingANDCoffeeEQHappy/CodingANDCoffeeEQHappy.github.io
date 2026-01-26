@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1769450400,
-      "main": {
-        "temp": 44.78,
-        "feels_like": 40.93,
-        "temp_min": 43.11,
-        "temp_max": 44.78,
-        "pressure": 1003,
-        "sea_level": 1003,
-        "grnd_level": 993,
-        "humidity": 87,
-        "temp_kf": 0.93
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 6.93,
-        "deg": 179,
-        "gust": 16.82
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-01-26 18:00:00"
-    },
-    {
       "dt": 1769461200,
       "main": {
-        "temp": 43.88,
-        "feels_like": 39.85,
-        "temp_min": 42.06,
-        "temp_max": 43.88,
+        "temp": 43.32,
+        "feels_like": 39.18,
+        "temp_min": 42.04,
+        "temp_max": 43.32,
         "pressure": 1003,
         "sea_level": 1003,
         "grnd_level": 992,
         "humidity": 84,
-        "temp_kf": 1.01
+        "temp_kf": 0.71
       },
       "weather": [
         {
-          "id": 804,
+          "id": 803,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "broken clouds",
           "icon": "04n"
         }
       ],
       "clouds": {
-        "all": 98
+        "all": 82
       },
       "wind": {
         "speed": 6.93,
@@ -78,15 +42,15 @@
     {
       "dt": 1769472000,
       "main": {
-        "temp": 42.75,
-        "feels_like": 37.42,
+        "temp": 42.48,
+        "feels_like": 37.08,
         "temp_min": 41.72,
-        "temp_max": 42.75,
+        "temp_max": 42.48,
         "pressure": 1000,
         "sea_level": 1000,
         "grnd_level": 989,
         "humidity": 81,
-        "temp_kf": 0.57
+        "temp_kf": 0.42
       },
       "weather": [
         {
@@ -97,7 +61,7 @@
         }
       ],
       "clouds": {
-        "all": 98
+        "all": 90
       },
       "wind": {
         "speed": 9.13,
@@ -1481,14 +1445,53 @@
         "pod": "d"
       },
       "dt_txt": "2026-01-31 15:00:00"
+    },
+    {
+      "dt": 1769882400,
+      "main": {
+        "temp": 45.01,
+        "feels_like": 39.99,
+        "temp_min": 45.01,
+        "temp_max": 45.01,
+        "pressure": 998,
+        "sea_level": 998,
+        "grnd_level": 989,
+        "humidity": 78,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 99
+      },
+      "wind": {
+        "speed": 9.66,
+        "deg": 233,
+        "gust": 23.06
+      },
+      "visibility": 10000,
+      "pop": 0.38,
+      "rain": {
+        "3h": 0.27
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-01-31 18:00:00"
     }
   ],
   "city": {
-    "id": 6269531,
-    "name": "Paris 01 Louvre",
+    "id": 2978048,
+    "name": "Saint-Merri",
     "coord": {
-      "lat": 48.8575,
-      "lon": 2.3514
+      "lat": 48.8566,
+      "lon": 2.3522
     },
     "country": "FR",
     "population": 0,

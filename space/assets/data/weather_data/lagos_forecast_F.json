@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1769958000,
-      "main": {
-        "temp": 91.62,
-        "feels_like": 104.22,
-        "temp_min": 86.16,
-        "temp_max": 91.62,
-        "pressure": 1008,
-        "sea_level": 1008,
-        "grnd_level": 1007,
-        "humidity": 66,
-        "temp_kf": 3.03
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": {
-        "all": 75
-      },
-      "wind": {
-        "speed": 14.34,
-        "deg": 206,
-        "gust": 14.07
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-02-01 15:00:00"
-    },
-    {
       "dt": 1769968800,
       "main": {
         "temp": 88.92,
@@ -1481,17 +1445,56 @@
         "pod": "d"
       },
       "dt_txt": "2026-02-06 12:00:00"
+    },
+    {
+      "dt": 1770390000,
+      "main": {
+        "temp": 85.26,
+        "feels_like": 92.16,
+        "temp_min": 85.26,
+        "temp_max": 85.26,
+        "pressure": 1011,
+        "sea_level": 1011,
+        "grnd_level": 1010,
+        "humidity": 67,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 99
+      },
+      "wind": {
+        "speed": 13.38,
+        "deg": 216,
+        "gust": 13.71
+      },
+      "visibility": 10000,
+      "pop": 0.89,
+      "rain": {
+        "3h": 1.04
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-02-06 15:00:00"
     }
   ],
   "city": {
-    "id": 2566677,
-    "name": "Shogunle",
+    "id": 2332459,
+    "name": "Lagos",
     "coord": {
       "lat": 6.5244,
       "lon": 3.3792
     },
     "country": "NG",
-    "population": 0,
+    "population": 9000000,
     "timezone": 3600,
     "sunrise": 1769925874,
     "sunset": 1769968524

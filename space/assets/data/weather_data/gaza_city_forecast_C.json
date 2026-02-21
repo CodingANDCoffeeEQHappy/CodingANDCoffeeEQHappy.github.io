@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1771675200,
-      "main": {
-        "temp": 18.52,
-        "feels_like": 18.26,
-        "temp_min": 18.52,
-        "temp_max": 18.52,
-        "pressure": 1016,
-        "sea_level": 1016,
-        "grnd_level": 1010,
-        "humidity": 70,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01d"
-        }
-      ],
-      "clouds": {
-        "all": 0
-      },
-      "wind": {
-        "speed": 6.49,
-        "deg": 280,
-        "gust": 5.69
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-02-21 12:00:00"
-    },
-    {
       "dt": 1771686000,
       "main": {
         "temp": 18.01,
@@ -1478,14 +1442,53 @@
         "pod": "d"
       },
       "dt_txt": "2026-02-26 09:00:00"
+    },
+    {
+      "dt": 1772107200,
+      "main": {
+        "temp": 17.22,
+        "feels_like": 16.54,
+        "temp_min": 17.22,
+        "temp_max": 17.22,
+        "pressure": 1015,
+        "sea_level": 1015,
+        "grnd_level": 1009,
+        "humidity": 59,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 77
+      },
+      "wind": {
+        "speed": 9.96,
+        "deg": 300,
+        "gust": 10.85
+      },
+      "visibility": 10000,
+      "pop": 1,
+      "rain": {
+        "3h": 1.17
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-02-26 12:00:00"
     }
   ],
   "city": {
     "id": 281133,
     "name": "Gaza",
     "coord": {
-      "lat": 31.5017,
-      "lon": 34.4668
+      "lat": 31.5016,
+      "lon": 34.4667
     },
     "country": "PS",
     "population": 410000,

@@ -4,69 +4,33 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1772820000,
-      "main": {
-        "temp": 61.07,
-        "feels_like": 59.88,
-        "temp_min": 61.07,
-        "temp_max": 61.07,
-        "pressure": 1021,
-        "sea_level": 1021,
-        "grnd_level": 1011,
-        "humidity": 64,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 90
-      },
-      "wind": {
-        "speed": 3.69,
-        "deg": 2,
-        "gust": 6.71
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-03-06 18:00:00"
-    },
-    {
       "dt": 1772830800,
       "main": {
-        "temp": 58.59,
-        "feels_like": 57.38,
-        "temp_min": 53.6,
-        "temp_max": 58.59,
+        "temp": 57.83,
+        "feels_like": 56.84,
+        "temp_min": 53.56,
+        "temp_max": 57.83,
         "pressure": 1022,
         "sea_level": 1022,
         "grnd_level": 1013,
-        "humidity": 69,
-        "temp_kf": 2.77
+        "humidity": 75,
+        "temp_kf": 2.37
       },
       "weather": [
         {
-          "id": 804,
+          "id": 802,
           "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04n"
+          "description": "scattered clouds",
+          "icon": "03n"
         }
       ],
       "clouds": {
-        "all": 92
+        "all": 33
       },
       "wind": {
-        "speed": 4.14,
-        "deg": 2,
-        "gust": 12.01
+        "speed": 4.92,
+        "deg": 4,
+        "gust": 13.35
       },
       "visibility": 10000,
       "pop": 0,
@@ -78,26 +42,26 @@
     {
       "dt": 1772841600,
       "main": {
-        "temp": 54.14,
-        "feels_like": 52.97,
-        "temp_min": 50.68,
-        "temp_max": 54.14,
+        "temp": 53.01,
+        "feels_like": 51.85,
+        "temp_min": 49.53,
+        "temp_max": 53.01,
         "pressure": 1022,
         "sea_level": 1022,
         "grnd_level": 1013,
-        "humidity": 79,
-        "temp_kf": 1.92
+        "humidity": 82,
+        "temp_kf": 1.93
       },
       "weather": [
         {
-          "id": 804,
+          "id": 803,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "broken clouds",
           "icon": "04n"
         }
       ],
       "clouds": {
-        "all": 89
+        "all": 59
       },
       "wind": {
         "speed": 3.49,
@@ -114,10 +78,10 @@
     {
       "dt": 1772852400,
       "main": {
-        "temp": 47.23,
-        "feels_like": 45.91,
-        "temp_min": 47.23,
-        "temp_max": 47.23,
+        "temp": 46.42,
+        "feels_like": 44.98,
+        "temp_min": 46.42,
+        "temp_max": 46.42,
         "pressure": 1023,
         "sea_level": 1023,
         "grnd_level": 1013,
@@ -150,10 +114,10 @@
     {
       "dt": 1772863200,
       "main": {
-        "temp": 47.16,
-        "feels_like": 45.34,
-        "temp_min": 47.16,
-        "temp_max": 47.16,
+        "temp": 47.55,
+        "feels_like": 45.79,
+        "temp_min": 47.55,
+        "temp_max": 47.55,
         "pressure": 1023,
         "sea_level": 1023,
         "grnd_level": 1013,
@@ -1463,19 +1427,58 @@
         "pod": "d"
       },
       "dt_txt": "2026-03-11 15:00:00"
+    },
+    {
+      "dt": 1773252000,
+      "main": {
+        "temp": 53.78,
+        "feels_like": 52.14,
+        "temp_min": 53.78,
+        "temp_max": 53.78,
+        "pressure": 1014,
+        "sea_level": 1014,
+        "grnd_level": 1004,
+        "humidity": 70,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 10.4,
+        "deg": 220,
+        "gust": 20.15
+      },
+      "visibility": 10000,
+      "pop": 0.31,
+      "rain": {
+        "3h": 0.21
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-03-11 18:00:00"
     }
   ],
   "city": {
     "id": 2978048,
     "name": "Saint-Merri",
     "coord": {
-      "lat": 48.8566,
-      "lon": 2.3522
+      "lat": 48.8575,
+      "lon": 2.3514
     },
     "country": "FR",
     "population": 0,
     "timezone": 3600,
     "sunrise": 1772778191,
-    "sunset": 1772818855
+    "sunset": 1772818856
   }
 }

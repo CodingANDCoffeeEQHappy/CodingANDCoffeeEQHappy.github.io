@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1773457200,
-      "main": {
-        "temp": 21.6,
-        "feels_like": 21.98,
-        "temp_min": 18.99,
-        "temp_max": 21.6,
-        "pressure": 1014,
-        "sea_level": 1014,
-        "grnd_level": 890,
-        "humidity": 83,
-        "temp_kf": 2.61
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 75
-      },
-      "wind": {
-        "speed": 1.98,
-        "deg": 332,
-        "gust": 3.65
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-03-14 03:00:00"
-    },
-    {
       "dt": 1773468000,
       "main": {
-        "temp": 20.5,
-        "feels_like": 20.88,
-        "temp_min": 18.29,
-        "temp_max": 20.5,
-        "pressure": 1013,
-        "sea_level": 1013,
+        "temp": 18.79,
+        "feels_like": 19.07,
+        "temp_min": 18.27,
+        "temp_max": 18.79,
+        "pressure": 1016,
+        "sea_level": 1016,
         "grnd_level": 888,
-        "humidity": 87,
-        "temp_kf": 2.21
+        "humidity": 90,
+        "temp_kf": 0.52
       },
       "weather": [
         {
-          "id": 803,
+          "id": 804,
           "main": "Clouds",
-          "description": "broken clouds",
+          "description": "overcast clouds",
           "icon": "04n"
         }
       ],
       "clouds": {
-        "all": 83
+        "all": 100
       },
       "wind": {
         "speed": 1.87,
@@ -78,15 +42,15 @@
     {
       "dt": 1773478800,
       "main": {
-        "temp": 18.92,
-        "feels_like": 19.27,
-        "temp_min": 17.58,
-        "temp_max": 18.92,
-        "pressure": 1013,
-        "sea_level": 1013,
+        "temp": 18.19,
+        "feels_like": 18.49,
+        "temp_min": 17.76,
+        "temp_max": 18.19,
+        "pressure": 1014,
+        "sea_level": 1014,
         "grnd_level": 889,
-        "humidity": 92,
-        "temp_kf": 1.34
+        "humidity": 93,
+        "temp_kf": 0.43
       },
       "weather": [
         {
@@ -97,7 +61,7 @@
         }
       ],
       "clouds": {
-        "all": 54
+        "all": 62
       },
       "wind": {
         "speed": 1.49,
@@ -1529,19 +1493,58 @@
         "pod": "n"
       },
       "dt_txt": "2026-03-19 00:00:00"
+    },
+    {
+      "dt": 1773889200,
+      "main": {
+        "temp": 19.07,
+        "feels_like": 19.41,
+        "temp_min": 19.07,
+        "temp_max": 19.07,
+        "pressure": 1012,
+        "sea_level": 1012,
+        "grnd_level": 888,
+        "humidity": 91,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 0.72,
+        "deg": 320,
+        "gust": 0.84
+      },
+      "visibility": 10000,
+      "pop": 1,
+      "rain": {
+        "3h": 2.46
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-03-19 03:00:00"
     }
   ],
   "city": {
-    "id": 3461936,
-    "name": "Guará",
+    "id": 3469058,
+    "name": "Brasília",
     "coord": {
       "lat": -15.7975,
       "lon": -47.8919
     },
     "country": "BR",
-    "population": 0,
+    "population": 1000000,
     "timezone": -10800,
-    "sunrise": 1773393264,
-    "sunset": 1773437273
+    "sunrise": 1773479673,
+    "sunset": 1773523629
   }
 }

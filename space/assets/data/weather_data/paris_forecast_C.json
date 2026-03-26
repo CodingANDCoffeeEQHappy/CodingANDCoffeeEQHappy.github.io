@@ -4,56 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1774526400,
-      "main": {
-        "temp": 8.87,
-        "feels_like": 6.23,
-        "temp_min": 8.87,
-        "temp_max": 8.87,
-        "pressure": 1021,
-        "sea_level": 1021,
-        "grnd_level": 1011,
-        "humidity": 54,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 500,
-          "main": "Rain",
-          "description": "light rain",
-          "icon": "10d"
-        }
-      ],
-      "clouds": {
-        "all": 76
-      },
-      "wind": {
-        "speed": 4.86,
-        "deg": 331,
-        "gust": 7.15
-      },
-      "visibility": 10000,
-      "pop": 0.89,
-      "rain": {
-        "3h": 0.61
-      },
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-03-26 12:00:00"
-    },
-    {
       "dt": 1774537200,
       "main": {
-        "temp": 9.04,
-        "feels_like": 6.17,
-        "temp_min": 9.04,
-        "temp_max": 9.37,
+        "temp": 8.23,
+        "feels_like": 5.15,
+        "temp_min": 8.23,
+        "temp_max": 9.19,
         "pressure": 1021,
         "sea_level": 1021,
         "grnd_level": 1010,
-        "humidity": 48,
-        "temp_kf": -0.33
+        "humidity": 62,
+        "temp_kf": -0.96
       },
       "weather": [
         {
@@ -64,7 +25,7 @@
         }
       ],
       "clouds": {
-        "all": 84
+        "all": 83
       },
       "wind": {
         "speed": 5.57,
@@ -84,15 +45,15 @@
     {
       "dt": 1774548000,
       "main": {
-        "temp": 7.57,
-        "feels_like": 4.47,
+        "temp": 7.2,
+        "feels_like": 4,
         "temp_min": 6.92,
-        "temp_max": 7.57,
+        "temp_max": 7.2,
         "pressure": 1022,
         "sea_level": 1022,
         "grnd_level": 1012,
-        "humidity": 43,
-        "temp_kf": 0.65
+        "humidity": 50,
+        "temp_kf": 0.28
       },
       "weather": [
         {
@@ -1466,19 +1427,55 @@
         "pod": "d"
       },
       "dt_txt": "2026-03-31 09:00:00"
+    },
+    {
+      "dt": 1774958400,
+      "main": {
+        "temp": 15.32,
+        "feels_like": 14.34,
+        "temp_min": 15.32,
+        "temp_max": 15.32,
+        "pressure": 1032,
+        "sea_level": 1032,
+        "grnd_level": 1022,
+        "humidity": 55,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "all": 92
+      },
+      "wind": {
+        "speed": 3.01,
+        "deg": 328,
+        "gust": 5.35
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-03-31 12:00:00"
     }
   ],
   "city": {
     "id": 6455259,
     "name": "Paris",
     "coord": {
-      "lat": 48.8566,
-      "lon": 2.3522
+      "lat": 48.856,
+      "lon": 2.35
     },
     "country": "FR",
     "population": 0,
     "timezone": 3600,
     "sunrise": 1774503673,
-    "sunset": 1774548674
+    "sunset": 1774548675
   }
 }

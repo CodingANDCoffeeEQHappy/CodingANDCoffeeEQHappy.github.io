@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1774580400,
-      "main": {
-        "temp": 0.53,
-        "feels_like": 0.53,
-        "temp_min": 0.53,
-        "temp_max": 1.19,
-        "pressure": 1024,
-        "sea_level": 1024,
-        "grnd_level": 1014,
-        "humidity": 86,
-        "temp_kf": -0.66
-      },
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "clouds": {
-        "all": 0
-      },
-      "wind": {
-        "speed": 0.32,
-        "deg": 34,
-        "gust": 0.3
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-03-27 03:00:00"
-    },
-    {
       "dt": 1774591200,
       "main": {
-        "temp": 0.8,
-        "feels_like": 0.8,
-        "temp_min": 0.8,
-        "temp_max": 1.33,
-        "pressure": 1024,
-        "sea_level": 1024,
+        "temp": 1.23,
+        "feels_like": 1.23,
+        "temp_min": 1.23,
+        "temp_max": 1.23,
+        "pressure": 1025,
+        "sea_level": 1025,
         "grnd_level": 1015,
-        "humidity": 78,
-        "temp_kf": -0.53
+        "humidity": 76,
+        "temp_kf": 0
       },
       "weather": [
         {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01d"
+          "id": 801,
+          "main": "Clouds",
+          "description": "few clouds",
+          "icon": "02d"
         }
       ],
       "clouds": {
-        "all": 8
+        "all": 24
       },
       "wind": {
         "speed": 0.87,
@@ -78,15 +42,15 @@
     {
       "dt": 1774602000,
       "main": {
-        "temp": 5.4,
-        "feels_like": 5.4,
-        "temp_min": 5.4,
-        "temp_max": 7.84,
+        "temp": 3.13,
+        "feels_like": 3.13,
+        "temp_min": 3.13,
+        "temp_max": 6.94,
         "pressure": 1025,
         "sea_level": 1025,
         "grnd_level": 1015,
-        "humidity": 56,
-        "temp_kf": -2.44
+        "humidity": 68,
+        "temp_kf": -3.81
       },
       "weather": [
         {
@@ -97,7 +61,7 @@
         }
       ],
       "clouds": {
-        "all": 16
+        "all": 24
       },
       "wind": {
         "speed": 0.8,
@@ -114,15 +78,15 @@
     {
       "dt": 1774612800,
       "main": {
-        "temp": 9.78,
-        "feels_like": 9.32,
-        "temp_min": 9.78,
+        "temp": 6.93,
+        "feels_like": 6.05,
+        "temp_min": 6.93,
         "temp_max": 9.78,
         "pressure": 1024,
         "sea_level": 1024,
         "grnd_level": 1014,
-        "humidity": 30,
-        "temp_kf": 0
+        "humidity": 45,
+        "temp_kf": -2.85
       },
       "weather": [
         {
@@ -133,7 +97,7 @@
         }
       ],
       "clouds": {
-        "all": 35
+        "all": 31
       },
       "wind": {
         "speed": 1.58,
@@ -1466,14 +1430,53 @@
         "pod": "n"
       },
       "dt_txt": "2026-04-01 00:00:00"
+    },
+    {
+      "dt": 1775012400,
+      "main": {
+        "temp": 10.52,
+        "feels_like": 9.98,
+        "temp_min": 10.52,
+        "temp_max": 10.52,
+        "pressure": 1029,
+        "sea_level": 1029,
+        "grnd_level": 1019,
+        "humidity": 90,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 95
+      },
+      "wind": {
+        "speed": 2.06,
+        "deg": 303,
+        "gust": 6.5
+      },
+      "visibility": 10000,
+      "pop": 0.2,
+      "rain": {
+        "3h": 0.12
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-04-01 03:00:00"
     }
   ],
   "city": {
-    "id": 2978048,
-    "name": "Saint-Merri",
+    "id": 6455259,
+    "name": "Paris",
     "coord": {
-      "lat": 48.8566,
-      "lon": 2.3522
+      "lat": 48.8575,
+      "lon": 2.3514
     },
     "country": "FR",
     "population": 0,

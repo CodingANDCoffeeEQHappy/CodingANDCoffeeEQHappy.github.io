@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1774839600,
-      "main": {
-        "temp": 56.21,
-        "feels_like": 53.22,
-        "temp_min": 51.75,
-        "temp_max": 56.21,
-        "pressure": 1028,
-        "sea_level": 1028,
-        "grnd_level": 1020,
-        "humidity": 36,
-        "temp_kf": 2.48
-      },
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "clouds": {
-        "all": 0
-      },
-      "wind": {
-        "speed": 10.25,
-        "deg": 194,
-        "gust": 32.75
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-03-30 03:00:00"
-    },
-    {
       "dt": 1774850400,
       "main": {
-        "temp": 52.88,
-        "feels_like": 49.75,
-        "temp_min": 46.24,
-        "temp_max": 52.88,
-        "pressure": 1028,
-        "sea_level": 1028,
+        "temp": 55.8,
+        "feels_like": 52.72,
+        "temp_min": 50.56,
+        "temp_max": 55.8,
+        "pressure": 1027,
+        "sea_level": 1027,
         "grnd_level": 1019,
-        "humidity": 40,
-        "temp_kf": 3.69
+        "humidity": 35,
+        "temp_kf": 2.91
       },
       "weather": [
         {
-          "id": 802,
+          "id": 804,
           "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03n"
+          "description": "overcast clouds",
+          "icon": "04n"
         }
       ],
       "clouds": {
-        "all": 33
+        "all": 100
       },
       "wind": {
         "speed": 10.83,
@@ -78,26 +42,26 @@
     {
       "dt": 1774861200,
       "main": {
-        "temp": 49.17,
-        "feels_like": 44.6,
-        "temp_min": 45.66,
-        "temp_max": 49.17,
+        "temp": 52.97,
+        "feels_like": 49.95,
+        "temp_min": 47.32,
+        "temp_max": 52.97,
         "pressure": 1027,
         "sea_level": 1027,
         "grnd_level": 1018,
-        "humidity": 52,
-        "temp_kf": 1.95
+        "humidity": 42,
+        "temp_kf": 3.14
       },
       "weather": [
         {
-          "id": 803,
+          "id": 804,
           "main": "Clouds",
-          "description": "broken clouds",
+          "description": "overcast clouds",
           "icon": "04n"
         }
       ],
       "clouds": {
-        "all": 67
+        "all": 100
       },
       "wind": {
         "speed": 11.27,
@@ -114,15 +78,15 @@
     {
       "dt": 1774872000,
       "main": {
-        "temp": 53.38,
-        "feels_like": 51.67,
+        "temp": 54.19,
+        "feels_like": 52.03,
         "temp_min": 53.38,
-        "temp_max": 53.38,
+        "temp_max": 54.19,
         "pressure": 1027,
         "sea_level": 1027,
         "grnd_level": 1018,
-        "humidity": 69,
-        "temp_kf": 0
+        "humidity": 58,
+        "temp_kf": 0.45
       },
       "weather": [
         {
@@ -1463,6 +1427,45 @@
         "pod": "n"
       },
       "dt_txt": "2026-04-04 00:00:00"
+    },
+    {
+      "dt": 1775271600,
+      "main": {
+        "temp": 69.44,
+        "feels_like": 69.42,
+        "temp_min": 69.44,
+        "temp_max": 69.44,
+        "pressure": 1022,
+        "sea_level": 1022,
+        "grnd_level": 1014,
+        "humidity": 71,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 7.47,
+        "deg": 220,
+        "gust": 27.34
+      },
+      "visibility": 10000,
+      "pop": 0.38,
+      "rain": {
+        "3h": 0.18
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-04-04 03:00:00"
     }
   ],
   "city": {
@@ -1475,7 +1478,7 @@
     "country": "US",
     "population": 601723,
     "timezone": -14400,
-    "sunrise": 1774781843,
-    "sunset": 1774826889
+    "sunrise": 1774868149,
+    "sunset": 1774913346
   }
 }

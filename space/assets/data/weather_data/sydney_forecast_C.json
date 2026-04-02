@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1775098800,
-      "main": {
-        "temp": 25.05,
-        "feels_like": 25.33,
-        "temp_min": 25.05,
-        "temp_max": 25.09,
-        "pressure": 1021,
-        "sea_level": 1021,
-        "grnd_level": 1016,
-        "humidity": 66,
-        "temp_kf": -0.04
-      },
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "clouds": {
-        "all": 40
-      },
-      "wind": {
-        "speed": 4.57,
-        "deg": 64,
-        "gust": 4.1
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-04-02 03:00:00"
-    },
-    {
       "dt": 1775109600,
       "main": {
-        "temp": 24.59,
-        "feels_like": 24.8,
-        "temp_min": 23.68,
-        "temp_max": 24.59,
-        "pressure": 1021,
-        "sea_level": 1021,
+        "temp": 26.17,
+        "feels_like": 26.17,
+        "temp_min": 23.52,
+        "temp_max": 26.17,
+        "pressure": 1020,
+        "sea_level": 1020,
         "grnd_level": 1015,
-        "humidity": 65,
-        "temp_kf": 0.91
+        "humidity": 61,
+        "temp_kf": 2.65
       },
       "weather": [
         {
-          "id": 802,
+          "id": 801,
           "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
+          "description": "few clouds",
+          "icon": "02d"
         }
       ],
       "clouds": {
-        "all": 32
+        "all": 20
       },
       "wind": {
         "speed": 5.16,
@@ -78,15 +42,15 @@
     {
       "dt": 1775120400,
       "main": {
-        "temp": 22.88,
-        "feels_like": 23.16,
+        "temp": 24.71,
+        "feels_like": 24.99,
         "temp_min": 21.79,
-        "temp_max": 22.88,
-        "pressure": 1021,
-        "sea_level": 1021,
+        "temp_max": 24.71,
+        "pressure": 1020,
+        "sea_level": 1020,
         "grnd_level": 1016,
-        "humidity": 74,
-        "temp_kf": 1.09
+        "humidity": 67,
+        "temp_kf": 2.92
       },
       "weather": [
         {
@@ -97,7 +61,7 @@
         }
       ],
       "clouds": {
-        "all": 15
+        "all": 14
       },
       "wind": {
         "speed": 4.58,
@@ -114,15 +78,15 @@
     {
       "dt": 1775131200,
       "main": {
-        "temp": 20.7,
-        "feels_like": 21.07,
+        "temp": 22.52,
+        "feels_like": 22.86,
         "temp_min": 20.7,
-        "temp_max": 20.7,
-        "pressure": 1022,
-        "sea_level": 1022,
+        "temp_max": 22.52,
+        "pressure": 1021,
+        "sea_level": 1021,
         "grnd_level": 1017,
-        "humidity": 86,
-        "temp_kf": 0
+        "humidity": 78,
+        "temp_kf": 1.82
       },
       "weather": [
         {
@@ -133,7 +97,7 @@
         }
       ],
       "clouds": {
-        "all": 1
+        "all": 7
       },
       "wind": {
         "speed": 2.95,
@@ -1490,17 +1454,53 @@
         "pod": "d"
       },
       "dt_txt": "2026-04-07 00:00:00"
+    },
+    {
+      "dt": 1775530800,
+      "main": {
+        "temp": 26.51,
+        "feels_like": 26.51,
+        "temp_min": 26.51,
+        "temp_max": 26.51,
+        "pressure": 1013,
+        "sea_level": 1013,
+        "grnd_level": 1008,
+        "humidity": 44,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "all": 73
+      },
+      "wind": {
+        "speed": 2.25,
+        "deg": 73,
+        "gust": 2.1
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-04-07 03:00:00"
     }
   ],
   "city": {
-    "id": 6619279,
+    "id": 2147714,
     "name": "Sydney",
     "coord": {
       "lat": -33.8688,
       "lon": 151.2093
     },
     "country": "AU",
-    "population": 0,
+    "population": 1000000,
     "timezone": 39600,
     "sunrise": 1775074048,
     "sunset": 1775116201

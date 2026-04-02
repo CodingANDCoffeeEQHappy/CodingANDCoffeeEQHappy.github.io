@@ -4,53 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1775120400,
-      "main": {
-        "temp": 13.83,
-        "feels_like": 12.89,
-        "temp_min": 10.83,
-        "temp_max": 13.83,
-        "pressure": 1013,
-        "sea_level": 1013,
-        "grnd_level": 761,
-        "humidity": 62,
-        "temp_kf": 3
-      },
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "clouds": {
-        "all": 0
-      },
-      "wind": {
-        "speed": 0.79,
-        "deg": 316,
-        "gust": 1.02
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-04-02 09:00:00"
-    },
-    {
       "dt": 1775131200,
       "main": {
-        "temp": 12.66,
-        "feels_like": 11.52,
-        "temp_min": 10.33,
-        "temp_max": 12.66,
+        "temp": 10.52,
+        "feels_like": 9.19,
+        "temp_min": 10.19,
+        "temp_max": 10.52,
         "pressure": 1013,
         "sea_level": 1013,
         "grnd_level": 762,
-        "humidity": 59,
-        "temp_kf": 2.33
+        "humidity": 60,
+        "temp_kf": 0.33
       },
       "weather": [
         {
@@ -78,15 +42,15 @@
     {
       "dt": 1775142000,
       "main": {
-        "temp": 15.79,
-        "feels_like": 14.73,
-        "temp_min": 15.79,
+        "temp": 14.74,
+        "feels_like": 13.58,
+        "temp_min": 14.74,
         "temp_max": 16.77,
         "pressure": 1014,
         "sea_level": 1014,
         "grnd_level": 763,
         "humidity": 50,
-        "temp_kf": -0.98
+        "temp_kf": -2.03
       },
       "weather": [
         {
@@ -1484,6 +1448,45 @@
         "pod": "n"
       },
       "dt_txt": "2026-04-07 06:00:00"
+    },
+    {
+      "dt": 1775552400,
+      "main": {
+        "temp": 16.02,
+        "feels_like": 15.35,
+        "temp_min": 16.02,
+        "temp_max": 16.02,
+        "pressure": 1015,
+        "sea_level": 1015,
+        "grnd_level": 763,
+        "humidity": 64,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 45
+      },
+      "wind": {
+        "speed": 1.97,
+        "deg": 3,
+        "gust": 1.42
+      },
+      "visibility": 10000,
+      "pop": 0.5,
+      "rain": {
+        "3h": 0.3
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-04-07 09:00:00"
     }
   ],
   "city": {

@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1775325600,
-      "main": {
-        "temp": 69.53,
-        "feels_like": 67.46,
-        "temp_min": 69.53,
-        "temp_max": 69.53,
-        "pressure": 1015,
-        "sea_level": 1015,
-        "grnd_level": 764,
-        "humidity": 27,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 51
-      },
-      "wind": {
-        "speed": 12.33,
-        "deg": 92,
-        "gust": 12.3
-      },
-      "visibility": 10000,
-      "pop": 0.01,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-04-04 18:00:00"
-    },
-    {
       "dt": 1775336400,
       "main": {
         "temp": 68.63,
@@ -1508,19 +1472,58 @@
         "pod": "d"
       },
       "dt_txt": "2026-04-09 15:00:00"
+    },
+    {
+      "dt": 1775757600,
+      "main": {
+        "temp": 65.88,
+        "feels_like": 65.08,
+        "temp_min": 65.88,
+        "temp_max": 65.88,
+        "pressure": 1018,
+        "sea_level": 1018,
+        "grnd_level": 765,
+        "humidity": 62,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 86
+      },
+      "wind": {
+        "speed": 1.54,
+        "deg": 213,
+        "gust": 2.33
+      },
+      "visibility": 10000,
+      "pop": 1,
+      "rain": {
+        "3h": 1.83
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-04-09 18:00:00"
     }
   ],
   "city": {
     "id": 71137,
     "name": "Sanaa",
     "coord": {
-      "lat": 15.3545,
-      "lon": 44.2064
+      "lat": 15.3522,
+      "lon": 44.2095
     },
     "country": "YE",
     "population": 1937451,
     "timezone": 10800,
     "sunrise": 1775271384,
-    "sunset": 1775315743
+    "sunset": 1775315742
   }
 }

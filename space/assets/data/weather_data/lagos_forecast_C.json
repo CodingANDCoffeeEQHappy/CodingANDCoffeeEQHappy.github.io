@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1776178800,
-      "main": {
-        "temp": 30.44,
-        "feels_like": 35.87,
-        "temp_min": 30.44,
-        "temp_max": 30.44,
-        "pressure": 1007,
-        "sea_level": 1007,
-        "grnd_level": 1006,
-        "humidity": 69,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "clouds": {
-        "all": 42
-      },
-      "wind": {
-        "speed": 6.84,
-        "deg": 216,
-        "gust": 6.5
-      },
-      "visibility": 10000,
-      "pop": 0.11,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-04-14 15:00:00"
-    },
-    {
       "dt": 1776189600,
       "main": {
         "temp": 30.04,
@@ -1463,17 +1427,56 @@
         "pod": "d"
       },
       "dt_txt": "2026-04-19 12:00:00"
+    },
+    {
+      "dt": 1776610800,
+      "main": {
+        "temp": 30.35,
+        "feels_like": 35.14,
+        "temp_min": 30.35,
+        "temp_max": 30.35,
+        "pressure": 1006,
+        "sea_level": 1006,
+        "grnd_level": 1005,
+        "humidity": 67,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 5.87,
+        "deg": 177,
+        "gust": 5.97
+      },
+      "visibility": 10000,
+      "pop": 0.65,
+      "rain": {
+        "3h": 0.23
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-04-19 15:00:00"
     }
   ],
   "city": {
-    "id": 2332459,
-    "name": "Lagos",
+    "id": 2566677,
+    "name": "Shogunle",
     "coord": {
       "lat": 6.5244,
       "lon": 3.3792
     },
     "country": "NG",
-    "population": 9000000,
+    "population": 0,
     "timezone": 3600,
     "sunrise": 1776145132,
     "sunset": 1776189258

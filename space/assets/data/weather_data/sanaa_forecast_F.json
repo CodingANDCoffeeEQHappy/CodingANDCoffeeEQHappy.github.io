@@ -4,42 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1777150800,
-      "main": {
-        "temp": 68.14,
-        "feels_like": 65.84,
-        "temp_min": 68.14,
-        "temp_max": 68.14,
-        "pressure": 1015,
-        "sea_level": 1015,
-        "grnd_level": 763,
-        "humidity": 25,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
-        }
-      ],
-      "clouds": {
-        "all": 83
-      },
-      "wind": {
-        "speed": 4.83,
-        "deg": 89,
-        "gust": 7.36
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-04-25 21:00:00"
-    },
-    {
       "dt": 1777161600,
       "main": {
         "temp": 67.26,
@@ -1508,19 +1472,58 @@
         "pod": "n"
       },
       "dt_txt": "2026-04-30 18:00:00"
+    },
+    {
+      "dt": 1777582800,
+      "main": {
+        "temp": 65.35,
+        "feels_like": 64.42,
+        "temp_min": 65.35,
+        "temp_max": 65.35,
+        "pressure": 1015,
+        "sea_level": 1015,
+        "grnd_level": 763,
+        "humidity": 60,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 3.78,
+        "deg": 23,
+        "gust": 6.82
+      },
+      "visibility": 10000,
+      "pop": 1,
+      "rain": {
+        "3h": 2.4
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-04-30 21:00:00"
     }
   ],
   "city": {
-    "id": 6940658,
-    "name": "Old City",
+    "id": 71137,
+    "name": "Sanaa",
     "coord": {
       "lat": 15.3545,
       "lon": 44.2064
     },
     "country": "YE",
-    "population": 0,
+    "population": 1937451,
     "timezone": 10800,
-    "sunrise": 1777084968,
-    "sunset": 1777130355
+    "sunrise": 1777171335,
+    "sunset": 1777216769
   }
 }

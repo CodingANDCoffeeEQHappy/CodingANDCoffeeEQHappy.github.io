@@ -4,17 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1777453200,
+      "dt": 1777464000,
       "main": {
-        "temp": 14.86,
-        "feels_like": 13.79,
-        "temp_min": 14.86,
-        "temp_max": 15.86,
-        "pressure": 1018,
-        "sea_level": 1018,
+        "temp": 19.27,
+        "feels_like": 18.4,
+        "temp_min": 19.27,
+        "temp_max": 19.92,
+        "pressure": 1017,
+        "sea_level": 1017,
         "grnd_level": 1008,
-        "humidity": 53,
-        "temp_kf": -1
+        "humidity": 44,
+        "temp_kf": -0.65
       },
       "weather": [
         {
@@ -26,42 +26,6 @@
       ],
       "clouds": {
         "all": 0
-      },
-      "wind": {
-        "speed": 5.24,
-        "deg": 81,
-        "gust": 10.03
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-04-29 09:00:00"
-    },
-    {
-      "dt": 1777464000,
-      "main": {
-        "temp": 16.42,
-        "feels_like": 15.42,
-        "temp_min": 16.42,
-        "temp_max": 19.54,
-        "pressure": 1018,
-        "sea_level": 1018,
-        "grnd_level": 1008,
-        "humidity": 50,
-        "temp_kf": -3.12
-      },
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "clouds": {
-        "all": 33
       },
       "wind": {
         "speed": 6.02,
@@ -78,26 +42,26 @@
     {
       "dt": 1777474800,
       "main": {
-        "temp": 19.18,
-        "feels_like": 18.3,
-        "temp_min": 19.18,
-        "temp_max": 21.34,
+        "temp": 19.85,
+        "feels_like": 19.01,
+        "temp_min": 19.85,
+        "temp_max": 21.01,
         "pressure": 1017,
         "sea_level": 1017,
         "grnd_level": 1007,
-        "humidity": 44,
-        "temp_kf": -2.16
+        "humidity": 43,
+        "temp_kf": -1.16
       },
       "weather": [
         {
-          "id": 802,
+          "id": 801,
           "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
+          "description": "few clouds",
+          "icon": "02d"
         }
       ],
       "clouds": {
-        "all": 45
+        "all": 23
       },
       "wind": {
         "speed": 7.41,
@@ -114,15 +78,15 @@
     {
       "dt": 1777485600,
       "main": {
-        "temp": 19.11,
-        "feels_like": 18.36,
+        "temp": 19.16,
+        "feels_like": 18.38,
         "temp_min": 19.11,
-        "temp_max": 19.11,
+        "temp_max": 19.16,
         "pressure": 1017,
         "sea_level": 1017,
         "grnd_level": 1008,
-        "humidity": 49,
-        "temp_kf": 0
+        "humidity": 48,
+        "temp_kf": 0.05
       },
       "weather": [
         {
@@ -133,7 +97,7 @@
         }
       ],
       "clouds": {
-        "all": 84
+        "all": 56
       },
       "wind": {
         "speed": 6.25,
@@ -1475,14 +1439,53 @@
         "pod": "d"
       },
       "dt_txt": "2026-05-04 06:00:00"
+    },
+    {
+      "dt": 1777885200,
+      "main": {
+        "temp": 14.74,
+        "feels_like": 14.54,
+        "temp_min": 14.74,
+        "temp_max": 14.74,
+        "pressure": 1013,
+        "sea_level": 1013,
+        "grnd_level": 1003,
+        "humidity": 87,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 2.14,
+        "deg": 248,
+        "gust": 4.98
+      },
+      "visibility": 10000,
+      "pop": 0.54,
+      "rain": {
+        "3h": 0.3
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-05-04 09:00:00"
     }
   ],
   "city": {
-    "id": 2978048,
-    "name": "Saint-Merri",
+    "id": 6455259,
+    "name": "Paris",
     "coord": {
-      "lat": 48.8566,
-      "lon": 2.3522
+      "lat": 48.8575,
+      "lon": 2.3514
     },
     "country": "FR",
     "population": 0,

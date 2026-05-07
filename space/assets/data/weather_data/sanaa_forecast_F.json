@@ -4,45 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1778166000,
-      "main": {
-        "temp": 77.77,
-        "feels_like": 76.19,
-        "temp_min": 77.77,
-        "temp_max": 77.77,
-        "pressure": 1010,
-        "sea_level": 1010,
-        "grnd_level": 761,
-        "humidity": 20,
-        "temp_kf": 0
-      },
-      "weather": [
-        {
-          "id": 500,
-          "main": "Rain",
-          "description": "light rain",
-          "icon": "10d"
-        }
-      ],
-      "clouds": {
-        "all": 93
-      },
-      "wind": {
-        "speed": 11.1,
-        "deg": 79,
-        "gust": 12.91
-      },
-      "visibility": 10000,
-      "pop": 0.3,
-      "rain": {
-        "3h": 0.15
-      },
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-05-07 15:00:00"
-    },
-    {
       "dt": 1778176800,
       "main": {
         "temp": 76.33,
@@ -1448,19 +1409,55 @@
         "pod": "d"
       },
       "dt_txt": "2026-05-12 12:00:00"
+    },
+    {
+      "dt": 1778598000,
+      "main": {
+        "temp": 75.61,
+        "feels_like": 73.49,
+        "temp_min": 75.61,
+        "temp_max": 75.61,
+        "pressure": 1012,
+        "sea_level": 1012,
+        "grnd_level": 762,
+        "humidity": 13,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "all": 57
+      },
+      "wind": {
+        "speed": 15.95,
+        "deg": 52,
+        "gust": 12.82
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-05-12 15:00:00"
     }
   ],
   "city": {
     "id": 71137,
     "name": "Sanaa",
     "coord": {
-      "lat": 15.3522,
-      "lon": 44.2095
+      "lat": 15.3545,
+      "lon": 44.2064
     },
     "country": "YE",
     "population": 1937451,
     "timezone": 10800,
     "sunrise": 1778121428,
-    "sunset": 1778167338
+    "sunset": 1778167339
   }
 }

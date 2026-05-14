@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1778770800,
-      "main": {
-        "temp": 56.79,
-        "feels_like": 55.6,
-        "temp_min": 56.79,
-        "temp_max": 57.54,
-        "pressure": 1011,
-        "sea_level": 1011,
-        "grnd_level": 1003,
-        "humidity": 73,
-        "temp_kf": -0.42
-      },
-      "weather": [
-        {
-          "id": 804,
-          "main": "Clouds",
-          "description": "overcast clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": {
-        "all": 100
-      },
-      "wind": {
-        "speed": 9.98,
-        "deg": 323,
-        "gust": 16.33
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-05-14 15:00:00"
-    },
-    {
       "dt": 1778781600,
       "main": {
-        "temp": 56.7,
-        "feels_like": 55.17,
-        "temp_min": 56.52,
-        "temp_max": 56.7,
+        "temp": 61.41,
+        "feels_like": 59.88,
+        "temp_min": 58.53,
+        "temp_max": 61.41,
         "pressure": 1011,
         "sea_level": 1011,
         "grnd_level": 1003,
-        "humidity": 66,
-        "temp_kf": 0.1
+        "humidity": 56,
+        "temp_kf": 1.6
       },
       "weather": [
         {
-          "id": 804,
+          "id": 803,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "broken clouds",
           "icon": "04d"
         }
       ],
       "clouds": {
-        "all": 97
+        "all": 75
       },
       "wind": {
         "speed": 11.23,
@@ -78,26 +42,26 @@
     {
       "dt": 1778792400,
       "main": {
-        "temp": 61.81,
-        "feels_like": 60.31,
-        "temp_min": 61.81,
-        "temp_max": 64.31,
+        "temp": 62.22,
+        "feels_like": 60.67,
+        "temp_min": 62.22,
+        "temp_max": 63.86,
         "pressure": 1011,
         "sea_level": 1011,
         "grnd_level": 1003,
-        "humidity": 56,
-        "temp_kf": -1.39
+        "humidity": 54,
+        "temp_kf": -0.91
       },
       "weather": [
         {
-          "id": 804,
+          "id": 803,
           "main": "Clouds",
-          "description": "overcast clouds",
+          "description": "broken clouds",
           "icon": "04d"
         }
       ],
       "clouds": {
-        "all": 100
+        "all": 83
       },
       "wind": {
         "speed": 9.8,
@@ -114,15 +78,15 @@
     {
       "dt": 1778803200,
       "main": {
-        "temp": 57.16,
-        "feels_like": 55.49,
+        "temp": 58.59,
+        "feels_like": 56.97,
         "temp_min": 57.16,
-        "temp_max": 57.16,
+        "temp_max": 58.59,
         "pressure": 1012,
         "sea_level": 1012,
         "grnd_level": 1004,
-        "humidity": 62,
-        "temp_kf": 0
+        "humidity": 60,
+        "temp_kf": 0.79
       },
       "weather": [
         {
@@ -133,7 +97,7 @@
         }
       ],
       "clouds": {
-        "all": 100
+        "all": 92
       },
       "wind": {
         "speed": 9.57,
@@ -1448,19 +1412,55 @@
         "pod": "d"
       },
       "dt_txt": "2026-05-19 12:00:00"
+    },
+    {
+      "dt": 1779202800,
+      "main": {
+        "temp": 88.32,
+        "feels_like": 86.85,
+        "temp_min": 88.32,
+        "temp_max": 88.32,
+        "pressure": 1020,
+        "sea_level": 1020,
+        "grnd_level": 1013,
+        "humidity": 34,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
+        }
+      ],
+      "clouds": {
+        "all": 0
+      },
+      "wind": {
+        "speed": 8.57,
+        "deg": 223,
+        "gust": 14.27
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-05-19 15:00:00"
     }
   ],
   "city": {
     "id": 4140963,
     "name": "Washington D.C.",
     "coord": {
-      "lat": 38.9072,
-      "lon": -77.0369
+      "lat": 38.9095,
+      "lon": -77.0436
     },
     "country": "US",
     "population": 601723,
     "timezone": -14400,
-    "sunrise": 1778752596,
-    "sunset": 1778803952
+    "sunrise": 1778752597,
+    "sunset": 1778803954
   }
 }

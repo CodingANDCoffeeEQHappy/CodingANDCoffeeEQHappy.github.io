@@ -4,64 +4,28 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1779375600,
-      "main": {
-        "temp": 75.4,
-        "feels_like": 75.04,
-        "temp_min": 74.88,
-        "temp_max": 75.4,
-        "pressure": 1026,
-        "sea_level": 1026,
-        "grnd_level": 1016,
-        "humidity": 51,
-        "temp_kf": 0.29
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": {
-        "all": 75
-      },
-      "wind": {
-        "speed": 5.99,
-        "deg": 121,
-        "gust": 4.74
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-05-21 15:00:00"
-    },
-    {
       "dt": 1779386400,
       "main": {
-        "temp": 74.5,
-        "feels_like": 74.08,
-        "temp_min": 72.72,
-        "temp_max": 74.5,
+        "temp": 75.02,
+        "feels_like": 74.66,
+        "temp_min": 73.4,
+        "temp_max": 75.02,
         "pressure": 1026,
         "sea_level": 1026,
         "grnd_level": 1016,
         "humidity": 52,
-        "temp_kf": 0.99
+        "temp_kf": 0.9
       },
       "weather": [
         {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
         }
       ],
       "clouds": {
-        "all": 53
+        "all": 0
       },
       "wind": {
         "speed": 6.82,
@@ -78,26 +42,26 @@
     {
       "dt": 1779397200,
       "main": {
-        "temp": 68.14,
-        "feels_like": 67.8,
-        "temp_min": 64.53,
-        "temp_max": 68.14,
-        "pressure": 1027,
-        "sea_level": 1027,
+        "temp": 72,
+        "feels_like": 71.62,
+        "temp_min": 65.97,
+        "temp_max": 72,
+        "pressure": 1026,
+        "sea_level": 1026,
         "grnd_level": 1017,
-        "humidity": 67,
-        "temp_kf": 2.01
+        "humidity": 58,
+        "temp_kf": 3.35
       },
       "weather": [
         {
-          "id": 803,
+          "id": 801,
           "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
+          "description": "few clouds",
+          "icon": "02n"
         }
       ],
       "clouds": {
-        "all": 67
+        "all": 21
       },
       "wind": {
         "speed": 3.87,
@@ -114,15 +78,15 @@
     {
       "dt": 1779408000,
       "main": {
-        "temp": 58.82,
-        "feels_like": 58.26,
+        "temp": 64.22,
+        "feels_like": 63.73,
         "temp_min": 58.82,
-        "temp_max": 58.82,
+        "temp_max": 64.22,
         "pressure": 1026,
         "sea_level": 1026,
         "grnd_level": 1017,
-        "humidity": 82,
-        "temp_kf": 0
+        "humidity": 72,
+        "temp_kf": 3
       },
       "weather": [
         {
@@ -133,7 +97,7 @@
         }
       ],
       "clouds": {
-        "all": 45
+        "all": 30
       },
       "wind": {
         "speed": 3.58,
@@ -1442,19 +1406,55 @@
         "pod": "d"
       },
       "dt_txt": "2026-05-26 12:00:00"
+    },
+    {
+      "dt": 1779807600,
+      "main": {
+        "temp": 88.29,
+        "feels_like": 86.22,
+        "temp_min": 88.29,
+        "temp_max": 88.29,
+        "pressure": 1026,
+        "sea_level": 1026,
+        "grnd_level": 1017,
+        "humidity": 31,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
+        }
+      ],
+      "clouds": {
+        "all": 6
+      },
+      "wind": {
+        "speed": 10.33,
+        "deg": 60,
+        "gust": 11.9
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-05-26 15:00:00"
     }
   ],
   "city": {
     "id": 6455259,
     "name": "Paris",
     "coord": {
-      "lat": 48.8558,
-      "lon": 2.3494
+      "lat": 48.8565,
+      "lon": 2.3524
     },
     "country": "FR",
     "population": 0,
     "timezone": 7200,
-    "sunrise": 1779336116,
-    "sunset": 1779391964
+    "sunrise": 1779336115,
+    "sunset": 1779391963
   }
 }

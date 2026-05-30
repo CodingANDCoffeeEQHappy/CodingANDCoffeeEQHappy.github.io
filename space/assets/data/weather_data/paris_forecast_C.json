@@ -4,17 +4,17 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1780153200,
+      "dt": 1780164000,
       "main": {
-        "temp": 33.2,
-        "feels_like": 32.73,
-        "temp_min": 30.49,
-        "temp_max": 33.2,
+        "temp": 32.16,
+        "feels_like": 31.83,
+        "temp_min": 28.02,
+        "temp_max": 32.16,
         "pressure": 1016,
         "sea_level": 1016,
         "grnd_level": 1007,
-        "humidity": 33,
-        "temp_kf": 2.71
+        "humidity": 36,
+        "temp_kf": 4.14
       },
       "weather": [
         {
@@ -26,42 +26,6 @@
       ],
       "clouds": {
         "all": 0
-      },
-      "wind": {
-        "speed": 3.03,
-        "deg": 219,
-        "gust": 3.53
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-05-30 15:00:00"
-    },
-    {
-      "dt": 1780164000,
-      "main": {
-        "temp": 31.58,
-        "feels_like": 30.81,
-        "temp_min": 28.35,
-        "temp_max": 31.58,
-        "pressure": 1016,
-        "sea_level": 1016,
-        "grnd_level": 1007,
-        "humidity": 34,
-        "temp_kf": 3.23
-      },
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02d"
-        }
-      ],
-      "clouds": {
-        "all": 20
       },
       "wind": {
         "speed": 3.4,
@@ -78,26 +42,26 @@
     {
       "dt": 1780174800,
       "main": {
-        "temp": 26.83,
-        "feels_like": 27.68,
-        "temp_min": 23.65,
-        "temp_max": 26.83,
+        "temp": 29.3,
+        "feels_like": 29.68,
+        "temp_min": 23.58,
+        "temp_max": 29.3,
         "pressure": 1016,
         "sea_level": 1016,
         "grnd_level": 1007,
-        "humidity": 57,
-        "temp_kf": 3.18
+        "humidity": 47,
+        "temp_kf": 5.72
       },
       "weather": [
         {
-          "id": 803,
+          "id": 802,
           "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
+          "description": "scattered clouds",
+          "icon": "03n"
         }
       ],
       "clouds": {
-        "all": 64
+        "all": 32
       },
       "wind": {
         "speed": 4.33,
@@ -114,15 +78,15 @@
     {
       "dt": 1780185600,
       "main": {
-        "temp": 15.77,
-        "feels_like": 15.62,
+        "temp": 21.23,
+        "feels_like": 21.21,
         "temp_min": 15.77,
-        "temp_max": 15.77,
-        "pressure": 1018,
-        "sea_level": 1018,
+        "temp_max": 21.23,
+        "pressure": 1017,
+        "sea_level": 1017,
         "grnd_level": 1008,
-        "humidity": 85,
-        "temp_kf": 0
+        "humidity": 69,
+        "temp_kf": 5.46
       },
       "weather": [
         {
@@ -133,7 +97,7 @@
         }
       ],
       "clouds": {
-        "all": 78
+        "all": 52
       },
       "wind": {
         "speed": 3.88,
@@ -1493,19 +1457,55 @@
         "pod": "d"
       },
       "dt_txt": "2026-06-04 12:00:00"
+    },
+    {
+      "dt": 1780585200,
+      "main": {
+        "temp": 20.66,
+        "feels_like": 19.88,
+        "temp_min": 20.66,
+        "temp_max": 20.66,
+        "pressure": 1013,
+        "sea_level": 1013,
+        "grnd_level": 1003,
+        "humidity": 42,
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "clouds": {
+        "all": 44
+      },
+      "wind": {
+        "speed": 5.57,
+        "deg": 265,
+        "gust": 7.82
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-06-04 15:00:00"
     }
   ],
   "city": {
     "id": 6455259,
     "name": "Paris",
     "coord": {
-      "lat": 48.856,
-      "lon": 2.349
+      "lat": 48.8575,
+      "lon": 2.3514
     },
     "country": "FR",
     "population": 0,
     "timezone": 7200,
-    "sunrise": 1780113205,
+    "sunrise": 1780113204,
     "sunset": 1780170190
   }
 }

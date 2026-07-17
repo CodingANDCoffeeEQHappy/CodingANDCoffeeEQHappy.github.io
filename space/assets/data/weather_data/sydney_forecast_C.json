@@ -4,58 +4,18 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1784311200,
-      "main": {
-        "temp": 12.27,
-        "feels_like": 11.67,
-        "temp_min": 12.27,
-        "temp_max": 12.6,
-        "pressure": 1031,
-        "sea_level": 1031,
-        "grnd_level": 1025,
-        "humidity": 81,
-        "temp_kf": -0.33,
-        "dew_point": 9.11
-      },
-      "weather": [
-        {
-          "id": 500,
-          "main": "Rain",
-          "description": "light rain",
-          "icon": "10n"
-        }
-      ],
-      "clouds": {
-        "all": 64
-      },
-      "wind": {
-        "speed": 2.98,
-        "deg": 159,
-        "gust": 4.2
-      },
-      "visibility": 10000,
-      "pop": 0.2,
-      "rain": {
-        "3h": 0.1
-      },
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-07-17 18:00:00"
-    },
-    {
       "dt": 1784322000,
       "main": {
-        "temp": 12.84,
-        "feels_like": 12.29,
-        "temp_min": 12.84,
-        "temp_max": 13.21,
-        "pressure": 1031,
-        "sea_level": 1031,
+        "temp": 12,
+        "feels_like": 11.34,
+        "temp_min": 12,
+        "temp_max": 13.13,
+        "pressure": 1030,
+        "sea_level": 1030,
         "grnd_level": 1026,
-        "humidity": 81,
-        "temp_kf": -0.37,
-        "dew_point": 9.66
+        "humidity": 80,
+        "temp_kf": -1.13,
+        "dew_point": 8.66
       },
       "weather": [
         {
@@ -66,7 +26,7 @@
         }
       ],
       "clouds": {
-        "all": 36
+        "all": 38
       },
       "wind": {
         "speed": 3.81,
@@ -86,16 +46,16 @@
     {
       "dt": 1784332800,
       "main": {
-        "temp": 17.24,
-        "feels_like": 16.77,
-        "temp_min": 17.24,
+        "temp": 15.31,
+        "feels_like": 14.72,
+        "temp_min": 15.31,
         "temp_max": 17.24,
-        "pressure": 1032,
-        "sea_level": 1032,
+        "pressure": 1031,
+        "sea_level": 1031,
         "grnd_level": 1027,
-        "humidity": 67,
-        "temp_kf": 0,
-        "dew_point": 10.61
+        "humidity": 70,
+        "temp_kf": -1.93,
+        "dew_point": 9.88
       },
       "weather": [
         {
@@ -106,7 +66,7 @@
         }
       ],
       "clouds": {
-        "all": 23
+        "all": 31
       },
       "wind": {
         "speed": 5.05,
@@ -1503,17 +1463,54 @@
         "pod": "n"
       },
       "dt_txt": "2026-07-22 15:00:00"
+    },
+    {
+      "dt": 1784743200,
+      "main": {
+        "temp": 10.24,
+        "feels_like": 9.25,
+        "temp_min": 10.24,
+        "temp_max": 10.24,
+        "pressure": 1024,
+        "sea_level": 1024,
+        "grnd_level": 1018,
+        "humidity": 74,
+        "temp_kf": 0,
+        "dew_point": 5.58
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "clouds": {
+        "all": 0
+      },
+      "wind": {
+        "speed": 3.88,
+        "deg": 259,
+        "gust": 6.36
+      },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-07-22 18:00:00"
     }
   ],
   "city": {
-    "id": 6619279,
+    "id": 2147714,
     "name": "Sydney",
     "coord": {
       "lat": -33.8688,
       "lon": 151.2093
     },
     "country": "AU",
-    "population": 0,
+    "population": 1000000,
     "timezone": 36000,
     "sunrise": 1784321807,
     "sunset": 1784358330

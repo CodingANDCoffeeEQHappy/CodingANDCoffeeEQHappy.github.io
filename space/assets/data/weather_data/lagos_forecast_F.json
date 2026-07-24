@@ -4,43 +4,6 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1784926800,
-      "main": {
-        "temp": 77.99,
-        "feels_like": 79.34,
-        "temp_min": 77.99,
-        "temp_max": 77.99,
-        "pressure": 1015,
-        "sea_level": 1015,
-        "grnd_level": 1014,
-        "humidity": 82,
-        "temp_kf": 0,
-        "dew_point": 72.05
-      },
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03n"
-        }
-      ],
-      "clouds": {
-        "all": 36
-      },
-      "wind": {
-        "speed": 9.95,
-        "deg": 223,
-        "gust": 12.91
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "n"
-      },
-      "dt_txt": "2026-07-24 21:00:00"
-    },
-    {
       "dt": 1784937600,
       "main": {
         "temp": 77.76,
@@ -1533,17 +1496,57 @@
         "pod": "d"
       },
       "dt_txt": "2026-07-29 18:00:00"
+    },
+    {
+      "dt": 1785358800,
+      "main": {
+        "temp": 76.96,
+        "feels_like": 78.21,
+        "temp_min": 76.96,
+        "temp_max": 76.96,
+        "pressure": 1015,
+        "sea_level": 1015,
+        "grnd_level": 1014,
+        "humidity": 82,
+        "temp_kf": 0,
+        "dew_point": 71.24
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "all": 100
+      },
+      "wind": {
+        "speed": 14.14,
+        "deg": 231,
+        "gust": 22.59
+      },
+      "visibility": 10000,
+      "pop": 0.5,
+      "rain": {
+        "3h": 0.14
+      },
+      "sys": {
+        "pod": "n"
+      },
+      "dt_txt": "2026-07-29 21:00:00"
     }
   ],
   "city": {
-    "id": 2332459,
-    "name": "Lagos",
+    "id": 2566677,
+    "name": "Shogunle",
     "coord": {
       "lat": 6.5244,
       "lon": 3.3792
     },
     "country": "NG",
-    "population": 9000000,
+    "population": 0,
     "timezone": 3600,
     "sunrise": 1784871587,
     "sunset": 1784916352

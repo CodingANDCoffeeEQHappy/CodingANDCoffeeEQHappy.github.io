@@ -4,66 +4,29 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1786514400,
+      "dt": 1786525200,
       "main": {
-        "temp": 18.13,
-        "feels_like": 17.3,
-        "temp_min": 18.02,
-        "temp_max": 18.13,
-        "pressure": 1011,
-        "sea_level": 1011,
-        "grnd_level": 1005,
-        "humidity": 50,
-        "temp_kf": 0.11,
-        "dew_point": 7.55
+        "temp": 17.13,
+        "feels_like": 16.23,
+        "temp_min": 15.16,
+        "temp_max": 17.13,
+        "pressure": 1012,
+        "sea_level": 1012,
+        "grnd_level": 1009,
+        "humidity": 51,
+        "temp_kf": 1.97,
+        "dew_point": 6.92
       },
       "weather": [
         {
           "id": 802,
           "main": "Clouds",
           "description": "scattered clouds",
-          "icon": "03d"
+          "icon": "03n"
         }
       ],
       "clouds": {
-        "all": 49
-      },
-      "wind": {
-        "speed": 7.06,
-        "deg": 243,
-        "gust": 9.79
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-08-12 06:00:00"
-    },
-    {
-      "dt": 1786525200,
-      "main": {
-        "temp": 15.69,
-        "feels_like": 14.72,
-        "temp_min": 14.44,
-        "temp_max": 15.69,
-        "pressure": 1013,
-        "sea_level": 1013,
-        "grnd_level": 1009,
-        "humidity": 54,
-        "temp_kf": 1.25,
-        "dew_point": 6.42
-      },
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02n"
-        }
-      ],
-      "clouds": {
-        "all": 20
+        "all": 37
       },
       "wind": {
         "speed": 4.53,
@@ -80,27 +43,27 @@
     {
       "dt": 1786536000,
       "main": {
-        "temp": 11.34,
-        "feels_like": 10.15,
+        "temp": 13.6,
+        "feels_like": 12.53,
         "temp_min": 11.34,
-        "temp_max": 11.34,
-        "pressure": 1016,
-        "sea_level": 1016,
+        "temp_max": 13.6,
+        "pressure": 1014,
+        "sea_level": 1014,
         "grnd_level": 1010,
-        "humidity": 62,
-        "temp_kf": 0,
-        "dew_point": 5.55
+        "humidity": 58,
+        "temp_kf": 2.26,
+        "dew_point": 5.5
       },
       "weather": [
         {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
+          "id": 801,
+          "main": "Clouds",
+          "description": "few clouds",
+          "icon": "02n"
         }
       ],
       "clouds": {
-        "all": 6
+        "all": 21
       },
       "wind": {
         "speed": 4.11,
@@ -1542,19 +1505,59 @@
         "pod": "d"
       },
       "dt_txt": "2026-08-17 03:00:00"
+    },
+    {
+      "dt": 1786946400,
+      "main": {
+        "temp": 15.5,
+        "feels_like": 15.01,
+        "temp_min": 15.5,
+        "temp_max": 15.5,
+        "pressure": 1034,
+        "sea_level": 1034,
+        "grnd_level": 1028,
+        "humidity": 73,
+        "temp_kf": 0,
+        "dew_point": 10.44
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 75
+      },
+      "wind": {
+        "speed": 6.75,
+        "deg": 115,
+        "gust": 8.63
+      },
+      "visibility": 10000,
+      "pop": 1,
+      "rain": {
+        "3h": 1.56
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-08-17 06:00:00"
     }
   ],
   "city": {
     "id": 2163755,
     "name": "Haymarket",
     "coord": {
-      "lat": -33.8679,
-      "lon": 151.2073
+      "lat": -33.8688,
+      "lon": 151.2093
     },
     "country": "AU",
     "population": 4310,
     "timezone": 36000,
-    "sunrise": 1786480679,
+    "sunrise": 1786480678,
     "sunset": 1786519368
   }
 }

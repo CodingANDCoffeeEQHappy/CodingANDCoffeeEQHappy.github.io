@@ -4,55 +4,18 @@
   "cnt": 40,
   "list": [
     {
-      "dt": 1786687200,
+      "dt": 1786698000,
       "main": {
-        "temp": 75.06,
-        "feels_like": 74.1,
-        "temp_min": 75.06,
-        "temp_max": 76.26,
+        "temp": 79.84,
+        "feels_like": 79.84,
+        "temp_min": 79.84,
+        "temp_max": 91.53,
         "pressure": 1018,
         "sea_level": 1018,
         "grnd_level": 1008,
         "humidity": 39,
-        "temp_kf": -0.67,
-        "dew_point": 48.45
-      },
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01d"
-        }
-      ],
-      "clouds": {
-        "all": 4
-      },
-      "wind": {
-        "speed": 1.92,
-        "deg": 301,
-        "gust": 2.26
-      },
-      "visibility": 10000,
-      "pop": 0,
-      "sys": {
-        "pod": "d"
-      },
-      "dt_txt": "2026-08-14 06:00:00"
-    },
-    {
-      "dt": 1786698000,
-      "main": {
-        "temp": 86.11,
-        "feels_like": 83.39,
-        "temp_min": 86.11,
-        "temp_max": 91.94,
-        "pressure": 1017,
-        "sea_level": 1017,
-        "grnd_level": 1008,
-        "humidity": 26,
-        "temp_kf": -3.24,
-        "dew_point": 47.25
+        "temp_kf": -6.49,
+        "dew_point": 52.7
       },
       "weather": [
         {
@@ -80,16 +43,16 @@
     {
       "dt": 1786708800,
       "main": {
-        "temp": 99.3,
-        "feels_like": 95.09,
-        "temp_min": 99.3,
+        "temp": 90.86,
+        "feels_like": 87.89,
+        "temp_min": 90.86,
         "temp_max": 99.3,
-        "pressure": 1016,
-        "sea_level": 1016,
+        "pressure": 1017,
+        "sea_level": 1017,
         "grnd_level": 1006,
-        "humidity": 15,
-        "temp_kf": 0,
-        "dew_point": 43.93
+        "humidity": 25,
+        "temp_kf": -4.69,
+        "dew_point": 50.22
       },
       "weather": [
         {
@@ -100,7 +63,7 @@
         }
       ],
       "clouds": {
-        "all": 0
+        "all": 1
       },
       "wind": {
         "speed": 0.63,
@@ -1482,19 +1445,59 @@
         "pod": "n"
       },
       "dt_txt": "2026-08-19 03:00:00"
+    },
+    {
+      "dt": 1787119200,
+      "main": {
+        "temp": 72.19,
+        "feels_like": 71.89,
+        "temp_min": 72.19,
+        "temp_max": 72.19,
+        "pressure": 1015,
+        "sea_level": 1015,
+        "grnd_level": 1005,
+        "humidity": 59,
+        "temp_kf": 0,
+        "dew_point": 56.91
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "all": 51
+      },
+      "wind": {
+        "speed": 4.36,
+        "deg": 299,
+        "gust": 7
+      },
+      "visibility": 10000,
+      "pop": 0.2,
+      "rain": {
+        "3h": 0.24
+      },
+      "sys": {
+        "pod": "d"
+      },
+      "dt_txt": "2026-08-19 06:00:00"
     }
   ],
   "city": {
-    "id": 6455259,
-    "name": "Paris",
+    "id": 2978048,
+    "name": "Saint-Merri",
     "coord": {
-      "lat": 48.8575,
-      "lon": 2.3514
+      "lat": 48.8558,
+      "lon": 2.3494
     },
     "country": "FR",
     "population": 0,
     "timezone": 7200,
-    "sunrise": 1786682499,
+    "sunrise": 1786682500,
     "sunset": 1786734552
   }
 }
